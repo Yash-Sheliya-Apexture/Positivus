@@ -27,10 +27,11 @@ cd Positivus
 Open the index.html file in your web browser to view the landing page.
 
 
-![image](https://github.com/user-attachments/assets/f2e805cd-bd75-4d2e-9c87-45c504535c81)
 
 
-Design Reference
+
+Design Reference Link :- https://www.figma.com/design/BdNXvAAG19bEOimlMQOWmX/Positivus-Landing-Page-Design-(Community)?node-id=25-145&t=aRlLY8Vpw1asSiSB-1
+
 The landing page design was inspired by the following Figma prototype: Positivus Landing Page Figma Design
 
 This link contains the design layout and specifications for the project. Our goal is to replicate the look and feel of this design as accurately as possible.
