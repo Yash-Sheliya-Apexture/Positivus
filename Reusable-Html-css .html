@@ -6,6 +6,168 @@
     <title>Reusable Html and css</title>
 </head>
 <body>
+
+
+<!-- 1 ===================== -->
+
+    <!-- p Tage use this html start -->
+    <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+    <!-- p Tage use this html end-->
+    <!-- p Tage use this css start-->
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22.97px;
+    }
+    <!-- p Tage use this css end-->
+
+<!-- ================= -->
+
+
+
+
+<!-- 2 ===================== -->
+
+    <!-- h1 Tage use this html start -->
+    <h1>Navigating the digital landscape for success</h1>
+    <!-- h1 Tage use this html end-->
+    <!-- h1 Tage use this css start-->
+    h1{
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 76.56px;
+    }
+    <!-- h1 Tage use this css end-->
+
+<!-- ================= -->
+
+
+
+
+<!-- 3 ===================== -->
+
+    <!-- all headings -->
+    <div class="heading-section-wrap">
+        <div class="flex heading-wrap">
+            <div class="heading">
+                <h3 class="heading-bg-green">Services</h3>
+            </div>
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+        </div>
+    </div>
+    <!-- all headings use this html end-->
+    <!-- all headings use this css start-->
+    .heading-bg-green {
+        background-color: var(--primary-color);
+    }
     
+    .heading-section-wrap .heading h3{
+        border-radius: 7px;
+        padding: 0px 7px;
+        display: inline-block;
+    }
+    
+    .heading-wrap{
+        gap: 40px;
+    }
+    .heading-section-wrap p{
+        margin: 0px;
+        font-size: 18px;
+        line-height: 22.97px;
+    }
+    
+    @media(max-width:767.98px){
+        .heading-section-wrap .heading h3{
+            font-size: 36px;
+            line-height: 45.94px;
+        }
+        .heading-wrap{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    <!-- all headings use this css end-->   
+
+<!-- ================= -->
+
+
+
+
+
+
+<!-- 4 ===================== -->
+
+    <!-- Button class btn tag-->
+    <button class="btn">Book a consultation</button>
+    <!-- Button class btn tag use this html end-->
+    <!-- Button class btn tag use this css start-->
+    .btn {
+        padding: 20px 35px;
+        border-radius: 14px;
+        font-size: 20px;
+        font-family: var(--font-family-primary);
+        border: 1px solid #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    @media(max-width:767.98px) {
+        .btn {
+            width: 100%;
+        }
+    }
+    <!-- Button class btn tag use this css end-->   
+
+
+    <!-- Button class btn btn-type-one tag-->
+    <button class="btn btn-type-one">Book a consultation</button>
+    <!-- Button class btn btn-type-one tag use this html end-->
+    <!-- Button class btn btn-type-one tag use this css start-->
+    .btn.btn-type-one {
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+    }
+    
+    .btn.btn-type-one:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--black-color);
+    }
+    <!-- Button class btn btn btn-type-one tag use this css end--> 
+
+    <!-- Button class btn btn-type-two tag-->
+    <button class="btn btn-type-two">Book a consultation</button>
+    <!-- Button class btn btn-type-two tag use this html end-->
+    <!-- Button class btn btn-type-two tag use this css start-->
+    .btn.btn-type-two {
+        background-color: transparent;
+        color: var(--black-color);
+    }
+    
+    .btn.btn-type-two:hover {
+        background-color: var(--black-color);
+        border-color: var(--black-color);
+        color: var(--white-color);
+    }    
+    <!-- Button class btn btn-type-two tag use this css end--> 
+
+
+    <!-- Button class btn btn-type-three tag-->
+    <button class="btn btn-type-three">Book a consultation</button>
+    <!-- Button class btn btn-type-three tag use this html end-->
+    <!-- Button class btn btn-type-three tag use this css start-->
+    .btn.btn-type-three {
+        background-color: var(--primary-color);
+        color: var(--black-color);
+        border-color: var(--primary-color);
+    }
+    
+    .btn.btn-type-three:hover {
+        background-color: var(--black-color);
+        border-color: var(--black-color);
+        color: var(--white-color);
+    }   
+    <!-- Button class btn btn-type-three tag use this css end--> 
+
+<!-- ================= -->
 </body>
 </html>
