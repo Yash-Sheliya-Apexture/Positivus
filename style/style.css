@@ -1,5 +1,151 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* ========== Font Import ========== */
+/* Import Space Grotesk font files from local sources */
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../assets/font/SpaceGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../assets/font/SpaceGrotesk-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../assets/font/SpaceGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../assets/font/SpaceGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../assets/font/SpaceGrotesk-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ========== CSS Variables ========== */
+:root {
+    /* Color Variables */
+    --primary-color: #B9FF66;  /* Lime Green */
+    --secondary-color: #191A23; /* Dark Gray */
+    --black-color: #000000;    /* Black */
+    --light-gray-color: #F3F3F3; /* Light Gray */
+
+    /* Font Family Variable */
+    --font-family-primary: 'SpaceGrotesk', sans-serif;
+}
+
+/* ========== Global Styles ========== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-primary); /* Apply SpaceGrotesk as the primary font */
+    background-color: var(--light-gray-color); /* Set background to light gray */
+    color: var(--black-color); /* Default text color */
+    line-height: 1.6;
+}
+
+/* ========== Layout Styles ========== */
+/* Center container for the main content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ========== Typography Styles ========== */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color); /* Heading color */
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* ========== Button Styles ========== */
+.button {
+    background-color: var(--primary-color); /* Button background color */
+    color: var(--black-color); /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--secondary-color); /* Darken on hover */
+    color: var(--light-gray-color); /* Light text on hover */
+}
+
+/* ========== Utility Classes ========== */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+/* ========== Section Styles ========== */
+/* Hero section style */
+.hero {
+    background-color: var(--secondary-color); /* Dark background */
+    color: var(--light-gray-color); /* Light text */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color); /* Accent color for hero title */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--light-gray-color); /* Light color for hero description */
+}
+
+/* ========== Footer Styles ========== */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-gray-color);
+    padding: 20px;
+    text-align: center;
 }
