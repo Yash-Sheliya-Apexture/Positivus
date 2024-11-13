@@ -102,8 +102,10 @@ h2 {
     line-height: 51.04px;
 }
 
-p {
-    margin-bottom: 1em;
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.97px;
 }
 
 /* ========== Typography Styles end ========== */
