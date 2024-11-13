@@ -102,10 +102,10 @@ h2 {
   line-height: 51.04px;
 }
 
-p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.97px;
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.97px;
 }
 
 /* ========== Typography Styles end ========== */
@@ -218,33 +218,3 @@ p {
 
 /* ========== Button Styles end ========== */
 
-
-/* Kartavya CSS Code Start*/
-/* ========== hero start ========== */
-.hero-section.mt-2 {
-  margin-top: 10px;
-}
-
-.hero-section .hero-detail {
-  gap: 108.54px;
-}
-
-.hero-section .hero-detail .hero-content-wrap .heading.mb-2,
-.hero-section .hero-detail .hero-content-wrap .description.mb-2 {
-  margin-bottom: 35px;
-}
-
-.description {
-  line-height: 28px;
-  font-size: 20px;
-}
-
-.hero-image img {
-  max-width: 100%; /* Ensure the image fits within the div */
-  height: auto; /* Maintain the aspect ratio */
-}
-.hero-image .description-and-btn-mobile-wrap {
-  display: none;
-}
-/* ========== hero end ========== */
-/* Kartavya CSS Code End*/
