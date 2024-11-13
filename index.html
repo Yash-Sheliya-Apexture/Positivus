@@ -7,16 +7,75 @@
     <title>Positivus Landing Page Design</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/responsive.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
+        <!-- Header Rudra Section Start -->
+
+        <header class="header">
+            <div class="container">
+                <div class="flex flex-justify-content-space-between flex-align-items-center">
+                    <!-- Logo Section -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/Images/logo.png" alt="Positivus Logo">
+                        </a>
+                    </div>
+    
+                    <!-- Navigation Section -->
+                    <div class="nav">
+                        <!-- Navbar for larger screens -->
+                        <nav class="navbar flex flex-align-items-center">
+                            <ul>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#use-cases">Use Cases</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                            </ul>
+                            <!-- Request a Quote Button -->
+                            <button class="btn btn-type-two ml-2">Request a quote</button>
+                        </nav>
+    
+    
+                        <!-- Menu for small screens (hamburger icon) -->
+                        <div class="hamburger" id="hamburger">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Sidebar Menu (initially hidden) -->
+                <div class="sidebar" id="sidebar">
+                    <div class="close-btn" id="closeBtn">&times;</div>
+                    <ul>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+    
+                    <!-- Button at the bottom -->
+                    <!-- <a href="#contact" class="botton">Request A Quote</a> -->
+                    <div class="mobail-button-wrap">
+                        <button class="btn btn-type-one new">Request A Quote</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- Header Rudra Section End -->
+
     <main>
 
         <section class="hero-section mt-2" id="hero">
             <!-- Container for holding the content and image -->
             <div class="container">
-
                 <div class="hero-detail flex">
                     <!-- Left side content (text and button) -->
                     <div class="hero-content-wrap column w-50">
@@ -35,7 +94,7 @@
 
                     <!-- Right side content (image) -->
                     <div class="hero-image column w-50">
-                        <img src="/assets/Images/Illustration.svg" alt="Digital Landscape" class="w-100" />
+                        <img src="./assets/Images/Illustration.svg" alt="Digital Landscape" class="w-100" />
                         <!-- Image on the right side -->
 
                         <div class="description-and-btn-mobile-wrap">
