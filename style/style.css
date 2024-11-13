@@ -218,75 +218,197 @@ p {
 
 /* ========== Button Styles end ========== */
 
-/* ================ jenali Case Studies Section css start ================*/
-/* .case-studies-mobile{
-    display: none;
-} */
-.case-studies {
-    padding: 60px 0px 60px 0px;
-}
-
-.heading-wrap p {
-    width: 580px;
-    height: 46px;
+/* ================ jenali TestimonialsSection css start ================*/
+/* General case studies container styling */
+.heading-section-wrap p {
+    width: 473px;
+    height: 47px;
 }
 
 .heading-section-wrap {
-    padding-top: 60px;
+    margin-bottom: 50px;
 }
 
-.row {
-    display: flex;
+.imag {
+    position: relative;
+    /* This allows positioning of the content over the image */
+    display: inline-block;
+    /* Ensures the content and image are contained within the div */
+}
+
+.imag img {
+    width: 100%;
+    /* Make the image fill the entire width of the container */
+    height: auto;
+    /* Ensure the image maintains its aspect ratio */
+    border-radius: 10px;
+    /* Optional: add rounded corners to the image */
+}
+
+.testimonial-content {
+    position: absolute;
+    /* Positioning the content on top of the image */
+    top: 50%;
+    /* Center the content vertically */
+    left: 50%;
+    /* Center the content horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for exact centering */
+    color: #fff;
+    /* Text color (white) for visibility on top of the image */
+    font-size: 18px;
+    /* Font size for readability */
+    font-weight: 400;
+    /* Adjust font weight */
+    text-align: center;
+    /* Center-align the text */
+    width: 100%;
+    padding: 15px;
+    /* Add padding for the text to not touch edges */
+    border-radius: 10px;
+    /* Optional: rounded corners for the text container */
+}
+
+.case-studies {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+.case-studies h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+/* Slider container styling */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: var(--secondary-color);
     color: var(--white-color);
-    border-radius: 45px;
-    padding: 70px 60px 70px 60px;
-    /* justify-content: space-between; */
-    gap: 100px;
-    /* flex-wrap: nowrap;
-    overflow-x: auto;  */
+    padding: 50px 60px 250px 60px;
 }
 
-.heading-bg-green {
-    width: 202px;
-    height: 51px;
-    font-size: 30px;
+/* Slider wrapper holds the slides */
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 50px;
 }
 
-.col-4 {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22.97px;
-    /* width: 286px;
-    height: 186px; */
+.author-info {
+    margin-left: 62px;
 }
 
-.col-4 p {
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    /* Show only 3 lines of text */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.content-border {
-    border-left: 1px solid var(--white-color);
-    padding-left: 60px;
-}
-
-.learnMore {
+.author-info span {
     color: var(--primary-color);
+}
+
+.case-study-slide {
+    width: 500px;
+    height: 237.95px;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    text-align: left;
+}
+
+
+.case-study-slide p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Slider navigation buttons */
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Adjust previous and next buttons */
+.slider-controls {
+    position: absolute;
+    bottom: 50px;
+    /* Adjust position below the slider */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.slider-controls button {
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: unset;
+}
+
+.slider-controls img {
+    width: 20px;
+    height: 20px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Pagination dots */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.learnMore img {
-    width: 15px;
-    height: 15px;
-    margin-left: 12px;
-    margin-bottom: -2px;
+.dot img {
+    height: 14px;
+    width: 14px;
+}
+
+/* Active dot styling */
+.dot.active img {
+    content: url('assets\Images\greenDot.png');
+    /* Active dot with primary color */
+}
+
+/* Default inactive dot styling */
+.dot img {
+    content: url('assets\Images\whiteDot.png');
+    /* Inactive dot with white color */
 }
 
 
 
-/* ======================= jenali Case Studies Section css end ============ */
+
+/* ======================= jenali TestimonialsSection Section css end ============ */

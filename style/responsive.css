@@ -10,17 +10,7 @@
         max-width: 720px;
     }
 
-    /* ===================jenali Case Studies Section start================== */
-    .row {
-        padding: 50px 40px 50px 40px;
-        gap: 30px;
-    }
 
-    .col-4 p {
-        font-size: 16px;
-    }
-
-    /* ===================jenali Case Studies Section start================== */
 }
 
 @media(max-width:767.98px) {
@@ -42,59 +32,17 @@
         width: 100%;
     }
 
-    .case-studies {
-        /* Adjust space between columns */
-        overflow-x: auto;
-        /* Enable horizontal scrolling */
-        flex-wrap: nowrap;
-        scrollbar-width: none;
-    }
-
-    .row {
-        background-color: unset;
-        color: var(--black-color);
-        padding: 0;
-        gap: 20px;
-
-        padding: 0 20px 0 20px;
-    }
-
-    .col-4 {
-        background-color: var(--secondary-color);
-        width: 350px;
-        height: 252px;
-        border-radius: 40px;
-        font-size: 16px;
-        color: var(--white-color);
-        flex: 0 0 auto;
-        padding: 42px 50px 42px 50px;
-    }
-
-    .content-border {
-        border-left: none;
-        /* padding-left: 0; */
-        /* padding: 42px 50px 42px 50px; */
-    }
-
-    .heading-wrap p {
-        width: 390px;
-        height: 48px;
-        font-size: 16px;
-    }
-
-    .heading-section-wrap .heading h3 {
-        font-size: 30px;
-    }
+    /* jenali testimonials css start */
+    
 }
 
 @media(max-width:350.98px) {
-    .col-4 {
-        width: 100%;
-        padding: 40px 40px 40px 40px;
+    .heading-section-wrap p {
+        width: 290px;
+        height: 72px;
+        font-size: 16px
     }
-
-    .heading-wrap p {
-        width: 276px;
-        height: 48px;
+    .slider-controls{
+        width: 100%;
     }
 }

@@ -11,38 +11,93 @@
 </head>
 
 <body>
-    <!--------- jenali Case Studies Section html start------->
-    <div class="heading-section-wrap container">
-        <div class="flex heading-wrap">
-            <div class="heading">
-                <h3 class="heading-bg-green">Case Studies</h3>
-            </div>
-            <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
-        </div>
-    </div>
+    <!--------- jenali TestimonialsSection html start------->
     <div class="case-studies container">
-        <div class="row">
-            <div class="col-4">
-                <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in
-                    website traffic and a 25% increase in sales.</p>
-                <br>
-                <p class="learnMore">LearnMore<img src="assets\Images\learnMore-errow.png" alt=""></p>
+        <div class="heading-section-wrap">
+            <div class="flex heading-wrap">
+                <div class="heading">
+                    <h3 class="heading-bg-green">Testimonials</h3>
+                </div>
+                <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
             </div>
-            <div class="col-4 content-border">
-                <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for
-                    key keywords and a 200% increase in organic traffic.</p>
-                <br>
-                <p class="learnMore">LearnMore<img src="assets\Images\learnMore-errow.png" alt=""></p>
+        </div>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="case-study-slide">
+                    <div class="imag">
+                        <img src="assets/Images/Bubble.png" alt="">
+                        <!-- <img src="assets\Images\Union.png" alt=""> -->
+                        <div class="testimonial-content">
+                            <p>"We have been working with Positivus for the past year and have seen a significant
+                                increase in website traffic and leads as a result of their efforts. The team is
+                                professional, responsive, and truly cares about the success of our business. We highly
+                                recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                    </div>
+                    <p class="author-info"><span>John Smith</span><br>Marketing Director at XYZ Corp</p> <!-- Name and role -->
+                </div>
+                <div class="case-study-slide">
+                    <div class="imag">
+                        <img src="assets/Images/Bubble.png" alt="">
+                        <div class="testimonial-content">
+                            <p>"We have been working with Positivus for the past year and have seen a significant
+                                increase in website traffic and leads as a result of their efforts. The team is
+                                professional, responsive, and truly cares about the success of our business. We highly
+                                recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                    </div>
+                    <p class="author-info"><span>John Smith</span><br>Marketing Director at XYZ Corp</p> <!-- Name and role -->
+                </div>
+                <div class="case-study-slide">
+                    <div class="imag">
+                        <img src="assets/Images/Bubble.png" alt="">
+                        <div class="testimonial-content">
+                            <p>"We have been working with Positivus for the past year and have seen a significant
+                                increase in website traffic and leads as a result of their efforts. The team is
+                                professional, responsive, and truly cares about the success of our business. We highly
+                                recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                    </div>
+                    <p class="author-info"><span>John Smith</span><br>Marketing Director at XYZ Corp</p> <!-- Name and role -->
+                </div>
+                <div class="case-study-slide">
+                    <div class="imag">
+                        <img src="assets/Images/Bubble.png" alt="">
+                        <div class="testimonial-content">
+                            <p>"We have been working with Positivus for the past year and have seen a significant
+                                increase in website traffic and leads as a result of their efforts. The team is
+                                professional, responsive, and truly cares about the success of our business. We highly
+                                recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                    </div>
+                    <p class="author-info"><span>John Smith</span><br>Marketing Director at XYZ Corp</p> <!-- Name and role -->
+                </div>
+                <!-- Add more case-study-slide elements as needed -->
             </div>
-            <div class="col-4 content-border">
-                <p>For a national retail chain, we created a social media marketing campaign that increased followers by
-                    25% and generated a 20% increase in online sales.</p>
-                <br>
-                <p class="learnMore">LearnMore<img src="assets\Images\learnMore-errow.png" alt=""></p>
+            <div class="slider-controls">
+                <button id="prev" onclick="prevSlide()"><img src="assets\Images\Arrow left.png" alt=""></button>
+                <button id="next" onclick="nextSlide()"><img src="assets\Images\Arrow right.png" alt=""></button>
+            </div>
+            <div class="pagination">
+                <span class="dot" onclick="goToSlide(0)">
+                    <img src="assets/Images/whiteDot.png" alt="Dot 1">
+                </span>
+                <span class="dot" onclick="goToSlide(1)">
+                    <img src="assets/Images/whiteDot.png" alt="Dot 2">
+                </span>
+                <span class="dot" onclick="goToSlide(2)">
+                    <img src="assets/Images/whiteDot.png" alt="Dot 3">
+                </span>
+                <span class="dot" onclick="goToSlide(3)">
+                    <img src="assets/Images/whiteDot.png" alt="Dot 4">
+                </span>
+                <!-- Add more dots if you have more slides -->
             </div>
         </div>
     </div>
-    <!--------- jenali Case Studies Section html end------->
+
+
+    <!--------- jenali TestimonialsSection html end------->
 
 
     <script src="./javascript/index.js"></script>
