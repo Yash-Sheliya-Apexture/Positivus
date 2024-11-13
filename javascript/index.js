@@ -21,8 +21,7 @@ function closeSidebar() {
 // Event Listeners
 hamburger.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
-overlay.addEventListener("click", closeSidebar);
-// ===================Rudra  js end==================
+// ===================Rudra  js end================== 
 
 
 

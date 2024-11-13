@@ -14,80 +14,118 @@
 
 <body>
 
-    <!-- Header Rudra Section Start -->
+        <!-- Header Rudra Section Start -->
 
-    <header class="header">
-        <div class="container">
-            <div class="flex flex-justify-content-space-between flex-align-items-center">
-                <!-- Logo Section -->
-                <div class="logo">
-                    <a href="#">
-                        <img src="assets/Images/logo.png" alt="Positivus Logo">
-                    </a>
+        <header class="header">
+            <div class="container">
+                <div class="flex flex-justify-content-space-between flex-align-items-center">
+                    <!-- Logo Section -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/Images/logo.png" alt="Positivus Logo">
+                        </a>
+                    </div>
+    
+                    <!-- Navigation Section -->
+                    <div class="nav">
+                        <!-- Navbar for larger screens -->
+                        <nav class="navbar flex flex-align-items-center">
+                            <ul>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#use-cases">Use Cases</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                            </ul>
+                            <!-- Request a Quote Button -->
+                            <button class="btn btn-type-two ml-2">Request a quote</button>
+                        </nav>
+    
+    
+                        <!-- Menu for small screens (hamburger icon) -->
+                        <div class="hamburger" id="hamburger">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Navigation Section -->
-                <div class="nav">
-                    <!-- Navbar for larger screens -->
-                    <nav class="navbar flex flex-align-items-center">
-                        <ul>
-                            <li><a href="#about">About us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#use-cases">Use Cases</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                        </ul>
-                        <!-- Request a Quote Button -->
-                        <button class="btn btn-type-two ml-2">Request a quote</button>
-                    </nav>
-
-
-                    <!-- Menu for small screens (hamburger icon) -->
-                    <div class="hamburger" id="hamburger">
-                        <i class="fa fa-bars"></i>
+    
+                <!-- Sidebar Menu (initially hidden) -->
+                <div class="sidebar" id="sidebar">
+                    <div class="close-btn" id="closeBtn">&times;</div>
+                    <ul>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+    
+                    <!-- Button at the bottom -->
+                    <!-- <a href="#contact" class="botton">Request A Quote</a> -->
+                    <div class="mobail-button-wrap">
+                        <button class="btn btn-type-one new">Request A Quote</button>
                     </div>
                 </div>
             </div>
+        </header>
+    
+        <!-- Header Rudra Section End -->
 
-            <!-- Sidebar Menu (initially hidden) -->
-            <div class="sidebar" id="sidebar">
-                <div class="close-btn" id="closeBtn">&times;</div>
-                <ul>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#use-cases">Use Cases</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                </ul>
+    <main>
 
-                <!-- Button at the bottom -->
-                <!-- <a href="#contact" class="botton">Request A Quote</a> -->
-                <div class="btn-1">
-                    <button class="btn btn-type-one new">Request A Quote</button>
+        <section class="hero-section mt-2" id="hero">
+            <!-- Container for holding the content and image -->
+            <div class="container">
+                <div class="hero-detail flex">
+                    <!-- Left side content (text and button) -->
+                    <div class="hero-content-wrap column w-50">
+                        <h1 class="heading mb-2">Navigating the digital landscape for success</h1>
+                        <!-- Heading text -->
+                        <div class="description-and-btn-desktop-wrap">
+                            <p class="description mb-2">
+                                Our digital marketing agency helps businesses grow and succeed online through a
+                                range of services including SEO, PPC, social media marketing, and content
+                                creation.
+                            </p> <!-- Paragraph with description -->
+                            <button class="btn btn-type-one">Book a consultation</button>
+                            <!-- Button for consultation -->
+                        </div>
+                    </div>
+
+                    <!-- Right side content (image) -->
+                    <div class="hero-image column w-50">
+                        <img src="./assets/Images/Illustration.svg" alt="Digital Landscape" class="w-100" />
+                        <!-- Image on the right side -->
+
+                        <div class="description-and-btn-mobile-wrap">
+                            <p class="description mb-2">
+                                Our digital marketing agency helps businesses grow and succeed online through a
+                                range of services including SEO, PPC, social media marketing, and content
+                                creation.
+                            </p> <!-- Paragraph with description -->
+                            <button class="btn btn-type-one">Book a consultation</button>
+                            <!-- Button for consultation -->
+                        </div>
+                    </div>
                 </div>
+
+            </div>
+        </section>
+
+        <!-- jenali Cline-section html start -->
+        <div class="logos">
+            <div class="logos-slide" id="logoContainer">
+                <!-- Initial set of logos -->
+                <img src="assets\Images\amazon.png" alt="Logo 1">
+                <img src="assets\Images\dribble.png" alt="Logo 2">
+                <img src="assets\Images\hubspot.png" alt="Logo 3">
+                <img src="assets\Images\netflix.png" alt="Logo 4">
+                <img src="assets\Images\notion.png" alt="Logo 5">
+                <img src="assets\Images\zoom.png" alt="Logo 6">
             </div>
         </div>
-    </header>
-
-    <!-- Header Rudra Section End -->
-
-
-
-    <!-- jenali Cline-section html start -->
-    <div class="logos">
-        <div class="logos-slide" id="logoContainer">
-            <!-- Initial set of logos -->
-            <img src="assets\Images\amazon.png" alt="Logo 1">
-            <img src="assets\Images\dribble.png" alt="Logo 2">
-            <img src="assets\Images\hubspot.png" alt="Logo 3">
-            <img src="assets\Images\netflix.png" alt="Logo 4">
-            <img src="assets\Images\notion.png" alt="Logo 5">
-            <img src="assets\Images\zoom.png" alt="Logo 6">
-        </div>
-    </div>
-    <!-- jenali Cline-section html end -->
-
-
+        <!-- jenali Cline-section html end -->
+    </main>
     <script src="./javascript/index.js"></script>
 </body>
 

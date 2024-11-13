@@ -1,5 +1,4 @@
 /* ========== Responsive Breakpoints ========== */
-<<<<<<< HEAD
 @media (max-width: 1199.98px) {
   .container {
     max-width: 1140px;
@@ -71,7 +70,6 @@
 
 @media (max-width: 350.98px) {
 }
-=======
 @media(max-width:1199.98px) {
     /* Reusable Breakpoints css */
     .container {
@@ -180,4 +178,3 @@
 
 
 
->>>>>>> 10ca597e1477758ba5bb865fa44286bde08bc06e

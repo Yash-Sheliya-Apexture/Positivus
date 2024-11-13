@@ -98,15 +98,12 @@ h2 {
   font-size: 40px;
   font-weight: 500;
   line-height: 51.04px;
-<<<<<<< HEAD
-=======
 }
 
 h3 {
   font-size: 30px;
   font-weight: 500;
   line-height: 38.28px;
->>>>>>> 10ca597e1477758ba5bb865fa44286bde08bc06e
 }
 
 p {
@@ -125,13 +122,10 @@ p {
 
 .flex-justify-content-center {
   justify-content: center;
-<<<<<<< HEAD
 }
 
 .flex-justify-content-space-between {
   justify-content: space-between;
-=======
->>>>>>> 10ca597e1477758ba5bb865fa44286bde08bc06e
 }
 
 .flex-align-items-center {
@@ -154,15 +148,11 @@ p {
   width: 50%;
 }
 
-<<<<<<< HEAD
-=======
 .w-100 {
   width: 100%;
 }
 /* ========== Utility Classes end ========== */
 
->>>>>>> 10ca597e1477758ba5bb865fa44286bde08bc06e
-/* yash */
 
 /* ========== heading start ========== */
 
@@ -241,7 +231,6 @@ p {
 
 /* ========== Button Styles end ========== */
 
-<<<<<<< HEAD
 /* ========== Rudra Header Section start ========== */
 .header {
   padding: 60px 0px;
@@ -327,19 +316,21 @@ p {
   cursor: pointer;
 }
 
-.sidebar .btn-1 {
+.sidebar .mobail-button-wrap {
   position: fixed;
   bottom: 0;
   width: 100%;
   padding: 16px;
 }
 
-.sidebar .btn-1 .new {
-  box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.3);
+.sidebar .mobail-button-wrap{
+  box-shadow: 0px -6px 20px rgb(0 0 0 / 24%);
+  border-radius: 20px 20px 0px 0px;
+  border-top: 2px solid var(--black-color);
 }
 
 /* ========== Rudra Header Section End ========== */
-=======
+
 /* ================Kartavya CSS Code Start================ */
 /* ========== Hero Section Start ========== */
 
@@ -370,7 +361,7 @@ p {
 }
 /* ========== Hero Section End ========== */
 /* ================Kartavya CSS Code End================ */
->>>>>>> 10ca597e1477758ba5bb865fa44286bde08bc06e
+
 
 /* ================ jenali Cline-section css start ================*/
 @keyframes slide {
