@@ -20,6 +20,13 @@
     gap: 50px;
   }
   /* Hero Section End */
+
+  /* Things Happen Section Start */
+  .things-happen .things-happen-detail {
+    gap: 120px;
+  }
+
+  /* Things Happen Section End */
   /* ===================kartavya Responsive CSS end=================== */
 }
 
@@ -33,7 +40,7 @@
   /* ===================kartavya Responsive CSS Start=================== */
   /* Hero Section Start */
   .hero-section .hero-detail .hero-content-wrap .heading {
-    font-size: 45px;
+    font-size: 44px;
     line-height: 49.56px;
   }
   .hero-section .hero-detail .description {
@@ -41,6 +48,29 @@
     line-height: 24px;
   }
   /* Hero Section End */
+
+
+  /* Things Happen Section Start */
+  .things-happen .things-happen-detail .things-happen-content .things-title{
+    font-size: 26px;
+    line-height: 38.28px;
+  }
+
+  .things-happen .things-happen-detail .things-happen-content .things-para{
+    font-size: 16px;
+    line-height: 20.97px;
+  }
+
+  .things-happen .things-happen-detail {
+    gap: 60px;
+    padding: 50px;
+  }
+  .things-happen .things-happen-detail{
+    max-width: 100%;
+  }
+  /* Things Happen Section End */
+
+  
   /* ===================kartavya Responsive CSS End=================== */
 }
 
@@ -61,6 +91,9 @@
   /* Reusable Breakpoints css */
 
   /* ===================kartavya Responsive CSS Start=================== */
+  /* Things Happen Section Start */
+  
+  /* Things Happen Section End */
   /* ===================kartavya Responsive CSS End=================== */
 
   /* ===================jenali Cline-section css start================== */
@@ -104,6 +137,10 @@
     margin-bottom: 40px;
   }
   /* Hero Section End */
+
+  /* Things Happen Section Start */
+  
+  /* Things Happen Section End */
   /* ===================kartavya Responsive CSS End=================== */
 }
 

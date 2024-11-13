@@ -65,8 +65,6 @@
 body {
   font-family: var(--font-family-primary);
   /* Apply SpaceGrotesk as the primary font */
-  background-color: var(--light-gray-color);
-  /* Set background to light gray */
   color: var(--black-color);
   /* Default text color */
   line-height: 1.6;
@@ -102,12 +100,18 @@ h2 {
   line-height: 51.04px;
 }
 
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38.28px;
+}
+
 p {
   font-size: 18px;
   font-weight: 400;
   line-height: 22.97px;
 }
-
+    
 /* ========== Typography Styles end ========== */
 
 /* ========== Utility Classes start ========== */
@@ -218,9 +222,9 @@ p {
 
 /* ========== Button Styles end ========== */
 
-
 /* ================Kartavya CSS Code Start================ */
 /* ========== Hero Section Start ========== */
+
 .hero-section.mt-2 {
   margin-top: 10px;
 }
@@ -248,73 +252,91 @@ p {
 }
 /* ========== Hero Section End ========== */
 
+/* ========== Things Happen Section Start ========== */
+.things-happen{
+    margin-bottom: 100px;
+}
+.things-happen .things-happen-detail .things-title.mb-2,
+.things-happen .things-happen-detail .things-para.mb-2 {
+  margin-bottom: 26px;
+}
 
+.things-happen .things-happen-detail {
+  background-color: #f3f3f3;
+  border-radius: 45px;
+}
+
+.things-happen .things-happen-detail {
+  gap: 186px;
+  padding: 60px;
+}
+
+.things-image img {
+  max-width: 100%; /* Ensure the image fits within the div */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* ========== Things Happen Section End ========== */
 /* ================Kartavya CSS Code End================ */
-
 
 /* ================ jenali Cline-section css start ================*/
 @keyframes slide {
-    from {
-        transform: translateX(0);
+  from {
+    transform: translateX(0);
+  }
 
-    }
-
-    to {
-        transform: translateX(-100%);
-
-    }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .logos {
-    overflow: hidden;
-    padding: 60px 0;
-    background: white;
-    white-space: nowrap;
-    position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
 }
 
 .logos:before,
 .logos:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
 }
 
 .logos:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
 .logos:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-
 .logos:hover .logos-slide {
-    animation-play-state: paused;
-
-
+  animation-play-state: paused;
 }
 
 .logos-slide {
-    display: inline-block;
-    animation: 70s slide infinite linear;
+  display: inline-block;
+  animation: 70s slide infinite linear;
 }
 
 .logos-slide img {
-    height: 50px;
-    margin: 0 40px;
-    filter: grayscale(1) brightness(0.7);
-    cursor: pointer;
-    transition: .5s ease;
+  height: 50px;
+  margin: 0 40px;
+  filter: grayscale(1) brightness(0.7);
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .logos-slide img:hover {
-    filter: none;
+  filter: none;
 }
 
 /* ======================= jenali Cline-section css end ============ */
