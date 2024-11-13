@@ -1,109 +1,113 @@
 /* ========== Responsive Breakpoints ========== */
-@media(max-width:1199.98px) {
-    /* Reusable Breakpoints css */
-    .container {
-        max-width: 960px;
-    }
-    /* Reusable Breakpoints css */
+@media (max-width: 1199.98px) {
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 960px;
+  }
+  /* Reusable Breakpoints css */
 
-
-    /* kartavya Hero Section Responsive CSS start  */
-    .hero-section .hero-detail .hero-content-wrap .heading {
-        font-size: 50px;
-        line-height: 59.56px;
-    }
-    .hero-section .hero-detail .hero-content-wrap .heading.mb-2 , .hero-section .hero-detail .hero-content-wrap .description.mb-2{
-        margin-bottom: 20px;
-    }
-    .hero-section .hero-detail {
-        gap: 50px;
-    }
-    /* kartavya Hero Section Responsive CSS end  */
-
+  /* ===================kartavya Responsive CSS start=================== */
+  /* Hero Section Start */
+  .hero-section .hero-detail .hero-content-wrap .heading {
+    font-size: 50px;
+    line-height: 59.56px;
+  }
+  .hero-section .hero-detail .hero-content-wrap .heading.mb-2,
+  .hero-section .hero-detail .hero-content-wrap .description.mb-2 {
+    margin-bottom: 20px;
+  }
+  .hero-section .hero-detail {
+    gap: 50px;
+  }
+  /* Hero Section End */
+  /* ===================kartavya Responsive CSS end=================== */
 }
 
-@media(max-width:991.98px) {
+@media (max-width: 991.98px) {
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 720px;
+  }
+  /* Reusable Breakpoints css */
 
-    /* Reusable Breakpoints css */
-    .container {
-        max-width: 720px;
-    }
-    /* Reusable Breakpoints css */
-
-
-    /* kartavya Hero Section Responsive CSS start  */
-    .hero-section .hero-detail .hero-content-wrap .heading {
-        font-size: 45px;
-        line-height: 49.56px;
-    }
-    .hero-section .hero-detail .description {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    /* kartavya Hero Section Responsive CSS end  */
+  /* ===================kartavya Responsive CSS Start=================== */
+  /* Hero Section Start */
+  .hero-section .hero-detail .hero-content-wrap .heading {
+    font-size: 45px;
+    line-height: 49.56px;
+  }
+  .hero-section .hero-detail .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* Hero Section End */
+  /* ===================kartavya Responsive CSS End=================== */
 }
 
 @media (max-width: 767.98px) {
-    /* Reusable Breakpoints css */
-    .container {
-        max-width: 100%;
-    }
-    /* Reusable Breakpoints css */
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 100%;
+  }
 
+  .heading-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .heading-wrap {
-        flex-direction: column;
-        text-align: center;
-    }
+  .btn {
+    width: 100%;
+  }
+  /* Reusable Breakpoints css */
 
-    .btn {
-        width: 100%;
-    }
+  /* ===================kartavya Responsive CSS Start=================== */
+  /* ===================kartavya Responsive CSS End=================== */
 
-    /* ===================jenali Cline-section css start================== */
-    .logos:before,
-    .logos:after {
-        width: 100px;
-        height: 100%;
-    }
+  /* ===================jenali Cline-section css start================== */
+  .logos:before,
+  .logos:after {
+    width: 100px;
+    height: 100%;
+  }
 
-    .logos-slide img {
-       width: 100px;
-       height: unset;
-       margin: 0 19px;
-    }
+  .logos-slide img {
+    width: 100px;
+    height: unset;
+    margin: 0 19px;
+  }
 
-    /* ===================jenali Cline-section css start================== */
+  /* ===================jenali Cline-section css start================== */
 }
 
 @media (max-width: 576.98px) {
-
-    /* kartavya Hero Section Responsive CSS start  */
-    .hero-section .hero-detail{
-        flex-wrap: wrap;
-    }
-    .hero-section .hero-detail .hero-content-wrap .description-and-btn-desktop-wrap{
-        display: none;
-    }
-    .hero-section .hero-detail .column.w-50 {
-        width: 100%;
-    }
-    .hero-section .hero-detail {
-        gap: 10px;
-    }
-    .hero-image .description-and-btn-mobile-wrap{
-        display: block;
-    }
-    .hero-section .hero-detail .description {
-        margin-bottom: 40px;
-    }
-    /* kartavya Hero Section Responsive CSS end  */
+  /* ===================kartavya Responsive CSS Start=================== */
+  /* Hero Section Start */
+  .hero-section .hero-detail {
+    flex-wrap: wrap;
+  }
+  .hero-section
+    .hero-detail
+    .hero-content-wrap
+    .description-and-btn-desktop-wrap {
+    display: none;
+  }
+  .hero-section .hero-detail .column.w-50 {
+    width: 100%;
+  }
+  .hero-section .hero-detail {
+    gap: 10px;
+  }
+  .hero-image .description-and-btn-mobile-wrap {
+    display: block;
+  }
+  .hero-section .hero-detail .description {
+    margin-bottom: 40px;
+  }
+  /* Hero Section End */
+  /* ===================kartavya Responsive CSS End=================== */
 }
 
-@media(max-width:350.98px) {}
-
-
-
-
-
-
+@media (max-width: 350.98px) {
+  /* ===================kartavya Responsive CSS Start=================== */
+  /* ===================kartavya Responsive CSS End=================== */
+}
