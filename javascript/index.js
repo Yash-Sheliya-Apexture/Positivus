@@ -1,3 +1,31 @@
+// ===================Rudra js start==================
+
+// JavaScript for toggling sidebar
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("closeBtn");
+const overlay = document.getElementById("overlay");
+
+// Function to open the sidebar
+function openSidebar() {
+  sidebar.style.transform = "translateX(0)";
+  overlay.style.display = "block";
+}
+
+// Function to close the sidebar
+function closeSidebar() {
+  sidebar.style.transform = "translateX(100%)";
+  overlay.style.display = "none";
+}
+
+// Event Listeners
+hamburger.addEventListener("click", openSidebar);
+closeBtn.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+// ===================Rudra  js end==================
+
+
+
 // ===================jenali Cline-section js start==================
 // const copy = document.querySelector(".logos-slide").cloneNode(true);
 // document.querySelector(".logos").appendChild(copy);

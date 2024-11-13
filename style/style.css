@@ -1,83 +1,81 @@
 /* ========== Font Import ========== */
 /* Import Space Grotesk font files from local sources */
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* ========== CSS Variables ========== */
 :root {
-    /* Color Variables */
-    --primary-color: #B9FF66;
-    /* Lime Green */
-    --secondary-color: #191A23;
-    /* Dark Gray */
-    --black-color: #000000;
-    /* Black */
-    --light-gray-color: #F3F3F3;
-    /* Light Gray */
-    --white-color: #F3F3F3;
-    /* White */
+  /* Color Variables */
+  --primary-color: #b9ff66;
+  /* Lime Green */
+  --secondary-color: #191a23;
+  /* Dark Gray */
+  --black-color: #000000;
+  /* Black */
+  --light-gray-color: #f3f3f3;
+  /* Light Gray */
+  --white-color: #f3f3f3;
+  /* White */
 
-    /* Font Family Variable */
-    --font-family-primary: 'SpaceGrotesk', sans-serif;
+  /* Font Family Variable */
+  --font-family-primary: "SpaceGrotesk", sans-serif;
 }
 
 /* ========== Global Styles ========== */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family-primary);
-    /* Apply SpaceGrotesk as the primary font */
-    background-color: var(--light-gray-color);
-    /* Set background to light gray */
-    color: var(--black-color);
-    /* Default text color */
-    line-height: 1.6;
+  font-family: var(--font-family-primary);
+  /* Apply SpaceGrotesk as the primary font */
+  color: var(--black-color);
+  /* Default text color */
+  line-height: 1.6;
 }
 
 /* ========== Layout Styles ========== */
 /* Center container for the main content */
 .container {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0px 16px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0px 16px;
 }
 
 /* ========== Typography Styles start ========== */
@@ -87,200 +85,296 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--black-color);
+  color: var(--black-color);
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 76.56px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 76.56px;
 }
 
 h2 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 51.04px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 51.04px;
 }
 
 p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22.97px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
 }
 
 /* ========== Typography Styles end ========== */
 
-
-
-
-
 /* ========== Utility Classes start ========== */
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-justify-content-center {
-    justify-content: center;
+  justify-content: center;
+}
+
+.flex-justify-content-space-between {
+  justify-content: space-between;
 }
 
 .flex-align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .mt-2 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .mb-2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* ========== Utility Classes end ========== */
-
 
 /* yash */
 
 /* ========== heading start ========== */
 
+.heading {
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: 500;
+}
+
 .heading-bg-green {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .heading-section-wrap .heading h3 {
-    border-radius: 7px;
-    padding: 0px 7px;
-    display: inline-block;
+  border-radius: 7px;
+  padding: 0px 7px;
+  display: inline-block;
 }
 
 .heading-wrap {
-    gap: 40px;
+  gap: 40px;
 }
 
 .heading-section-wrap p {
-    margin: 0px;
-    font-size: 18px;
-    line-height: 22.97px;
+  margin: 0px;
+  font-size: 18px;
+  line-height: 22.97px;
 }
 
 /* ========== heading end ========== */
 
-
-
 /* ========== Button Styles start ========== */
 .btn {
-    padding: 20px 35px;
-    border-radius: 14px;
-    font-size: 20px;
-    font-family: var(--font-family-primary);
-    border: 1px solid #000;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  padding: 20px 35px;
+  border-radius: 14px;
+  font-size: 20px;
+  font-family: var(--font-family-primary);
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn.btn-type-one {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+  background-color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .btn.btn-type-one:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--black-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--black-color);
 }
 
 .btn.btn-type-two {
-    background-color: transparent;
-    color: var(--black-color);
+  background-color: transparent;
+  color: var(--black-color);
 }
 
 .btn.btn-type-two:hover {
-    background-color: var(--black-color);
-    border-color: var(--black-color);
-    color: var(--white-color);
+  background-color: var(--black-color);
+  border-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .btn.btn-type-three {
-    background-color: var(--primary-color);
-    color: var(--black-color);
-    border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  border-color: var(--primary-color);
 }
 
 .btn.btn-type-three:hover {
-    background-color: var(--black-color);
-    border-color: var(--black-color);
-    color: var(--white-color);
+  background-color: var(--black-color);
+  border-color: var(--black-color);
+  color: var(--white-color);
 }
 
 /* ========== Button Styles end ========== */
 
+/* ========== Rudra Header Section start ========== */
+.header {
+  padding: 60px 0px;
+}
+.logo img {
+  width: 150px; /* Adjust logo size as needed */
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.ml-2 {
+  margin-left: 40px;
+}
+
+/* Button Styles */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+  padding-top: 50px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
+/* Close Button for Sidebar */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.sidebar .btn-1 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+.sidebar .btn-1 .new {
+  box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ========== Rudra Header Section End ========== */
+
 /* ================ jenali Cline-section css start ================*/
 @keyframes slide {
-    from {
-        transform: translateX(0);
+  from {
+    transform: translateX(0);
+  }
 
-    }
-
-    to {
-        transform: translateX(-100%);
-
-    }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .logos {
-    overflow: hidden;
-    padding: 60px 0;
-    background: white;
-    white-space: nowrap;
-    position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
 }
 
 .logos:before,
 .logos:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
 }
 
 .logos:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
 .logos:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-
 .logos:hover .logos-slide {
-    animation-play-state: paused;
-
-
+  animation-play-state: paused;
 }
 
 .logos-slide {
-    display: inline-block;
-    animation: 70s slide infinite linear;
+  display: inline-block;
+  animation: 70s slide infinite linear;
 }
 
 .logos-slide img {
-    height: 50px;
-    margin: 0 40px;
-    filter: grayscale(1) brightness(0.7);
-    cursor: pointer;
-    transition: .5s ease;
+  height: 50px;
+  margin: 0 40px;
+  filter: grayscale(1) brightness(0.7);
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .logos-slide img:hover {
-    filter: none;
+  filter: none;
 }
 
 /* ======================= jenali Cline-section css end ============ */
