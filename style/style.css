@@ -38,10 +38,16 @@
 /* ========== CSS Variables ========== */
 :root {
     /* Color Variables */
-    --primary-color: #B9FF66;  /* Lime Green */
-    --secondary-color: #191A23; /* Dark Gray */
-    --black-color: #000000;    /* Black */
-    --light-gray-color: #F3F3F3; /* Light Gray */
+    --primary-color: #B9FF66;
+    /* Lime Green */
+    --secondary-color: #191A23;
+    /* Dark Gray */
+    --black-color: #000000;
+    /* Black */
+    --light-gray-color: #F3F3F3;
+    /* Light Gray */
+    --white-color: #F3F3F3;
+    /* White */
 
     /* Font Family Variable */
     --font-family-primary: 'SpaceGrotesk', sans-serif;
@@ -57,57 +63,69 @@
 }
 
 body {
-    font-family: var(--font-family-primary); /* Apply SpaceGrotesk as the primary font */
-    background-color: var(--light-gray-color); /* Set background to light gray */
-    color: var(--black-color); /* Default text color */
+    font-family: var(--font-family-primary);
+    /* Apply SpaceGrotesk as the primary font */
+    background-color: var(--light-gray-color);
+    /* Set background to light gray */
+    color: var(--black-color);
+    /* Default text color */
     line-height: 1.6;
 }
 
 /* ========== Layout Styles ========== */
 /* Center container for the main content */
 .container {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px 16px;
 }
 
-/* ========== Typography Styles ========== */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--secondary-color); /* Heading color */
-    margin-bottom: 1em;
+/* ========== Typography Styles start ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--black-color);
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 76.56px;
 }
 
 h2 {
-    font-weight: 600;
-    font-size: 2rem;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 51.04px;
 }
 
 p {
     margin-bottom: 1em;
 }
 
-/* ========== Button Styles ========== */
-.button {
-    background-color: var(--primary-color); /* Button background color */
-    color: var(--black-color); /* Button text color */
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* ========== Typography Styles end ========== */
+
+
+
+
+
+/* ========== Utility Classes start ========== */
+
+.flex {
+    display: flex;
 }
 
-.button:hover {
-    background-color: var(--secondary-color); /* Darken on hover */
-    color: var(--light-gray-color); /* Light text on hover */
+.flex-justify-content-center {
+    justify-content: center;
 }
 
-/* ========== Utility Classes ========== */
+.flex-align-items-center {
+    align-items: center;
+}
+
 .text-center {
     text-align: center;
 }
@@ -120,32 +138,81 @@ p {
     margin-bottom: 20px;
 }
 
-/* ========== Section Styles ========== */
-/* Hero section style */
-.hero {
-    background-color: var(--secondary-color); /* Dark background */
-    color: var(--light-gray-color); /* Light text */
-    padding: 60px 20px;
-    text-align: center;
+/* ========== Utility Classes end ========== */
+
+
+/* yash */
+
+/* ========== heading start ========== */
+
+.heading-bg-green {
+    background-color: var(--primary-color);
 }
 
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--primary-color); /* Accent color for hero title */
+.heading-section-wrap .heading h3 {
+    border-radius: 7px;
+    padding: 0px 7px;
+    display: inline-block;
 }
 
-.hero p {
-    font-size: 1.25rem;
-    max-width: 800px;
-    margin: 0 auto;
-    color: var(--light-gray-color); /* Light color for hero description */
+.heading-wrap {
+    gap: 40px;
 }
 
-/* ========== Footer Styles ========== */
-footer {
+.heading-section-wrap p {
+    margin: 0px;
+    font-size: 18px;
+    line-height: 22.97px;
+}
+
+/* ========== heading end ========== */
+
+
+
+/* ========== Button Styles start ========== */
+.btn {
+    padding: 20px 35px;
+    border-radius: 14px;
+    font-size: 20px;
+    font-family: var(--font-family-primary);
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-type-one {
     background-color: var(--secondary-color);
-    color: var(--light-gray-color);
-    padding: 20px;
-    text-align: center;
+    color: var(--white-color);
 }
+
+.btn.btn-type-one:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+.btn.btn-type-two {
+    background-color: transparent;
+    color: var(--black-color);
+}
+
+.btn.btn-type-two:hover {
+    background-color: var(--black-color);
+    border-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.btn.btn-type-three {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border-color: var(--primary-color);
+}
+
+.btn.btn-type-three:hover {
+    background-color: var(--black-color);
+    border-color: var(--black-color);
+    color: var(--white-color);
+}
+
+/* ========== Button Styles end ========== */
+
