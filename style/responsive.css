@@ -29,6 +29,21 @@
     .btn {
         width: 100%;
     }
+
+    /* ===================jenali Cline-section css start================== */
+    .logos:before,
+    .logos:after {
+        width: 100px;
+        height: 100%;
+    }
+
+    .logos-slide img {
+       width: 100px;
+       height: unset;
+       margin: 0 19px;
+    }
+
+    /* ===================jenali Cline-section css start================== */
 }
 
 @media(max-width:350.98px) {}
