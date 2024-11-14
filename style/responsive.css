@@ -38,6 +38,11 @@
         padding: 20px 10px;
     }
 
+    .slider-wrapper {
+        display: flex;
+        /* Space between slides */
+    }
+
     .heading-section-wrap p {
         width: 100%;
         font-size: 16px;
@@ -92,10 +97,6 @@
         text-align: left;
     }
 
-    .marketing-dir {
-        color: var(--white-color) !important;
-    }
-
     /* Adjust navigation and pagination for mobile */
     .slider-controls {
         bottom: 40px;
@@ -115,6 +116,7 @@
         height: 14px;
         width: 14px;
     }
+
     /* ===========jenali testimonials css end================== */
 }
 
