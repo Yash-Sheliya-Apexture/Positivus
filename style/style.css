@@ -253,9 +253,7 @@ p {
 /* ========== Hero Section End ========== */
 
 /* ========== Things Happen Section Start ========== */
-.things-happen{
-    margin-bottom: 100px;
-}
+
 .things-happen .things-happen-detail .things-title.mb-2,
 .things-happen .things-happen-detail .things-para.mb-2 {
   margin-bottom: 26px;
@@ -276,6 +274,9 @@ p {
   height: auto; /* Maintain the aspect ratio */
 }
 
+.things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap{
+  display: none;
+}
 /* ========== Things Happen Section End ========== */
 /* ================Kartavya CSS Code End================ */
 

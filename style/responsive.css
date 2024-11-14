@@ -49,28 +49,22 @@
   }
   /* Hero Section End */
 
-
   /* Things Happen Section Start */
-  .things-happen .things-happen-detail .things-happen-content .things-title{
-    font-size: 26px;
-    line-height: 38.28px;
-  }
-
-  .things-happen .things-happen-detail .things-happen-content .things-para{
-    font-size: 16px;
-    line-height: 20.97px;
-  }
-
+  
   .things-happen .things-happen-detail {
-    gap: 60px;
-    padding: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
   }
-  .things-happen .things-happen-detail{
-    max-width: 100%;
+  .things-happen .things-happen-detail .things-happen-content {
+    flex: 1;
+  }
+
+  .things-happen .things-happen-detail .things-image {
+    display: none;
   }
   /* Things Happen Section End */
 
-  
   /* ===================kartavya Responsive CSS End=================== */
 }
 
@@ -92,7 +86,19 @@
 
   /* ===================kartavya Responsive CSS Start=================== */
   /* Things Happen Section Start */
-  
+  .things-happen .things-happen-detail {
+    gap: 20px;
+    padding: 50px;
+  }
+  .things-happen .things-happen-detail .things-happen-content .things-title {
+    font-size: 26px;
+    line-height: 33.18px;
+  }
+
+  .things-happen .things-happen-detail .things-happen-content .things-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
   /* Things Happen Section End */
   /* ===================kartavya Responsive CSS End=================== */
 
@@ -139,12 +145,24 @@
   /* Hero Section End */
 
   /* Things Happen Section Start */
-  
+ 
+  .things-happen .things-happen-detail .things-title.mb-2,
+  .things-happen .things-happen-detail .things-para.mb-2 {
+    margin-bottom: 20px;
+  }
+  .things-happen .things-happen-detail .things-happen-content .btn-none{
+    display: none;
+  }
+  .things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap{
+    display: block;
+    width: 100%;
+  }
   /* Things Happen Section End */
   /* ===================kartavya Responsive CSS End=================== */
 }
 
 @media (max-width: 350.98px) {
   /* ===================kartavya Responsive CSS Start=================== */
+  
   /* ===================kartavya Responsive CSS End=================== */
 }
