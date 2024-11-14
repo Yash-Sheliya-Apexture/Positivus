@@ -27,6 +27,15 @@
   }
 
   /* Things Happen Section End */
+
+  /* Team Section Start */
+
+  .team-section .team-card-container {
+    flex-wrap: wrap;
+  }
+
+  /* Team Section End */
+
   /* ===================kartavya Responsive CSS end=================== */
 }
 
@@ -50,7 +59,7 @@
   /* Hero Section End */
 
   /* Things Happen Section Start */
-  
+
   .things-happen .things-happen-detail {
     flex-wrap: wrap;
     align-items: center;
@@ -64,6 +73,25 @@
     display: none;
   }
   /* Things Happen Section End */
+
+  /* Team Section Start */
+
+  .team-section {
+    margin-top: 100px;
+  }
+
+  .team-section .heading-section-wrap {
+    margin-bottom: 40px;
+  }
+
+  /* .team-section .team-card-container .team-card {
+    width: 320px;
+  } */
+
+  .team-section .team-card-container .team-card {
+    width: 100%;
+  }
+  /* Team Section End */
 
   /* ===================kartavya Responsive CSS End=================== */
 }
@@ -100,6 +128,45 @@
     line-height: 24px;
   }
   /* Things Happen Section End */
+
+  /* Team Section Start */
+  .team-section {
+    margin-top: 80px;
+  }
+
+  .team-section .heading-wrap {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .team-section .heading-section-wrap {
+    margin-bottom: 40px;
+  }
+
+  .team-section .team-card-container .team-card {
+    width: 500px;
+  }
+
+  .team-section .team-card .team-card-top .team-member-detail h4 {
+    font-size: 18px;
+    line-height: 22.97px;
+  }
+  .team-section .team-card .team-card-top .team-member-detail p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .team-section .team-card .team-member-occupation p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn-all-team {
+    text-align: center;
+  }
+
+  /* Team Section End */
+
   /* ===================kartavya Responsive CSS End=================== */
 
   /* ===================jenali Cline-section css start================== */
@@ -145,24 +212,53 @@
   /* Hero Section End */
 
   /* Things Happen Section Start */
- 
+
   .things-happen .things-happen-detail .things-title.mb-2,
   .things-happen .things-happen-detail .things-para.mb-2 {
     margin-bottom: 20px;
   }
-  .things-happen .things-happen-detail .things-happen-content .btn-none{
+  .things-happen .things-happen-detail .things-happen-content .btn-none {
     display: none;
   }
-  .things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap{
+  .things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap {
     display: block;
     width: 100%;
   }
   /* Things Happen Section End */
+
+  /* Team Section Start */
+
+  .team-section {
+    margin-top: 60px;
+  }
+  .team-section .team-card-container {
+    gap: 30px;
+  }
+
+  /* Hide the last two team cards */
+  .team-card-container:nth-of-type(2) .team-card:nth-last-child(-n+2) {
+    display: none;
+}
+  /* Team Section End */
+
   /* ===================kartavya Responsive CSS End=================== */
 }
 
 @media (max-width: 350.98px) {
   /* ===================kartavya Responsive CSS Start=================== */
-  
+  .team-section {
+    margin-top: 100px;
+  }
+
+  .team-card {
+    padding: 20px 15px;
+    border-radius: 30px;
+  }
+
+  .team-section .team-card .linkedin-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9em;
+  }
   /* ===================kartavya Responsive CSS End=================== */
 }
