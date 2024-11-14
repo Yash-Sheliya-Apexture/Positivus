@@ -32,8 +32,90 @@
         width: 100%;
     }
 
-    /* jenali testimonials css start */
-    
+    /* ===========jenali testimonials css start================== */
+    /* Adjust the padding and font sizes for mobile */
+    .case-studies {
+        padding: 20px 10px;
+    }
+
+    .heading-section-wrap p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /* Adjust slider container for mobile */
+    .slider-container {
+        padding: 30px 20px 100px;
+    }
+
+    /* Make each slide fit smaller screens */
+    .case-study-slide {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    /* Style testimonial image and text for mobile */
+    .imag img.image-desktop {
+        display: none;
+        /* Hide desktop image */
+    }
+
+    .imag img.image-mobile {
+        display: block;
+    }
+
+    /* Center-align testimonial content */
+    .testimonial-content {
+        font-size: 14px;
+        padding: 10px;
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .testimonial-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    /* Style for author information */
+    .author-info {
+        margin-left: 50px;
+        font-size: 14px !important;
+        text-align: left;
+    }
+
+    .marketing-dir {
+        color: var(--white-color) !important;
+    }
+
+    /* Adjust navigation and pagination for mobile */
+    .slider-controls {
+        bottom: 40px;
+    }
+
+    .slider-controls img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    .dot img {
+        height: 14px;
+        width: 14px;
+    }
+    /* ===========jenali testimonials css end================== */
 }
 
 @media(max-width:350.98px) {
@@ -42,7 +124,16 @@
         height: 72px;
         font-size: 16px
     }
-    .slider-controls{
+
+    .slider-controls {
         width: 100%;
+    }
+
+    .image-mobile {
+        display: block;
+    }
+
+    .image-desktop {
+        display: none;
     }
 }

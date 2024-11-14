@@ -161,12 +161,6 @@ p {
     gap: 40px;
 }
 
-.heading-section-wrap p {
-    margin: 0px;
-    font-size: 18px;
-    line-height: 22.97px;
-}
-
 /* ========== heading end ========== */
 
 
@@ -223,6 +217,9 @@ p {
 .heading-section-wrap p {
     width: 473px;
     height: 47px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 22.97px;
 }
 
 .heading-section-wrap {
@@ -408,7 +405,8 @@ p {
     /* Inactive dot with white color */
 }
 
-
-
+.image-mobile {
+    display: none;
+}
 
 /* ======================= jenali TestimonialsSection Section css end ============ */
