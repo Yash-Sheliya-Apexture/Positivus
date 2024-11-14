@@ -24,6 +24,25 @@
   .hamburger {
     display: block;
   }
+
+  /* Rudra About Section Start */
+
+  .form-container {
+    padding: 20px 0px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%; /* Full width */
+    font-size: 14px;
+  }
+
+  form textarea {
+    height: 150px; /* Adjust textarea height */
+  }
+
+  /* Rudra About Section End */
   /* ===================Rudra css end================== */
 }
 
@@ -174,6 +193,11 @@
     color: black;
   }
 
+  .radio-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* =================== Rudra Working-section End ================== */
 }
 
@@ -290,6 +314,19 @@
 
   .accordion-content p {
     font-size: 0.8em;
+  }
+
+  .form-container {
+    padding: 40px 0px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
   }
 
   /* Rudra Working Section End */
