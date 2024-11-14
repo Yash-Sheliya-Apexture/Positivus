@@ -76,7 +76,7 @@
     }
 
     .heading-wrap p {
-        width: 390px;
+        width: 370px;
         height: 48px;
         font-size: 16px;
     }
@@ -84,11 +84,19 @@
     .heading-section-wrap .heading h3 {
         font-size: 30px;
     }
+
+    .col-4 {
+        width: 313px;
+    }
 }
 
+
 @media(max-width:350.98px) {
+
+    /* jenali caseStudies css start */
+
     .col-4 {
-        width: 92%;
+        width: 85%;
         padding: 40px 40px 40px 40px;
     }
 
@@ -96,4 +104,6 @@
         width: 276px;
         height: 48px;
     }
+
+    /* jenali caseStudies css end */
 }
