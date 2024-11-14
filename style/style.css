@@ -148,7 +148,6 @@ p {
   margin-bottom: 20px;
 }
 
-
 .white {
   color: #fff;
 }
@@ -186,6 +185,10 @@ p {
 
 .Head-data {
   margin-bottom: 60px;
+}
+
+.new-data {
+  margin-bottom: 80px;
 }
 
 .heading-section-wrap p {
@@ -548,3 +551,105 @@ p {
   height: auto;
   margin-top: 40px;
 }
+
+/* ======================= Rudra Services-section css End ============ */
+
+/* ======================= Rudra Working-section css Start ============ */
+
+.accordion {
+  width: 100%;
+  height: auto;
+}
+
+.accordion .card-1 {
+  background-color: #a3ff33;
+  padding: 41px 60px;
+}
+
+.accordion-item .card-2 {
+  background-color: #f3f3f3;
+  padding: 41px 60px;
+}
+
+.accordion-content .border-accordion {
+  border-top: 1px solid black;
+  margin: 20px 0px;
+}
+
+.accordion-item {
+  border: 1px solid #191a23;
+  border-radius: 45px;
+  background-color: #f3f3f3;
+  box-shadow: 0 5px 0 0 #191a23;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-item .active {
+  background-color: #a3ff33;
+  border-radius: 10px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header.active {
+  border-radius: 10px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p {
+  padding: 10px 0;
+  color: black;
+  font-size: 18px;
+}
+
+.number {
+  font-size: 30px;
+  color: #000;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-header .number span {
+  font-size: 60px;
+  font-weight: 500;
+  color: black;
+}
+
+.icon {
+  font-size: 2.5rem;
+  height: 58px;
+  width: 58px;
+  border: 1px solid #191a23;
+  background-color: #f3f3f3;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header.active .icon {
+  background-color: #a3ff33; /* Icon background color for active section */
+}
+
+/* ======================= Rudra Working-section css End ============ */

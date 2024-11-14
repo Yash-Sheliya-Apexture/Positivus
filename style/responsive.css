@@ -67,14 +67,15 @@
 
   /* ===================jenali Cline-section css End================== */
 
+  /* ===================Rudra Service-section Start ================== */
+
   .service-card {
-    width: 300px;
-    padding: 20px;
+    padding: 40px;
     height: 250px;
   }
 
   .Service-gap {
-    gap: 0px;
+    gap: 30px;
   }
 
   .service-title {
@@ -111,7 +112,7 @@
     height: 30px;
     background-color: white; /* Dark circle background */
     border-radius: 50%;
-    color:black; /* Green color for the arrow */
+    color: black; /* Green color for the arrow */
     font-size: 18px;
     font-weight: 300;
   }
@@ -127,8 +128,53 @@
 
   .card-image img {
     width: 100%; /* Make image responsive */
-    margin-top: 60px;
+    margin-top: 40px;
   }
+
+  /* ===================Rudra Service-section End ================== */
+
+  /* ===================Rudra Working-section Start ================== */
+
+  .accordion .card-1 {
+    padding: 18px;
+  }
+
+  .accordion .card-2 {
+    padding: 18px;
+  }
+
+  .icon {
+    font-size: 1.5em;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #191a23;
+    background-color: #f3f3f3;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+  }
+
+  .accordion-header .num {
+    font-size: 24px;
+  }
+
+  .accordion-content p {
+    font-size: 0.85em;
+  }
+
+  .accordion-header .number span {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+  }
+
+  /* =================== Rudra Working-section End ================== */
 }
 
 @media (max-width: 350.98px) {
@@ -230,6 +276,23 @@
     margin-bottom: 40px;
   }
   /* kartavya Hero Section Responsive CSS end  */
+
+  /* Rudra Working Section Start */
+
+  .accordion-header {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .number {
+    font-size: 1em;
+  }
+
+  .accordion-content p {
+    font-size: 0.8em;
+  }
+
+  /* Rudra Working Section End */
 }
 
 @media (max-width: 350.98px) {
