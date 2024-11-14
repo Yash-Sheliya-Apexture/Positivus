@@ -1,84 +1,58 @@
-
-
-// =========jenali TestimonialsSection js end===================
 let currentIndex = 0;
-let slidesToShow = 3;
+let slidesToShow = 3; // Default to 3 slides for desktop
 
 function showSlides(index) {
     const slides = document.querySelectorAll(".case-study-slide");
     const wrapper = document.querySelector(".slider-wrapper");
     const totalSlides = slides.length;
 
-    // Ensure index is within bounds and loops infinitely
-    if (index < 0) {
-        currentIndex = totalSlides - 1;  // Loop to the last slide when going backward
-    } else if (index >= totalSlides) {
-        currentIndex = 0;  // Loop to the first slide when going forward
-    } else {
-        currentIndex = index;
-    }
+    // Infinite loop logic
+    currentIndex = (index + totalSlides) % totalSlides;
 
-    // For mobile, slide should take up 100% width
-    const slideWidth = (window.innerWidth <= 768) ? 100 : (100 / slidesToShow);  // 100% for mobile, otherwise divide by slidesToShow for larger screens
+    // Determine slide width based on screen size
+    const isMobile = window.innerWidth <= 768;
+    const gap = isMobile ? 19 : 50;
+    const slideWidth = isMobile ? 100 : (100 / slidesToShow);  // Full width on mobile
 
-    // Move the slider wrapper to the current slide based on calculated width
-    wrapper.style.transform = `translateX(-${(currentIndex * slideWidth)}%)`;
+    // Move wrapper to show the current slide, considering the gap
+    const translateX = currentIndex * (slideWidth + (gap / 100) * slideWidth);
+    wrapper.style.transform = `translateX(-${translateX}%)`;
+
+    // Update pagination
     updatePagination();
 }
 
 function nextSlide() {
-    const slides = document.querySelectorAll(".case-study-slide");
-    if (currentIndex < slides.length - 1) {
-        currentIndex++;
-    } else {
-        currentIndex = 0; // Loop to the first slide when at the last one
-    }
-    showSlides(currentIndex);
+    showSlides(currentIndex + 1);  // Move to next slide
 }
 
 function prevSlide() {
-    const slides = document.querySelectorAll(".case-study-slide");
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
-        currentIndex = slides.length - 1; // Loop to the last slide when at the first one
-    }
-    showSlides(currentIndex);
-}
-
-function goToSlide(index) {
-    showSlides(index);
+    showSlides(currentIndex - 1);  // Move to previous slide
 }
 
 function updatePagination() {
     const dots = document.querySelectorAll(".dot");
     dots.forEach((dot, idx) => {
         const img = dot.querySelector('img');
-        
-        if (idx === currentIndex) {
-            img.src = 'assets/Images/greenDot.png'; // Active dot
-        } else {
-            img.src = 'assets/Images/whiteDot.png'; // Inactive dot
-        }
+        img.src = idx === currentIndex ? 'assets/Images/greenDot.png' : 'assets/Images/whiteDot.png';
     });
 }
 
-// Initialize the first slide
-showSlides(currentIndex);
-
-// Mobile View Adjustment
-function adjustSliderForMobile() {
-    if (window.innerWidth <= 768) {
-        slidesToShow = 1;  // Show 1 slide on mobile
-    } else {
-        slidesToShow = 3;  // Default to 3 slides for larger screens
-    }
-    showSlides(currentIndex);  // Re-adjust slide display based on screen size
+// This function is called when a dot is clicked
+function goToSlide(index) {
+    showSlides(index);
 }
 
-// Adjust slider on initial load and on window resize
-window.addEventListener('load', adjustSliderForMobile);
-window.addEventListener('resize', adjustSliderForMobile);
+// Adjust the number of slides to show based on screen size
+function adjustSliderForMobile() {
+    slidesToShow = window.innerWidth <= 768 ? 1 : 3;  // Show 1 slide on mobile, 3 on desktop
+    showSlides(currentIndex); // Re-adjust display
+}
 
+window.addEventListener('load', () => {
+    adjustSliderForMobile();  // Adjust based on screen size
+    showSlides(currentIndex); // Initialize slider
+});
 
-// =========jenali TestimonialsSection js end===================
+// Initialize the slider
+showSlides(currentIndex);

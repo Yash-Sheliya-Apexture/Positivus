@@ -117,18 +117,34 @@
         width: 14px;
     }
 
+    .slider-wrapper {
+        gap: 70px;
+    }
+
     /* ===========jenali testimonials css end================== */
 }
 
-@media(max-width:350.98px) {
-    .heading-section-wrap p {
-        width: 290px;
-        height: 72px;
-        font-size: 16px
+/* jenali testimonials add css start */
+@media(max-width:375px) {
+    .slider-wrapper {
+        gap: 60px;
     }
 
     .slider-controls {
         width: 100%;
+    }
+
+}
+
+/* jenali testimonials add css end */
+
+@media(max-width:350.98px) {
+
+    /* jenali testimonials add css start */
+    .heading-section-wrap p {
+        width: 290px;
+        height: 72px;
+        font-size: 16px
     }
 
     .image-mobile {
@@ -138,4 +154,10 @@
     .image-desktop {
         display: none;
     }
+
+    .slider-wrapper {
+        gap: 50px;
+    }
+
+    /* jenali testimonials add css end */
 }
