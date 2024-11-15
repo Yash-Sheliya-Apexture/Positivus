@@ -47,10 +47,22 @@
   --light-gray-color: #f3f3f3;
   /* Light Gray */
   --white-color: #f3f3f3;
-  /* White */
+  /* light Lime */
+  --Lime-light: #a3ff33;
+  /* Service BackGround */
+  --Service-background: #b9ff66;
 
   /* Font Family Variable */
   --font-family-primary: "SpaceGrotesk", sans-serif;
+
+  /* Font-size Variable */
+  --font-extrasmall:14px;
+  --font-small: 16px;
+  --font-medium: 18px;
+  --font-large: 20px;
+
+  /* box-shadow Variable */
+  --box-shadow: 0 5px 0 0 #191a23;
 }
 
 /* ========== Global Styles ========== */
@@ -193,7 +205,7 @@ p {
 
 .heading-section-wrap p {
   margin: 0px;
-  font-size: 18px;
+  font-size: var(--font-medium);
   line-height: 22.97px;
 }
 
@@ -203,9 +215,9 @@ p {
 .btn {
   padding: 20px 35px;
   border-radius: 14px;
-  font-size: 20px;
+  font-size: var(--font-large);
   font-family: var(--font-family-primary);
-  border: 1px solid #000;
+  border: 1px solid var(--black-color);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -269,9 +281,9 @@ p {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--black-color);
   font-weight: 400;
-  font-size: 20px;
+  font-size: var(--font-large);
   transition: color 0.3s;
 }
 .ml-2 {
@@ -283,7 +295,7 @@ p {
 .hamburger {
   display: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: var(--font-large);
 }
 
 /* Sidebar Styling */
@@ -315,11 +327,11 @@ p {
 .sidebar ul li a {
   color: black;
   text-decoration: none;
-  font-size: 18px;
+  font-size: var(--font-medium);
 }
 
 .sidebar ul li a:hover {
-  color: #007bff;
+  color: var(--Lime-light);
 }
 
 /* Close Button for Sidebar */
@@ -364,7 +376,7 @@ p {
 
 .description {
   line-height: 28px;
-  font-size: 20px;
+  font-size: var(--font-large);
 }
 
 .hero-image img {
@@ -447,25 +459,25 @@ p {
   padding: 40px;
   width: 580px;
   height: 310px;
-  background-color: #f3f3f3;
+  background-color: var(--white-color);
   border-radius: 45px;
-  border: 1px solid #191a23;
-  box-shadow: 0 5px 0 0 #191a23;
+  border: 1px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
   transition: all 0.3s ease;
   margin-top: 10px;
 }
 
 .Service-bg {
-  background-color: #b9ff66;
+  background-color: var(--Service-background);
 }
 
 .service-color {
-  background-color: #191a23;
+  background-color: var(--secondary-color);
 }
 
 .service-part {
-  background-color: #fff;
-  color: black;
+  background-color: white;
+  color: var(--black-color);
   display: inline-block;
   padding: 0px 7px;
   border-radius: 7px;
@@ -490,8 +502,8 @@ p {
   display: inline-block;
   font-size: 30px;
   font-weight: 500;
-  background-color: #b9ff66;
-  color: #000;
+  background-color: var(--primary-color);
+  color: var(--black-color);
   padding: 0px 7px;
   border-radius: 7px;
   line-height: 38px;
@@ -501,8 +513,8 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
-  color: #000;
+  font-size: var(--font-small);
+  color: var(--black-color);
 }
 
 .icon-circle {
@@ -511,9 +523,9 @@ p {
   align-items: center;
   width: 41px;
   height: 41px;
-  background-color: #1a1a1a; /* Dark circle background */
+  background-color: var(--secondary-color); /* Dark circle background */
   border-radius: 50%;
-  color: #a3ff33; /* Green color for the arrow */
+  color: var(--Lime-light); /* Green color for the arrow */
   font-size: 18px;
   font-weight: 300;
 }
@@ -524,10 +536,10 @@ p {
   align-items: center;
   width: 41px;
   height: 41px;
-  background-color: #fff; /* Dark circle background */
+  background-color: white; /* Dark circle background */
   border-radius: 50%;
   color: black; /* Green color for the arrow */
-  font-size: 18px;
+  font-size: var(--font-medium);
   font-weight: 300;
 }
 
@@ -542,7 +554,7 @@ p {
 }
 
 .learn-more span {
-  font-size: 20px;
+  font-size: var(--font-large);
   font-weight: 400;
 }
 
@@ -562,32 +574,31 @@ p {
 }
 
 .accordion .card-1 {
-  background-color: #a3ff33;
+  background-color: var(--Lime-light);
   padding: 41px 60px;
 }
 
 .accordion-item .card-2 {
-  background-color: #f3f3f3;
+  background-color: var(--light-gray-color);
   padding: 41px 60px;
 }
 
 .accordion-content .border-accordion {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--black-color);
   margin: 20px 0px;
 }
 
 .accordion-item {
-  border: 1px solid #191a23;
+  border: 1px solid var(--secondary-color);
   border-radius: 45px;
   background-color: #f3f3f3;
-  box-shadow: 0 5px 0 0 #191a23;
+  box-shadow: 0 5px 0 0 var(--secondary-color);
   margin-bottom: 30px;
   overflow: hidden;
   transition: background-color 0.3s ease;
 }
 
 .accordion-item .active {
-  background-color: #a3ff33;
   border-radius: 10px;
 }
 
@@ -597,9 +608,8 @@ p {
   align-items: center;
   padding: 20px;
   cursor: pointer;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #333;
+  font-size: var(--font-large);
+  font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
@@ -616,40 +626,37 @@ p {
 
 .accordion-content p {
   padding: 10px 0;
-  color: black;
-  font-size: 18px;
+  color: var(--black-color);
+  font-size: var(--font-medium);
 }
 
 .number {
   font-size: 30px;
-  color: #000;
+  color: var(--black-color);
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0px 25px;
 }
 
 .accordion-header .number span {
   font-size: 60px;
   font-weight: 500;
-  color: black;
+  color: var(--black-color);
 }
 
 .icon {
   font-size: 2.5rem;
   height: 58px;
   width: 58px;
-  border: 1px solid #191a23;
-  background-color: #f3f3f3;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--light-gray-color);
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease;
-}
-
-.accordion-header.active .icon {
-  background-color: #a3ff33; /* Icon background color for active section */
 }
 
 /* ======================= Rudra Working-section css End ============ */
@@ -658,17 +665,18 @@ p {
 
 .form-container {
   display: flex;
-  background-color: #f3f3f3;
+  background-color: var(--light-gray-color);
   padding: 60px 100px 80px 100px;
   border-radius: 45px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
   overflow: hidden;
+  margin-bottom: 140px;
 }
 
 .form-fields {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
 }
 
 .radio-buttons {
@@ -689,7 +697,7 @@ p {
   width: 28px;
   height: 28px;
   appearance: none; /* Remove default styling */
-  border: 2px solid #000; /* Border color */
+  border: 2px solid var(--black-color); /* Border color */
   border-radius: 50%; /* Make it circular */
   display: inline-block;
   position: relative;
@@ -698,17 +706,17 @@ p {
 }
 
 .radio-buttons input[type="radio"]:checked {
-  background-color: #a3ff33; /* Color when checked */
-  border: 2px solid #a3ff33; /* Border color when checked */
+  background-color: var(--Lime-light); /* Color when checked */
+  border: 1px solid var(--Lime-light); /* Border color when checked */
 }
 
 form label {
-  font-size: 16px;
+  font-size: var(--font-small);
   margin-bottom: 5px;
   display: block;
   font-weight: 400;
   line-height: 28px;
-  color: black;
+  color: var(--black-color);
 }
 
 .top-space {
@@ -727,10 +735,11 @@ form input {
   width: 100%;
   padding: 18px 30px 18px 30px;
   margin-bottom: 25px;
-  border: 1px solid #000;
+  border: 1px solid var(--black-color);
   border-radius: 14px;
-  font-size: 16px;
+  font-size: var(--font-small);
   resize: none;
+  font-family: var(--font-family-primary);
 }
 
 form textarea {
@@ -740,16 +749,16 @@ form textarea {
   margin-bottom: 40px;
   border: 1px solid #000;
   border-radius: 14px;
-  font-size: 16px;
+  font-size: var(--font-small);
   resize: none;
 }
 
 form button {
   width: 100%;
   padding: 20px 35px;
-  background-color: #000;
+  background-color: var(--black-color);
   color: #fff;
-  font-size: 20px;
+  font-size: var(--font-large);
   line-height: 28px;
   border: none;
   font-weight: 400;
@@ -759,7 +768,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #1a1a1a;
+  background-color: var(--secondary-color);
 }
 
 .main-img {
@@ -771,5 +780,5 @@ form button:hover {
   height: 80%;
   position: absolute;
   top: 80px;
-  left: 260px;
+  left: 285px;
 }

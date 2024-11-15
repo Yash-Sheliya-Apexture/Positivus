@@ -1,4 +1,5 @@
 /* ========== Responsive Breakpoints ========== */
+
 @media (max-width: 1199.98px) {
   .container {
     max-width: 1140px;
@@ -35,7 +36,7 @@
   form textarea,
   form button {
     width: 100%; /* Full width */
-    font-size: 14px;
+    font-size: var(--font-extrasmall);
   }
 
   form textarea {
@@ -94,15 +95,15 @@
   }
 
   .Service-gap {
-    gap: 30px;
+    gap: 20px;
   }
 
   .service-title {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 
   .service-part {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 
   .icon-circle {
@@ -111,15 +112,15 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    background-color: #1a1a1a; /* Dark circle background */
+    background-color: var(--secondary-color); /* Dark circle background */
     border-radius: 50%;
-    color: #a3ff33; /* Green color for the arrow */
-    font-size: 18px;
+    color:var(--Lime-light);
+    font-size: var(--font-medium);
     font-weight: 300;
   }
 
   .icon-circle .arrow {
-    font-size: 20px;
+    font-size: var(--font-large);
     rotate: -35deg;
   }
 
@@ -131,13 +132,13 @@
     height: 30px;
     background-color: white; /* Dark circle background */
     border-radius: 50%;
-    color: black; /* Green color for the arrow */
-    font-size: 18px;
+    color: var(--black-color); /* Green color for the arrow */
+    font-size: var(--font-medium);
     font-weight: 300;
   }
 
   .icon-white .arrow {
-    font-size: 20px;
+    font-size: var(--font-large);
     rotate: -35deg;
   }
 
@@ -155,19 +156,19 @@
   /* ===================Rudra Working-section Start ================== */
 
   .accordion .card-1 {
-    padding: 18px;
+    padding: 16px;
   }
 
   .accordion .card-2 {
-    padding: 18px;
+    padding: 16px;
   }
 
   .icon {
-    font-size: 1.5em;
+    font-size: 30px;
     height: 30px;
     width: 30px;
-    border: 1px solid #191a23;
-    background-color: #f3f3f3;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--light-gray-color);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -176,21 +177,17 @@
   }
 
   .accordion-header {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 
   .accordion-header .num {
     font-size: 24px;
   }
 
-  .accordion-content p {
-    font-size: 0.85em;
-  }
-
   .accordion-header .number span {
     font-size: 30px;
     font-weight: 500;
-    color: black;
+    color: var(--black-color);
   }
 
   .radio-buttons {
@@ -227,7 +224,7 @@
   .main-img img {
     height: 80%;
     position: absolute;
-    left: 150px;
+    left: 165px;
   }
 }
 
@@ -318,16 +315,12 @@
   /* Rudra Working Section Start */
 
   .accordion-header {
-    font-size: 0.9em;
     padding: 10px;
   }
 
   .number {
-    font-size: 1em;
-  }
-
-  .accordion-content p {
-    font-size: 0.8em;
+    font-size: var(--font-medium);
+    gap: 0px 25px;
   }
 
   .form-container {
@@ -347,4 +340,5 @@
 }
 
 @media (max-width: 350.98px) {
+  
 }
