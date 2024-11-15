@@ -586,11 +586,6 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.accordion-item .active {
-  background-color: #a3ff33;
-  border-radius: 10px;
-}
-
 .accordion-header {
   display: flex;
   justify-content: space-between;
@@ -617,7 +612,7 @@ p {
 .accordion-content p {
   padding: 10px 0;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .number {
@@ -627,6 +622,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0px 25px;
 }
 
 .accordion-header .number span {
@@ -646,10 +642,6 @@ p {
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease;
-}
-
-.accordion-header.active .icon {
-  background-color: #a3ff33; /* Icon background color for active section */
 }
 
 /* ======================= Rudra Working-section css End ============ */

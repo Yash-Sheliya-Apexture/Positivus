@@ -71,4 +71,5 @@ document.addEventListener("DOMContentLoaded", () => {
   firstContent.style.maxHeight = firstContent.scrollHeight + "px";
   firstContent.style.padding = "10px 20px";
 });
+
 // ===================Rudra Working-section js End==================

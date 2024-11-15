@@ -285,11 +285,12 @@
   }
 
   .number {
-    font-size: 1em;
+    font-size: 16px;
+    gap: 0px 10px;
   }
 
   .accordion-content p {
-    font-size: 0.8em;
+    font-size: 18px;
   }
 
   /* Rudra Working Section End */
