@@ -136,11 +136,11 @@
   /* ===================Rudra Working-section Start ================== */
 
   .accordion .card-1 {
-    padding: 18px;
+    padding: 16px;
   }
 
   .accordion .card-2 {
-    padding: 18px;
+    padding: 16px;
   }
 
   .icon {
@@ -162,10 +162,6 @@
 
   .accordion-header .num {
     font-size: 24px;
-  }
-
-  .accordion-content p {
-    font-size: 0.85em;
   }
 
   .accordion-header .number span {
@@ -286,7 +282,7 @@
 
   .number {
     font-size: 16px;
-    gap: 0px 10px;
+    gap: 0px 25px;
   }
 
   .accordion-content p {

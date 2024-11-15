@@ -622,7 +622,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px 25px;
+  gap: 0px 30px;
 }
 
 .accordion-header .number span {
