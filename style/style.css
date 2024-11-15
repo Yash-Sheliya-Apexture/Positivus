@@ -663,11 +663,12 @@ p {
   border-radius: 45px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
+  overflow: hidden;
 }
 
 .form-fields {
   flex: 1;
-  padding: 40px;
+  padding: 20px;
 }
 
 .radio-buttons {
@@ -723,7 +724,7 @@ textarea {
 }
 
 form input {
-  width: 50%;
+  width: 100%;
   padding: 18px 30px 18px 30px;
   margin-bottom: 25px;
   border: 1px solid #000;
@@ -744,7 +745,7 @@ form textarea {
 }
 
 form button {
-  width: 50%;
+  width: 100%;
   padding: 20px 35px;
   background-color: #000;
   color: #fff;
@@ -759,4 +760,16 @@ form button {
 
 form button:hover {
   background-color: #1a1a1a;
+}
+
+.main-img {
+  flex: 1;
+  position: relative;
+}
+
+.main-img img {
+  height: 80%;
+  position: absolute;
+  top: 80px;
+  left: 260px;
 }
