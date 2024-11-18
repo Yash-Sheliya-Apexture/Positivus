@@ -262,19 +262,19 @@ p {
 .things-happen .things-happen-detail {
   background-color: #f3f3f3;
   border-radius: 45px;
-}
-
-.things-happen .things-happen-detail {
   gap: 186px;
+}
+.things-happen .things-happen-detail .things-happen-content {
   padding: 60px;
 }
 
-.things-image img {
-  max-width: 100%; /* Ensure the image fits within the div */
-  height: auto; /* Maintain the aspect ratio */
+.things-image {
+  background-image: url(/Positivus/assets/Images/Frame\ 19.svg);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
-.things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap{
+.things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap {
   display: none;
 }
 /* ========== Things Happen Section End ========== */

@@ -88,6 +88,8 @@
   /* Things Happen Section Start */
   .things-happen .things-happen-detail {
     gap: 20px;
+  }
+  .things-happen .things-happen-detail .things-happen-content{
     padding: 50px;
   }
   .things-happen .things-happen-detail .things-happen-content .things-title {
