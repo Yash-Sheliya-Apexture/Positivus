@@ -43,21 +43,28 @@
     }
 
     .case-studies {
-        /* Adjust space between columns */
-        overflow-x: auto;
         /* Enable horizontal scrolling */
-        flex-wrap: nowrap;
+        overflow-x: auto;
+        /* Prevent the scrollbar from being visible */
         scrollbar-width: none;
+        -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+        padding: 60px 20px 60px 20px;/* Add 20px padding on both sides */
+        display: flex; /* Flexbox to align items horizontally */
     }
-
+    
+    .case-studies::-webkit-scrollbar {
+        display: none; /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+    }
+    
     .row {
         background-color: unset;
         color: var(--black-color);
-        padding: 0;
-        gap: 20px;
-
-        padding: 0 20px 0 20px;
+        padding: 0; /* Remove any padding from the row */
+        gap: 20px; /* Space between row items */
+        display: flex; /* Align items horizontally */
+        flex-wrap: nowrap; /* Prevent wrapping of items */
     }
+    
 
     .col-4 {
         background-color: var(--secondary-color);
@@ -96,7 +103,7 @@
     /* jenali caseStudies css start */
 
     .col-4 {
-        width: 85%;
+        width: 245px;
         padding: 40px 40px 40px 40px;
     }
 
