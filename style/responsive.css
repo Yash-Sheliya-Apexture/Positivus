@@ -137,6 +137,11 @@
     font-weight: 300;
   }
 
+  .size h4{
+    font-size: 18px;
+    font-weight: 500;
+  }
+
   .icon-white .arrow {
     font-size: var(--font-large);
     rotate: -35deg;
@@ -147,7 +152,7 @@
   }
 
   .card-image img {
-    width: 100%; /* Make image responsive */
+    height: 60%;
     margin-top: 40px;
   }
 

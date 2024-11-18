@@ -56,7 +56,7 @@
   --font-family-primary: "SpaceGrotesk", sans-serif;
 
   /* Font-size Variable */
-  --font-extrasmall:14px;
+  --font-extrasmall: 14px;
   --font-small: 16px;
   --font-medium: 18px;
   --font-large: 20px;
@@ -195,6 +195,11 @@ p {
   gap: 40px;
 }
 
+.heading-wrap .Para {
+  font-size: 20px;
+  max-width: 650px;
+}
+
 .Head-data {
   margin-bottom: 60px;
 }
@@ -286,6 +291,11 @@ p {
   font-size: var(--font-large);
   transition: color 0.3s;
 }
+
+.navbar ul li a:hover{
+  color:var(--primary-color);
+}
+
 .ml-2 {
   margin-left: 40px;
 }
@@ -305,7 +315,7 @@ p {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: white;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 100;
@@ -325,7 +335,7 @@ p {
 }
 
 .sidebar ul li a {
-  color: black;
+  color:var(--black-color);
   text-decoration: none;
   font-size: var(--font-medium);
 }
@@ -483,6 +493,11 @@ p {
   border-radius: 7px;
 }
 
+.size h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .Service-gap {
   display: flex;
   flex-wrap: wrap;
@@ -559,7 +574,7 @@ p {
 }
 
 .card-image img {
-  width: 100%; /* Make image responsive */
+  /* width: 100%;  */
   height: auto;
   margin-top: 40px;
 }
@@ -574,13 +589,18 @@ p {
 }
 
 .accordion .card-1 {
-  background-color: var(--Lime-light);
+  background-color: var(--primary-color);
   padding: 41px 60px;
 }
 
 .accordion-item .card-2 {
   background-color: var(--light-gray-color);
   padding: 41px 60px;
+}
+
+.accordion-item .card-2:hover{
+  background-color: var(--primary-color);
+  transition: all 0.4s ease;
 }
 
 .accordion-content .border-accordion {
@@ -595,7 +615,7 @@ p {
   box-shadow: 0 5px 0 0 var(--secondary-color);
   margin-bottom: 30px;
   overflow: hidden;
-  transition: background-color 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .accordion-item .active {
@@ -610,18 +630,22 @@ p {
   cursor: pointer;
   font-size: var(--font-large);
   font-weight: 500;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s ease;
 }
 
 .accordion-header.active {
   border-radius: 10px;
 }
 
+.heading-wrap .para-1 {
+  max-width: 300px;
+}
+
 .accordion-content {
   max-height: 0;
   overflow: hidden;
   padding: 0 20px;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
 .accordion-content p {
@@ -656,7 +680,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s ease;
 }
 
 /* ======================= Rudra Working-section css End ============ */
@@ -681,46 +705,52 @@ p {
 
 .radio-buttons {
   display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 35px; /* Space between radio buttons */
 }
 
 .radio-buttons label {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px; /* Space between the circle and text */
   font-weight: 400;
+  cursor: pointer;
 }
 
 .radio-buttons input[type="radio"] {
-  /* Control the size of the radio button */
+  appearance: none; /* Remove default radio button styling */
   width: 28px;
   height: 28px;
-  appearance: none; /* Remove default styling */
-  border: 2px solid var(--black-color); /* Border color */
+  border: 1px solid var(--black-color);
   border-radius: 50%; /* Make it circular */
   display: inline-block;
   position: relative;
   cursor: pointer;
-  margin-right: 5px;
 }
 
 .radio-buttons input[type="radio"]:checked {
-  background-color: var(--Lime-light); /* Color when checked */
-  border: 1px solid var(--Lime-light); /* Border color when checked */
+  background-color:white;
+  border: 1px solid var(--black-color); /* Match border color */
 }
 
-form label {
-  font-size: var(--font-small);
-  margin-bottom: 5px;
-  display: block;
-  font-weight: 400;
-  line-height: 28px;
-  color: var(--black-color);
+.radio-buttons input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: none; /* Hidden by default */
+}
+
+.radio-buttons input[type="radio"]:checked::before {
+  display: block; /* Visible only when selected */
 }
 
 .top-space {
-  margin-top: 60px;
+  margin-top: 68px;
 }
 
 input {
@@ -733,8 +763,9 @@ textarea {
 
 form input {
   width: 100%;
-  padding: 18px 30px 18px 30px;
+  padding: 18px 30px;
   margin-bottom: 25px;
+  margin-top: 5px;
   border: 1px solid var(--black-color);
   border-radius: 14px;
   font-size: var(--font-small);
@@ -747,7 +778,7 @@ form textarea {
   height: 190px;
   padding: 18px 30px;
   margin-bottom: 40px;
-  border: 1px solid #000;
+  border: 1px solid var(--black-color);
   border-radius: 14px;
   font-size: var(--font-small);
   resize: none;
@@ -755,20 +786,6 @@ form textarea {
 
 form button {
   width: 100%;
-  padding: 20px 35px;
-  background-color: var(--black-color);
-  color: #fff;
-  font-size: var(--font-large);
-  line-height: 28px;
-  border: none;
-  font-weight: 400;
-  border-radius: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: var(--secondary-color);
 }
 
 .main-img {
@@ -777,8 +794,17 @@ form button:hover {
 }
 
 .main-img img {
-  height: 80%;
   position: absolute;
-  top: 80px;
-  left: 285px;
+  width: 100%;
+  top: 100px;
+  left: 68%;
+}
+
+/* Form Validation Style */
+.error-message {
+  display: none; /* Hide error messages initially */
+  color: red;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: -10px;
 }

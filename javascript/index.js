@@ -73,4 +73,94 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // ===================Rudra Working-section js End==================
 
+// ===================Rudra Contact-section js Start==================
 
+// JavaScript to handle radio button change
+const radioButtons = document.querySelectorAll('input[name="option"]');
+const formFieldsContainer = document.getElementById("form-fields-container");
+
+// Function to update the form fields
+function updateFormFields(selectedOption) {
+  if (selectedOption === "say-hi") {
+    formFieldsContainer.innerHTML = `
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name">
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" placeholder="Message"></textarea>
+      `;
+  } else if (selectedOption === "get-quote") {
+    formFieldsContainer.innerHTML = `
+        <label for="name">UserName</label>
+        <input type="text" id="UserName" name="UserName" placeholder="UserName">
+
+        <label for="email">Password*</label>
+        <input type="email" id="Password" name="Password" placeholder="Password">
+
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91  ">
+
+        <label for="quote-details">Quote Details*</label>
+        <textarea id="quote-details" name="quote-details" placeholder="Describe your project..."></textarea>
+      `;
+  }
+}
+
+// Add event listener to radio buttons
+radioButtons.forEach((radio) => {
+  radio.addEventListener("change", (event) => {
+    updateFormFields(event.target.value);
+  });
+});
+
+/* Contact-Form Validation */
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function (event) {
+  // Prevent form submission
+  event.preventDefault();
+
+  let isValid = true;
+
+  // Validate Name
+  const name = document.getElementById("name");
+  const nameError = document.getElementById("nameError");
+  if (name.value.trim() === "") {
+    nameError.style.display = "block";
+    isValid = false;
+  } else {
+    nameError.style.display = "none";
+  }
+
+  // Validate Email
+  const email = document.getElementById("email");
+  const emailError = document.getElementById("emailError");
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
+  if (!emailRegex.test(email.value.trim())) {
+    emailError.style.display = "block";
+    isValid = false;
+  } else {
+    emailError.style.display = "none";
+  }
+
+  // Validate Message
+  const message = document.getElementById("message");
+  const messageError = document.getElementById("messageError");
+  if (message.value.trim() === "") {
+    messageError.style.display = "block";
+    isValid = false;
+  } else {
+    messageError.style.display = "none";
+  }
+
+  // If the form is valid, submit it (placeholder functionality)
+  if (isValid) {
+    alert("Form submitted successfully!");
+    form.reset();
+  }
+});
+
+// ===================Rudra Contact-section js End==================

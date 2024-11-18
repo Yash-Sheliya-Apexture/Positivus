@@ -31,8 +31,8 @@
                     <!-- Navbar for larger screens -->
                     <nav class="navbar flex flex-align-items-center">
                         <ul>
-                            <li><a href="#about">About us</a></li>
-                            <li><a href="#services">Services</a></li>
+                            <li><a href="#About">About us</a></li>
+                            <li><a href="#Service">Services</a></li>
                             <li><a href="#use-cases">Use Cases</a></li>
                             <li><a href="#pricing">Pricing</a></li>
                             <li><a href="#blog">Blog</a></li>
@@ -53,8 +53,8 @@
             <div class="sidebar" id="sidebar">
                 <div class="close-btn" id="closeBtn">&times;</div>
                 <ul>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#About">About us</a></li>
+                    <li><a href="#Service">Services</a></li>
                     <li><a href="#use-cases">Use Cases</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#blog">Blog</a></li>
@@ -111,7 +111,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -131,16 +130,18 @@
         </div>
         <!-- jenali Cline-section html end -->
 
+
         <!-- Rudra Services Section Start -->
 
         <section class="container">
 
             <div class="heading-section-wrap">
-                <div class="flex heading-wrap Head-data">
+                <div class="flex heading-wrap Head-data flex-align-items-center">
                     <div class="heading">
                         <h3 class="heading-bg-green">Services</h3>
                     </div>
-                    <p>At our digital marketing agency, we offer a range of services to <br> help businesses grow and
+                    <p class="Para">At our digital marketing agency, we offer a range of services to help businesses
+                        grow and
                         succeed
                         online. These services include:</p>
                 </div>
@@ -148,12 +149,12 @@
         </section>
 
         <div class="container">
-            <div class="Service-gap">
+            <div class="Service-gap" id="Service">
                 <div class="service-card">
                     <div class="card-content">
                         <div>
                             <h3 class="service-title">Search engine</h3>
-                            <h3 class="service-title">optimization</h3>
+                            <h4 class="service-title">optimization</h4>
                         </div>
                         <div>
                             <div class="learn-more">
@@ -171,9 +172,9 @@
 
                 <div class="service-card Service-bg">
                     <div class="card-content">
-                        <div>
+                        <div class="size">
                             <h3 class="service-part">Pay-per-click</h3>
-                            <h3 class="service-part">advertising</h3>
+                            <h4 class="service-part">advertising</h4>
                         </div>
                         <div>
                             <div class="learn-more">
@@ -190,9 +191,9 @@
                 </div>
                 <div class="service-card service-color">
                     <div class="card-content">
-                        <div>
+                        <div class="size">
                             <h3 class="service-part">Social Media</h3>
-                            <h3 class="service-part">Marketing</h3>
+                            <h4 class="service-part">Marketing</h4>
                         </div>
                         <div>
                             <div class="learn-more">
@@ -212,7 +213,7 @@
                     <div class="card-content">
                         <div>
                             <h3 class="service-title">Email</h3><br>
-                            <h3 class="service-title">Marketing</h3>
+                            <h4 class="service-title">Marketing</h4>
                         </div>
                         <div>
                             <div class="learn-more">
@@ -230,9 +231,9 @@
                 </div>
                 <div class="service-card Service-bg">
                     <div class="card-content">
-                        <div>
+                        <div class="size">
                             <h3 class="service-part">Content</h3><br>
-                            <h3 class="service-part">Creation</h3>
+                            <h4 class="service-part">Creation</h4>
                         </div>
                         <div>
                             <div class="learn-more">
@@ -252,7 +253,7 @@
                     <div class="card-content">
                         <div>
                             <h3 class="service-title">Analytics and </h3>
-                            <h3 class="service-title">Tracking</h3>
+                            <h4 class="service-title">Tracking</h4>
                         </div>
                         <div>
                             <div class="learn-more">
@@ -284,14 +285,14 @@
                     <div class="heading">
                         <h3 class="heading-bg-green">Our Working Process </h3>
                     </div>
-                    <p>Step-by-Step Guide to Achieving <br> Your Business Goals</p>
+                    <p class="para-1">Step-by-Step Guide to Achieving Your Business Goals</p>
                 </div>
             </div>
         </section>
 
 
         <section class="container">
-            <div class="accordion">
+            <div class="accordion" id="Working-process">
                 <!-- First Section -->
                 <div class="accordion-item">
                     <div class="card-1">
@@ -402,47 +403,58 @@
         <!-- Rudra Contact-Us Section Start -->
 
         <section class="container">
-
-            <div class="heading-section-wrap new-data">
+            <div class="heading-section-wrap new-data" id="Contant-Us">
                 <div class="flex heading-wrap flex-align-items-center">
                     <div class="heading">
                         <h3 class="heading-bg-green">Contact Us</h3>
                     </div>
-                    <p>Connect with Us: Let's Discuss Your <br> Digital Marketing Needs</p>
+                    <p class="para-1">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
                 </div>
             </div>
         </section>
+
 
         <section class="container">
             <div class="form-container">
                 <!-- Left Side - Form Fields -->
                 <div class="form-fields">
                     <div class="radio-buttons">
+                        <!-- Radio Button With Add Functionality -->
                         <label>
-                            <input type="radio" name="option" checked onclick="changeLayout('sayHi')"> Say Hi
+                            <input type="radio" name="option" value="say-hi" checked>
+                            <span>Say Hi</span>
                         </label>
                         <label>
-                            <input type="radio" name="option" onclick="changeLayout('getQuote')"> Get a Quote
+                            <input type="radio" name="option" value="get-quote">
+                            <span>Get a Quote</span>
                         </label>
                     </div>
-                    <form class="top-space" id="contactForm">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name">
+                    <form class="top-space" id="contactForm" novalidate>
+                        <div id="form-fields-container">
+                            <!-- Default Fields -->
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                            <span class="error-message" id="nameError">Name is required</span>
 
-                        <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" placeholder="Email">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <span class="error-message" id="emailError">Please enter a valid email</span>
 
-                        <label for="message">Message*</label>
-                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                            <span class="error-message" id="messageError">Massage is required now </span>
+                        </div>
 
-                        <button type="submit">Send Message</button>
+                        <button type="submit" class="btn btn-type-one">Send Message</button>
                     </form>
                 </div>
-
-
+                <!-- Image Section -->
                 <div class="main-img">
                     <img src="assets/Images/Illustration (1).png" alt="">
                 </div>
+            </div>
+
+
             </div>
         </section>
 
