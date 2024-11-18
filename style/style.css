@@ -293,8 +293,8 @@ p {
   transition: color 0.3s;
 }
 
-.navbar ul li a:hover{
-  color:var(--primary-color);
+.navbar ul li a:hover {
+  color: var(--primary-color);
 }
 
 .ml-2 {
@@ -336,7 +336,7 @@ p {
 }
 
 .sidebar ul li a {
-  color:var(--black-color);
+  color: var(--black-color);
   text-decoration: none;
   font-size: var(--font-medium);
 }
@@ -478,20 +478,16 @@ p {
   margin-top: 10px;
 }
 
+.size .bg-white {
+  background-color: #fff;
+}
+
 .Service-bg {
   background-color: var(--Service-background);
 }
 
 .service-color {
   background-color: var(--secondary-color);
-}
-
-.service-part {
-  background-color: white;
-  color: var(--black-color);
-  display: inline-block;
-  padding: 0px 7px;
-  border-radius: 7px;
 }
 
 .size h4 {
@@ -523,6 +519,10 @@ p {
   padding: 0px 7px;
   border-radius: 7px;
   line-height: 38px;
+}
+
+.new-flex {
+  display: inline-block;
 }
 
 .learn-more {
@@ -599,7 +599,7 @@ p {
   padding: 41px 60px;
 }
 
-.accordion-item .card-2:hover{
+.accordion-item .card-2:hover {
   background-color: var(--primary-color);
   transition: all 0.4s ease;
 }
@@ -728,7 +728,7 @@ p {
 }
 
 .radio-buttons input[type="radio"]:checked {
-  background-color:white;
+  background-color: white;
   border: 1px solid var(--black-color); /* Match border color */
 }
 
@@ -807,6 +807,4 @@ form button {
   font-weight: 500;
   font-size: 16px;
   margin-top: -10px;
-  
 }
-
