@@ -233,38 +233,6 @@ p {
     /* Ensures the content and image are contained within the div */
 }
 
-.imag img {
-    width: 100%;
-    /* Make the image fill the entire width of the container */
-    height: auto;
-    /* Ensure the image maintains its aspect ratio */
-    border-radius: 10px;
-    /* Optional: add rounded corners to the image */
-}
-
-.testimonial-content {
-    position: absolute;
-    /* Positioning the content on top of the image */
-    top: 50%;
-    /* Center the content vertically */
-    left: 50%;
-    /* Center the content horizontally */
-    transform: translate(-50%, -50%);
-    /* Adjust for exact centering */
-    color: #fff;
-    /* Text color (white) for visibility on top of the image */
-    font-size: 18px;
-    /* Font size for readability */
-    font-weight: 400;
-    /* Adjust font weight */
-    text-align: center;
-    /* Center-align the text */
-    width: 100%;
-    padding: 15px;
-    /* Add padding for the text to not touch edges */
-    border-radius: 10px;
-    /* Optional: rounded corners for the text container */
-}
 
 .case-studies {
     padding: 60px 20px;
@@ -326,6 +294,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    margin-top: 35px;
 }
 
 /* Slider navigation buttons */
@@ -416,20 +385,7 @@ p {
     /* Make the image grayscale */
 }
 
-.image-mobile {
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-/* .testimonial-box {
+.testimonial-box {
     color: var(--white-color);
     padding: 25px;
     max-width: 600px;
@@ -437,20 +393,29 @@ p {
     clip-path: polygon(0% 0%, 100% 0%, 100% 8%, 100% 100%, 100% 100%, 0% 116%, 0% 96%, 0% 5%);
     border-radius: 45px;
     border: 1px solid var(--primary-color);
-    text-align: center;
+    background-color: var(--secondary-color);
+    text-align: left;
+}
+
+.testimonial-box p {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .testimonial-box::after {
-    content: '';
+    content: "";
     position: absolute;
-    bottom: -20px;
-    left: 12%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent; 
-    border-right: 25px solid transparent;
-    border-top: 20px solid var(--primary-color); 
-} */
+    left: 61px;
+    bottom: -15px;
+    height: 30px;
+    width: 30px;
+    background-color: var(--secondary-color);
+    transform: translateX(-50%) rotate(47deg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-bottom-color: var(--primary-color);
+    border-right-color: var(--primary-color);
+}
+
 
 /* ======================= jenali TestimonialsSection Section css end ============ */

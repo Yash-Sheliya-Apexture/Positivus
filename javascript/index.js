@@ -81,7 +81,7 @@ function updateNavigationButtons(totalSlides) {
         nextButton.style.pointerEvents = "none";  // Disable click event
     } else {
         // Active right arrow: white arrow
-        nextButton.classList.remove("disabled");
+        nextButton.classList.remove("disabled");    
         nextArrowImage.src = "assets/Images/Arrow right.png";  // White right arrow image
         nextButton.style.pointerEvents = "auto";  // Enable click event
     }
