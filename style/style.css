@@ -267,6 +267,7 @@ p {
 .header {
   padding: 60px 0px;
 }
+
 .logo img {
   width: 150px; /* Adjust logo size as needed */
   height: auto;
@@ -341,7 +342,7 @@ p {
 }
 
 .sidebar ul li a:hover {
-  color: var(--Lime-light);
+  color: var(--primary-color);
 }
 
 /* Close Button for Sidebar */
@@ -494,7 +495,7 @@ p {
 }
 
 .size h4 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -692,7 +693,6 @@ p {
   background-color: var(--light-gray-color);
   padding: 60px 100px 80px 100px;
   border-radius: 45px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
   overflow: hidden;
   margin-bottom: 140px;
@@ -805,6 +805,8 @@ form button {
   display: none; /* Hide error messages initially */
   color: red;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: -10px;
+  
 }
+

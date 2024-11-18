@@ -43,6 +43,11 @@
     height: 150px; /* Adjust textarea height */
   }
 
+  .form-container .form-fields {
+    flex: 1;
+    padding: 40px;
+  }
+
   /* Rudra About Section End */
   /* ===================Rudra css end================== */
 }
@@ -51,6 +56,12 @@
   .container {
     max-width: 720px;
   }
+
+  .form-container .form-fields {
+    flex: 1;
+    padding: 20px;
+  }
+
 }
 
 @media (max-width: 767.98px) {
@@ -114,7 +125,7 @@
     height: 30px;
     background-color: var(--secondary-color); /* Dark circle background */
     border-radius: 50%;
-    color:var(--Lime-light);
+    color: var(--Lime-light);
     font-size: var(--font-medium);
     font-weight: 300;
   }
@@ -137,7 +148,7 @@
     font-weight: 300;
   }
 
-  .size h4{
+  .size h4 {
     font-size: 18px;
     font-weight: 500;
   }
@@ -156,6 +167,7 @@
     margin-top: 40px;
   }
 
+ 
   /* ===================Rudra Service-section End ================== */
 
   /* ===================Rudra Working-section Start ================== */
@@ -227,9 +239,8 @@
   /* kartavya Hero Section Responsive CSS end  */
 
   .main-img img {
-    height: 80%;
     position: absolute;
-    left: 165px;
+    left: 200px;
   }
 }
 
@@ -335,6 +346,7 @@
   form input,
   form textarea {
     width: 100%;
+    margin-top: 5px;
   }
 
   form button {
@@ -345,5 +357,4 @@
 }
 
 @media (max-width: 350.98px) {
-  
 }
