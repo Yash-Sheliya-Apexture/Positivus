@@ -301,8 +301,7 @@ p {
 }
 .team-card{
   padding: 40px 35px;
-  width: 387px;
-  height: 331px;
+  width: 100%;
   border-radius: 45px;
   border: 1px solid #191a23;
   box-shadow: 0 5px 0 0 #191a23;
@@ -314,11 +313,10 @@ p {
 
 .team-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .team-section .team-card .team-card-top{
-  /* justify-content: space-between; */
+  justify-content: space-between;
   position: relative;
   gap: 15px;
 }
