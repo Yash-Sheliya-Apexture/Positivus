@@ -47,10 +47,22 @@
   --light-gray-color: #f3f3f3;
   /* Light Gray */
   --white-color: #f3f3f3;
-  /* White */
+  /* light Lime */
+  --Lime-light: #a3ff33;
+  /* Service BackGround */
+  --Service-background: #b9ff66;
 
   /* Font Family Variable */
   --font-family-primary: "SpaceGrotesk", sans-serif;
+
+  /* Font-size Variable */
+  --font-extrasmall: 14px;
+  --font-small: 16px;
+  --font-medium: 18px;
+  --font-large: 20px;
+
+  /* box-shadow Variable */
+  --box-shadow: 0 5px 0 0 #191a23;
 }
 
 /* ========== Global Styles ========== */
@@ -111,7 +123,7 @@ p {
   font-weight: 400;
   line-height: 22.97px;
 }
-    
+
 /* ========== Typography Styles end ========== */
 
 /* ========== Utility Classes start ========== */
@@ -136,12 +148,21 @@ p {
   text-align: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .mt-2 {
   margin-top: 20px;
 }
 
 .mb-2 {
   margin-bottom: 20px;
+}
+
+
+.white {
+  color: #fff;
 }
 
 .w-50 {
@@ -152,7 +173,6 @@ p {
   width: 100%;
 }
 /* ========== Utility Classes end ========== */
-
 
 /* ========== heading start ========== */
 
@@ -174,6 +194,10 @@ p {
 
 .heading-wrap {
   gap: 40px;
+}
+
+.Head-data {
+  margin-bottom: 60px;
 }
 
 .heading-section-wrap p {
@@ -323,7 +347,7 @@ p {
   padding: 16px;
 }
 
-.sidebar .mobail-button-wrap{
+.sidebar .mobail-button-wrap {
   box-shadow: 0px -6px 20px rgb(0 0 0 / 24%);
   border-radius: 20px 20px 0px 0px;
   border-top: 2px solid var(--black-color);
@@ -361,7 +385,6 @@ p {
 }
 /* ========== Hero Section End ========== */
 /* ================Kartavya CSS Code End================ */
-
 
 /* ================ jenali Cline-section css start ================*/
 @keyframes slide {
@@ -424,3 +447,123 @@ p {
 }
 
 /* ======================= jenali Cline-section css end ============ */
+
+/* ======================= Rudra Services-section css Start ============ */
+
+.service-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 580px;
+  height: 310px;
+  background-color: var(--white-color);
+  border-radius: 45px;
+  border: 1px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.size .bg-white {
+  background-color: #fff;
+}
+
+.Service-bg {
+  background-color: var(--Service-background);
+}
+
+.service-color {
+  background-color: var(--secondary-color);
+}
+
+.size h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.Service-gap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* Adjust the gap as desired */
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.service-title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  padding: 0px 7px;
+  border-radius: 7px;
+  line-height: 38px;
+}
+
+.new-flex {
+  display: inline-block;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-small);
+  color: var(--black-color);
+}
+
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background-color: var(--secondary-color); /* Dark circle background */
+  border-radius: 50%;
+  color: var(--Lime-light); /* Green color for the arrow */
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.icon-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background-color: white; /* Dark circle background */
+  border-radius: 50%;
+  color: black; /* Green color for the arrow */
+  font-size: var(--font-medium);
+  font-weight: 300;
+}
+
+.icon-white .arrow {
+  font-size: 30px;
+  rotate: -35deg;
+}
+
+.icon-circle .arrow {
+  font-size: 30px;
+  rotate: -35deg;
+}
+
+.learn-more span {
+  font-size: var(--font-large);
+  font-weight: 400;
+}
+
+.card-image img {
+  /* width: 100%;  */
+  height: auto;
+  margin-top: 40px;
+}
+
+/* ======================= Rudra Services-section css End ============ */
