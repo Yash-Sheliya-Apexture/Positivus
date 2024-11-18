@@ -444,28 +444,29 @@ p {
   padding: 40px;
   width: 580px;
   height: 310px;
-  background-color: #f3f3f3;
+  background-color: var(--white-color);
   border-radius: 45px;
-  border: 1px solid #191a23;
-  box-shadow: 0 5px 0 0 #191a23;
+  border: 1px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
   transition: all 0.3s ease;
-  margin-top: 30px;
+  margin-top: 10px;
+}
+
+.size .bg-white {
+  background-color: #fff;
 }
 
 .Service-bg {
-  background-color: #b9ff66;
+  background-color: var(--Service-background);
 }
 
 .service-color {
-  background-color: #191a23;
+  background-color: var(--secondary-color);
 }
 
-.service-part {
-  background-color: #fff;
-  color: black;
-  display: inline-block;
-  padding: 0px 7px;
-  border-radius: 7px;
+.size h4 {
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .Service-gap {
@@ -487,19 +488,23 @@ p {
   display: inline-block;
   font-size: 30px;
   font-weight: 500;
-  background-color: #b9ff66;
-  color: #000;
+  background-color: var(--primary-color);
+  color: var(--black-color);
   padding: 0px 7px;
   border-radius: 7px;
   line-height: 38px;
+}
+
+.new-flex {
+  display: inline-block;
 }
 
 .learn-more {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
-  color: #000;
+  font-size: var(--font-small);
+  color: var(--black-color);
 }
 
 .icon-circle {
@@ -508,9 +513,9 @@ p {
   align-items: center;
   width: 41px;
   height: 41px;
-  background-color: #1a1a1a; /* Dark circle background */
+  background-color: var(--secondary-color); /* Dark circle background */
   border-radius: 50%;
-  color: #a3ff33; /* Green color for the arrow */
+  color: var(--Lime-light); /* Green color for the arrow */
   font-size: 18px;
   font-weight: 300;
 }
@@ -521,10 +526,10 @@ p {
   align-items: center;
   width: 41px;
   height: 41px;
-  background-color: #fff; /* Dark circle background */
+  background-color: white; /* Dark circle background */
   border-radius: 50%;
   color: black; /* Green color for the arrow */
-  font-size: 18px;
+  font-size: var(--font-medium);
   font-weight: 300;
 }
 
@@ -539,12 +544,14 @@ p {
 }
 
 .learn-more span {
-  font-size: 20px;
+  font-size: var(--font-large);
   font-weight: 400;
 }
 
 .card-image img {
-  width: 100%; /* Make image responsive */
+  /* width: 100%;  */
   height: auto;
   margin-top: 40px;
 }
+
+/* ======================= Rudra Services-section css End ============ */
