@@ -409,8 +409,48 @@ p {
     /* Inactive dot with white color */
 }
 
+.slider-controls button.disabled img {
+    opacity: 0.5;
+    /* Make the image appear faded */
+    filter: grayscale(100%);
+    /* Make the image grayscale */
+}
+
 .image-mobile {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+/* .testimonial-box {
+    color: var(--white-color);
+    padding: 25px;
+    max-width: 600px;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 8%, 100% 100%, 100% 100%, 0% 116%, 0% 96%, 0% 5%);
+    border-radius: 45px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+.testimonial-box::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 12%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent; 
+    border-right: 25px solid transparent;
+    border-top: 20px solid var(--primary-color); 
+} */
 
 /* ======================= jenali TestimonialsSection Section css end ============ */
