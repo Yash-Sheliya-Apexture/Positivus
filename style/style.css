@@ -47,10 +47,22 @@
   --light-gray-color: #f3f3f3;
   /* Light Gray */
   --white-color: #f3f3f3;
-  /* White */
+  /* light Lime */
+  --Lime-light: #a3ff33;
+  /* Service BackGround */
+  --Service-background: #b9ff66;
 
   /* Font Family Variable */
   --font-family-primary: "SpaceGrotesk", sans-serif;
+
+  /* Font-size Variable */
+  --font-extrasmall: 14px;
+  --font-small: 16px;
+  --font-medium: 18px;
+  --font-large: 20px;
+
+  /* box-shadow Variable */
+  --box-shadow: 0 5px 0 0 #191a23;
 }
 
 /* ========== Global Styles ========== */

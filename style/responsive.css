@@ -89,16 +89,8 @@
   }
 
   .icon-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
     background-color: var(--secondary-color); /* Dark circle background */
-    border-radius: 50%;
     color: var(--Lime-light);
-    font-size: var(--font-medium);
-    font-weight: 300;
   }
 
   .icon-circle .arrow {
@@ -107,16 +99,8 @@
   }
 
   .icon-white {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
     background-color: #1a1a1a; /* Dark circle background */
-    border-radius: 50%;
     color: #a3ff33; /* Green color for the arrow */
-    font-size: var(--font-medium);
-    font-weight: 300;
   }
 
   .size h4 {
@@ -147,16 +131,8 @@
   }
 
   .icon-white {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
     background-color: white; /* Dark circle background */
-    border-radius: 50%;
     color:black; /* Green color for the arrow */
-    font-size: 18px;
-    font-weight: 300;
   }
 
   .icon-white .arrow {
