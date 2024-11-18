@@ -67,22 +67,25 @@
 
   /* ===================jenali Cline-section css End================== */
 
+
+
+  /* ===================Rudra Service-section Start ================== */
+
   .service-card {
-    width: 300px;
-    padding: 20px;
+    padding: 40px;
     height: 250px;
   }
 
   .Service-gap {
-    gap: 0px;
+    gap: 20px;
   }
 
   .service-title {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 
   .service-part {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 
   .icon-circle {
@@ -91,12 +94,52 @@
     align-items: center;
     width: 30px;
     height: 30px;
+    background-color: var(--secondary-color); /* Dark circle background */
+    border-radius: 50%;
+    color: var(--Lime-light);
+    font-size: var(--font-medium);
+    font-weight: 300;
+  }
+
+  .icon-circle .arrow {
+    font-size: var(--font-large);
+    rotate: -35deg;
+  }
+
+  .icon-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
     background-color: #1a1a1a; /* Dark circle background */
     border-radius: 50%;
     color: #a3ff33; /* Green color for the arrow */
-    font-size: 18px;
+    font-size: var(--font-medium);
     font-weight: 300;
   }
+
+  .size h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .icon-white .arrow {
+    font-size: var(--font-large);
+    rotate: -35deg;
+  }
+
+  .learn-more .learn {
+    display: none;
+  }
+
+  .card-image img {
+    height: 60%;
+    margin-top: 40px;
+  }
+
+ 
+  /* ===================Rudra Service-section End ================== */
 
   .icon-circle .arrow {
     font-size: 20px;
