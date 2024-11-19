@@ -27,6 +27,15 @@
   }
 
   /* Things Happen Section End */
+
+  /* Team Section Start */
+
+  .team-section .all-team-cards .team-member-card {
+    grid-template-columns: auto auto;
+  }
+ 
+  /* Team Section End */
+
   /* ===================kartavya Responsive CSS end=================== */
 }
 
@@ -50,7 +59,7 @@
   /* Hero Section End */
 
   /* Things Happen Section Start */
-  
+
   .things-happen .things-happen-detail {
     flex-wrap: wrap;
     align-items: center;
@@ -65,6 +74,21 @@
   }
   /* Things Happen Section End */
 
+  /* Team Section Start */
+
+  .team-section {
+    margin-top: 100px;
+  }
+
+  .team-section .heading-section-wrap {
+    margin-bottom: 60px;
+  }
+  .team-section .all-team-cards .team-member-card {
+    grid-template-columns: auto;
+  }
+
+  /* Team Section End */
+
   /* ===================kartavya Responsive CSS End=================== */
 }
 
@@ -74,6 +98,10 @@
     max-width: 100%;
   }
 
+  .heading-section-wrap .heading h3 {
+    font-size: 36px;
+    line-height: 45.94px;
+  }
   .heading-wrap {
     flex-direction: column;
     text-align: center;
@@ -141,6 +169,27 @@
     line-height: 24px;
   }
   /* Things Happen Section End */
+
+  /* Team Section Start */
+  .team-section {
+    margin-top: 80px;
+  }
+
+  .team-section .heading-wrap {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .team-section .heading-section-wrap {
+    margin-bottom: 40px;
+  }
+
+  .btn-all-team {
+    text-align: center;
+  }
+
+  /* Team Section End */
+
   /* ===================kartavya Responsive CSS End=================== */
 
   /* ===================jenali Cline-section css start================== */
@@ -551,25 +600,78 @@
   /* Hero Section End */
 
   /* Things Happen Section Start */
- 
+
   .things-happen .things-happen-detail .things-title.mb-2,
   .things-happen .things-happen-detail .things-para.mb-2 {
     margin-bottom: 20px;
   }
-  .things-happen .things-happen-detail .things-happen-content .btn-none{
+  .things-happen .things-happen-detail .things-happen-content .btn-none {
     display: none;
   }
-  .things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap{
+  .things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap {
     display: block;
     width: 100%;
   }
   /* Things Happen Section End */
+
+  /* Team Section Start */
+
+  .team-section {
+    margin-top: 60px;
+  }
+
+  .team-section .all-team-cards .team-member-card {
+    gap: 30px;
+  }
+
+  .team-section .all-team-cards .team-member-card .team-card {
+    padding: 40px 50px;
+  }
+
+  .team-section
+    .all-team-cards
+    .team-member-card
+    .team-card
+    .team-card-top
+    .team-member-detail
+    h4 {
+    font-size: 18px;
+    line-height: 22.97px;
+  }
+  .team-section
+    .all-team-cards
+    .team-member-card
+    .team-card
+    .team-card-top
+    .team-member-detail
+    p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .team-section
+    .all-team-cards
+    .team-member-card
+    .team-card
+    .team-member-occupation
+    p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .team-member-card .team-card:nth-last-child(-n + 2) {
+    display: none;
+  }
+
+  /* Team Section End */
+
   /* ===================kartavya Responsive CSS End=================== */
 }
 
 @media (max-width: 350.98px) {
   /* ===================kartavya Responsive CSS Start=================== */
   
+ 
   /* ===================kartavya Responsive CSS End=================== */
   /* kartavya Hero Section Responsive CSS end  */
 

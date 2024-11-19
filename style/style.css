@@ -117,6 +117,12 @@ h3 {
   line-height: 38.28px;
 }
 
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25.52px;
+}
+
 p {
   font-size: 18px;
   font-weight: 400;
@@ -477,6 +483,80 @@ p {
   display: none;
 }
 /* ========== Things Happen Section End ========== */
+
+/* ========== Team Section Start ========== */
+.team-section {
+  margin-top: 140px;
+}
+
+.team-section .heading-section-wrap {
+  margin-bottom: 80px;
+}
+
+.team-section .heading-section-wrap .heading-wrap .heading-description{
+  max-width: 530px;
+}
+
+.team-section .all-team-cards .team-member-card{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+}
+
+.team-section .all-team-cards .team-member-card .team-card{
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  box-shadow: 0 5px 0 0 #191a23;
+  padding: 40px 35px;
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top{
+  position: relative;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top .team-member-image img {
+  filter: drop-shadow(6px 6px 0 #000);
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top .team-member-detail{
+  margin-top: 53.82px;
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top .linkedin-icon{
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  color: #b9ff66;
+  background-color: #000;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-member-occupation p::before {
+  content: "";
+  display: block;
+  border: 1px solid black;
+  background-color: #000; /* Border color */
+  margin-bottom: 28px; /* Spacing between the border and the paragraph */
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top .team-member-detail p {
+  margin: 3px 0 0;
+}
+.btn-all-team {
+  text-align: end;
+  margin-top: 40px;
+}
+
+
+/* ========== Team Section End ========== */
 .hero-image .description-and-btn-mobile-wrap {
   display: none;
 }
