@@ -155,7 +155,6 @@ p {
     border-radius: 7px;
     padding: 0px 7px;
     display: inline-block;
-    font-weight: 800;
 }
 
 .heading-wrap {
@@ -223,10 +222,6 @@ p {
     line-height: 22.97px;
 }
 
-.heading-section-wrap {
-    margin-bottom: 50px;
-}
-
 .imag {
     position: relative;
     /* This allows positioning of the content over the image */
@@ -236,7 +231,7 @@ p {
 
 
 .case-studies {
-    padding: 60px 20px;
+    padding: 60px 0px 60px 0px;
     background-color: #f8f9fa;
     color: #333;
     text-align: center;
@@ -259,6 +254,7 @@ p {
     background-color: var(--secondary-color);
     color: var(--white-color);
     padding: 50px 60px 250px 60px;
+    margin-top: 50px;
 }
 
 /* Slider wrapper holds the slides */
