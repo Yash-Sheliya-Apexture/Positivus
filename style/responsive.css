@@ -30,10 +30,12 @@
 
   /* Team Section Start */
 
-  .team-section .team-card-container {
-    flex-wrap: wrap;
+  .team-section .all-team-cards .team-member-card {
+    grid-template-columns: auto auto;
   }
-
+  .team-section .heading-section-wrap .heading-wrap .heading-description{
+    max-width: 60%;
+  }
   /* Team Section End */
 
   /* ===================kartavya Responsive CSS end=================== */
@@ -81,16 +83,12 @@
   }
 
   .team-section .heading-section-wrap {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+  }
+  .team-section .all-team-cards .team-member-card {
+    grid-template-columns: auto;
   }
 
-  /* .team-section .team-card-container .team-card {
-    width: 320px;
-  } */
-
-  .team-section .team-card-container .team-card {
-    width: 100%;
-  }
   /* Team Section End */
 
   /* ===================kartavya Responsive CSS End=================== */
@@ -138,6 +136,10 @@
     margin-top: 80px;
   }
 
+  .team-section .heading-section-wrap .heading-wrap .heading-description{
+    max-width: 80%;
+  }
+
   .team-section .heading-wrap {
     flex-direction: column;
     text-align: center;
@@ -145,24 +147,6 @@
   }
   .team-section .heading-section-wrap {
     margin-bottom: 40px;
-  }
-
-  .team-section .team-card-container .team-card {
-    width: 500px;
-  }
-
-  .team-section .team-card .team-card-top .team-member-detail h4 {
-    font-size: 18px;
-    line-height: 22.97px;
-  }
-  .team-section .team-card .team-card-top .team-member-detail p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .team-section .team-card .team-member-occupation p {
-    font-size: 16px;
-    line-height: 24px;
   }
 
   .btn-all-team {
@@ -235,14 +219,50 @@
   .team-section {
     margin-top: 60px;
   }
-  .team-section .team-card-container {
+
+  .team-section .all-team-cards .team-member-card {
     gap: 30px;
   }
 
-  /* Hide the last two team cards */
-  .team-card-container:nth-of-type(2) .team-card:nth-last-child(-n + 2) {
+  .team-section .all-team-cards .team-member-card .team-card {
+    padding: 40px 50px;
+  }
+
+  .team-section
+    .all-team-cards
+    .team-member-card
+    .team-card
+    .team-card-top
+    .team-member-detail
+    h4 {
+    font-size: 18px;
+    line-height: 22.97px;
+  }
+  .team-section
+    .all-team-cards
+    .team-member-card
+    .team-card
+    .team-card-top
+    .team-member-detail
+    p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .team-section
+    .all-team-cards
+    .team-member-card
+    .team-card
+    .team-member-occupation
+    p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .team-member-card .team-card:nth-last-child(-n + 2) {
     display: none;
   }
+
   /* Team Section End */
 
   /* ===================kartavya Responsive CSS End=================== */
@@ -250,19 +270,7 @@
 
 @media (max-width: 350.98px) {
   /* ===================kartavya Responsive CSS Start=================== */
-  .team-section {
-    margin-top: 100px;
-  }
-
-  .team-card {
-    padding: 20px 15px;
-    border-radius: 30px;
-  }
-
-  .team-section .team-card .linkedin-icon {
-    width: 28px;
-    height: 28px;
-    font-size: 0.9em;
-  }
+  
+ 
   /* ===================kartavya Responsive CSS End=================== */
 }
