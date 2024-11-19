@@ -427,6 +427,10 @@
     padding: 20px 0px;
   }
 
+  .Contact-Us {
+    padding: 60px 0px;
+  }
+
   form input,
   form textarea,
   form button {
@@ -496,7 +500,7 @@
   }
 
   .Service-gap {
-    gap: 20px;
+    gap: 30px;
   }
 
   .service-title {
@@ -588,7 +592,7 @@
 
   /* =================== Rudra Working-section Start ================== */
   .Our-Working-Process {
-    padding-top: 60px;
+    padding: 60px 0px;
   }
 
   .Services-Section {
@@ -663,7 +667,7 @@
 
   .main-img img {
     position: absolute;
-    left: 200px;
+    left: 50px;
   }
 }
 
