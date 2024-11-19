@@ -155,6 +155,7 @@ p {
     border-radius: 7px;
     padding: 0px 7px;
     display: inline-block;
+    font-weight: 800;
 }
 
 .heading-wrap {
@@ -319,6 +320,7 @@ p {
     display: flex;
     justify-content: space-between;
     width: 50%;
+    align-items: center;
 }
 
 .slider-controls button {
@@ -341,17 +343,6 @@ p {
 
 #next {
     right: 10px;
-}
-
-/* Pagination dots */
-.pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    position: absolute;
-    bottom: 63px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .dot {
