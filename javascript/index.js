@@ -63,31 +63,31 @@ function updateNavigationButtons(totalSlides) {
   const prevArrowImage = prevButton.querySelector("img");
   const nextArrowImage = nextButton.querySelector("img");
 
-  // Handle the left arrow (previous button)
-  if (currentIndex === 0) {
-    // Disable left arrow and change to gray
-    prevButton.classList.add("disabled");
-    prevArrowImage.src = "assets/Images/Arrow left.png"; // Disabled gray left arrow image
-    prevButton.style.pointerEvents = "none"; // Disable click event
-  } else {
-    // Active left arrow: white arrow
-    prevButton.classList.remove("disabled");
-    prevArrowImage.src = "assets/Images/arrow-icon-direction-icon-left.png"; // White left arrow image
-    prevButton.style.pointerEvents = "auto"; // Enable click event
-  }
+    // Handle the left arrow (previous button)
+    if (currentIndex === 0) {
+        // Disable left arrow and change to gray
+        prevButton.classList.add("disabled");
+        prevArrowImage.src = "assets/Images/Arrow-left.png";  // Disabled gray left arrow image
+        prevButton.style.pointerEvents = "none";  // Disable click event
+    } else {
+        // Active left arrow: white arrow
+        prevButton.classList.remove("disabled");
+        prevArrowImage.src = "assets/Images/arrow-icon-direction-icon-left.png";  // White left arrow image
+        prevButton.style.pointerEvents = "auto";  // Enable click event
+    }
 
-  // Handle the right arrow (next button)
-  if (currentIndex === totalSlides - 1) {
-    // Disable right arrow and change to gray
-    nextButton.classList.add("disabled");
-    nextArrowImage.src = "assets/Images/arrow-thin-right-icon.png"; // Disabled gray right arrow image
-    nextButton.style.pointerEvents = "none"; // Disable click event
-  } else {
-    // Active right arrow: white arrow
-    nextButton.classList.remove("disabled");
-    nextArrowImage.src = "assets/Images/Arrow right.png"; // White right arrow image
-    nextButton.style.pointerEvents = "auto"; // Enable click event
-  }
+    // Handle the right arrow (next button)
+    if (currentIndex === totalSlides - 1) {
+        // Disable right arrow and change to gray
+        nextButton.classList.add("disabled");
+        nextArrowImage.src = "assets/Images/arrow-thin-right-icon.png";  // Disabled gray right arrow image
+        nextButton.style.pointerEvents = "none";  // Disable click event
+    } else {
+        // Active right arrow: white arrow
+        nextButton.classList.remove("disabled");    
+        nextArrowImage.src = "assets/Images/Arrow-right.png";  // White right arrow image
+        nextButton.style.pointerEvents = "auto";  // Enable click event
+    }
 }
 
 window.addEventListener("load", () => {
