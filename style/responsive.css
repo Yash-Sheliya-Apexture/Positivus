@@ -1,4 +1,12 @@
 /* ========== Responsive Breakpoints ========== */
+@media(max-width:1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .slider-container {
+    padding: 50px 0px 250px 60px;
+  }
 @media (max-width: 1199.98px) {
   /* Reusable Breakpoints css */
   .container {
@@ -119,15 +127,10 @@
 }
 
 @media(max-width:991.98px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 
-    /* ===================jenali Case Studies Section start================== */
-    .row {
-        padding: 50px 40px 50px 40px;
-        gap: 30px;
-    }
 
     .col-4 p {
         font-size: 15px;
@@ -137,15 +140,41 @@
 }
 
 @media(max-width:767.98px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .heading-section-wrap .heading h3 {
-        font-size: 36px;
-        line-height: 45.94px;
-    }
+  .heading-section-wrap .heading h3 {
+    font-size: 36px;
+    line-height: 45.94px;
+  }
 
+  .heading-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /* ===========jenali testimonials css start================== */
+  /* Adjust the padding and font sizes for mobile */
+  .case-studies {
+    padding: 20px 10px;
+  }
+
+
+  .heading-section-wrap p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /* Adjust slider container for mobile */
+  .slider-container {
+    padding: 30px 20px 100px;
+  }
   .btn {
     width: 100%;
   }
@@ -233,12 +262,95 @@
         padding: 42px 50px 42px 50px;
     }
 
-    .content-border {
-        border-left: none;
-        /* padding-left: 0; */
-        /* padding: 42px 50px 42px 50px; */
-    }
+  /* Make each slide fit smaller screens */
+  .case-study-slide {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
 
+
+  .imag img.image-mobile {
+    display: block;
+  }
+
+  /* Style for author information */
+  .author-info {
+    margin-left: 50px;
+    font-size: 14px !important;
+    text-align: left;
+  }
+
+  /* Adjust navigation and pagination for mobile */
+  .slider-controls {
+    bottom: 40px;
+    width: 90%;
+  }
+
+  .slider-controls img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .dot img {
+    height: 14px;
+    width: 14px;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    gap: 62px;
+    /* justify-content: center; */
+  }
+
+  .pagination {
+    bottom: 60px;
+  }
+
+  /* ===========jenali testimonials css end================== */
+}
+
+/* jenali testimonials add css start */
+@media(max-width:375px) {
+  .slider-wrapper {
+    gap: 55px;
+  }
+
+}
+
+/* jenali testimonials add css end */
+
+@media(max-width:350.98px) {
+
+  /* jenali testimonials add css start */
+  .heading-section-wrap p {
+    max-width: 290px;
+    height: 72px;
+    font-size: 16px
+  }
+
+
+  .slider-wrapper {
+    gap: 42px;
+  }
+
+  .testimonial-box p {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* jenali testimonials add css end */
+}
     .heading-wrap p {
         width: 370px;
         height: 48px;
