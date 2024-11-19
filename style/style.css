@@ -64,7 +64,6 @@
   /* box-shadow Variable */
   --box-shadow: 0 5px 0 0 #191a23;
 }
-
 /* ========== Global Styles ========== */
 *,
 *::before,
@@ -118,12 +117,18 @@ h3 {
   line-height: 38.28px;
 }
 
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25.52px;
+}
+
 p {
   font-size: 18px;
   font-weight: 400;
   line-height: 22.97px;
 }
-
+    
 /* ========== Typography Styles end ========== */
 
 /* ========== Utility Classes start ========== */
@@ -171,11 +176,12 @@ p {
 .w-100 {
   width: 100%;
 }
+
 /* ========== Utility Classes end ========== */
 
 /* ========== heading start ========== */
 
-.heading {
+.heading h3 {
   font-size: 40px;
   line-height: 51px;
   font-weight: 500;
@@ -198,10 +204,6 @@ p {
 .heading-wrap .Para {
   font-size: 20px;
   max-width: 650px;
-}
-
-.Head-data {
-  margin-bottom: 60px;
 }
 
 .new-data {
@@ -263,13 +265,265 @@ p {
 
 /* ========== Button Styles end ========== */
 
+/* ================ jenali TestimonialsSection css start ================*/
+/* General case studies container styling */
+.heading-section-wrap p {
+    max-width: 473px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 22.97px;
+}
+
+.imag {
+    position: relative;
+    /* This allows positioning of the content over the image */
+    display: inline-block;
+    /* Ensures the content and image are contained within the div */
+}
+
+
+.case-studies {
+    padding: 60px 0px 60px 0px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+.case-studies h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+/* Slider container styling */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 50px 60px 250px 60px;
+    margin-top: 50px;
+}
+
+/* Slider wrapper holds the slides */
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 50px;
+}
+
+.author-info {
+    margin-left: 62px;
+}
+
+.author-info span {
+    color: var(--primary-color);
+}
+
+.marketing-dir {
+    color: var(--white-color) !important;
+}
+
+.case-study-slide {
+    width: 500px;
+    height: 237.95px;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    text-align: left;
+}
+
+
+.case-study-slide p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+/* Slider navigation buttons */
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Adjust previous and next buttons */
+.slider-controls {
+    position: absolute;
+    bottom: 50px;
+    /* Adjust position below the slider */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+.slider-controls button {
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: unset;
+}
+
+.slider-controls img {
+    width: 20px;
+    height: 20px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot img {
+    height: 14px;
+    width: 14px;
+}
+
+/* Active dot styling */
+.dot.active img {
+    content: url('assets\Images\greenDot.png');
+    /* Active dot with primary color */
+}
+
+/* Default inactive dot styling */
+.dot img {
+    content: url('assets\Images\whiteDot.png');
+    /* Inactive dot with white color */
+}
+
+.slider-controls button.disabled img {
+    opacity: 0.5;
+    /* Make the image appear faded */
+    filter: grayscale(100%);
+    /* Make the image grayscale */
+}
+
+.testimonial-box {
+    color: var(--white-color);
+    padding: 25px;
+    max-width: 600px;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 8%, 100% 100%, 100% 100%, 0% 116%, 0% 96%, 0% 5%);
+    border-radius: 45px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    text-align: left;
+}
+
+.testimonial-box p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.testimonial-box::after {
+    content: "";
+    position: absolute;
+    left: 61px;
+    bottom: -15px;
+    height: 30px;
+    width: 30px;
+    background-color: var(--secondary-color);
+    transform: translateX(-50%) rotate(47deg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-bottom-color: var(--primary-color);
+    border-right-color: var(--primary-color);
+}
+
+
+/* ======================= jenali TestimonialsSection Section css end ============ */
+/* ================ jenali Case Studies Section css start ================*/
+/* .case-studies-mobile{
+    display: none;
+} */
+
+.Case-Studies {
+  padding: 60px 0px 0px 0px;
+}
+
+.case-studies-content {
+  padding: 60px 0px 0px 0px;
+}
+
+.heading-wrap p {
+  max-width: 580px;
+}
+
+.row {
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 45px;
+  padding: 70px 60px 70px 60px;
+  gap: 100px;
+}
+
+.col-4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+}
+
+.col-4 p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content-border {
+  border-left: 1px solid var(--white-color);
+  padding-left: 60px;
+}
+
+.learnMore {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.learnMore img {
+  width: 15px;
+  height: 15px;
+  margin-left: 12px;
+  margin-bottom: -2px;
+}
+
+/* ======================= jenali Case Studies Section css end ============ */
 /* ========== Rudra Header Section start ========== */
 .header {
   padding: 60px 0px;
 }
 
 .logo img {
-  width: 150px; /* Adjust logo size as needed */
+  width: 150px;
+  /* Adjust logo size as needed */
   height: auto;
 }
 
@@ -398,6 +652,113 @@ p {
   display: none;
 }
 /* ========== Hero Section End ========== */
+
+/* ========== Things Happen Section Start ========== */
+
+.things-happen .things-happen-detail .things-title.mb-2,
+.things-happen .things-happen-detail .things-para.mb-2 {
+  margin-bottom: 26px;
+}
+
+.things-happen .things-happen-detail {
+  background-color: #f3f3f3;
+  border-radius: 45px;
+  gap: 186px;
+  position: relative;
+}
+.things-happen .things-happen-detail .things-happen-content {
+  padding: 60px;
+}
+
+.things-image{
+  position: absolute;
+  top: -25px;
+  right: 135px;
+}
+
+.things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap {
+  display: none;
+}
+/* ========== Things Happen Section End ========== */
+
+/* ========== Team Section Start ========== */
+.team-section {
+  margin-top: 140px;
+}
+
+.team-section .heading-section-wrap {
+  margin-bottom: 80px;
+}
+
+.team-section .heading-section-wrap .heading-wrap .heading-description{
+  max-width: 530px;
+}
+
+.team-section .all-team-cards .team-member-card{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+}
+
+.team-section .all-team-cards .team-member-card .team-card{
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  box-shadow: 0 5px 0 0 #191a23;
+  padding: 40px 35px;
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top{
+  position: relative;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top .team-member-image img {
+  filter: drop-shadow(6px 6px 0 #000);
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top .team-member-detail{
+  margin-top: 53.82px;
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top .linkedin-icon{
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  color: #b9ff66;
+  background-color: #000;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-member-occupation p::before {
+  content: "";
+  display: block;
+  border: 1px solid black;
+  background-color: #000; /* Border color */
+  margin-bottom: 28px; /* Spacing between the border and the paragraph */
+}
+
+.team-section .all-team-cards .team-member-card .team-card .team-card-top .team-member-detail p {
+  margin: 3px 0 0;
+}
+.btn-all-team {
+  text-align: end;
+  margin-top: 40px;
+}
+
+
+/* ========== Team Section End ========== */
+.hero-image .description-and-btn-mobile-wrap {
+  display: none;
+}
+
+/* ========== Hero Section End ========== */
 /* ================Kartavya CSS Code End================ */
 
 /* ================ jenali Cline-section css start ================*/
@@ -464,6 +825,11 @@ p {
 
 /* ======================= Rudra Services-section css Start ============ */
 
+.Services-Section{
+  padding-top: 80px;
+}
+
+
 .service-card {
   display: flex;
   justify-content: space-between;
@@ -498,7 +864,8 @@ p {
 .Service-gap {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px; /* Adjust the gap as desired */
+  gap: 40px;
+  /* Adjust the gap as desired */
   justify-content: center;
   margin-bottom: 100px;
 }
@@ -542,6 +909,7 @@ p {
   background-color: var(--secondary-color); /* Dark circle background */
   border-radius: 50%;
   color: var(--Lime-light); /* Green color for the arrow */
+  /* Green color for the arrow */
   font-size: 18px;
   font-weight: 300;
 }
@@ -583,7 +951,9 @@ p {
 /* ======================= Rudra Services-section css End ============ */
 
 /* ======================= Rudra Working-section css Start ============ */
-
+.Our-Working-Process{
+  padding-top: 140px;
+}
 .accordion {
   width: 100%;
   height: auto;
@@ -653,6 +1023,7 @@ p {
   padding: 10px 0;
   color: var(--black-color);
   font-size: var(--font-medium);
+  font-size: 18px;
 }
 
 .number {
@@ -684,6 +1055,9 @@ p {
   transition: background-color 0.4s ease;
 }
 
+.space-top {
+  margin-top: 140px;
+}
 /* ======================= Rudra Working-section css End ============ */
 
 /* ======================= Rudra Contant-Us css Start ============ */
