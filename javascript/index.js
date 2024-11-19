@@ -64,7 +64,7 @@ function updateNavigationButtons(totalSlides) {
     if (currentIndex === 0) {
         // Disable left arrow and change to gray
         prevButton.classList.add("disabled");
-        prevArrowImage.src = "assets/Images/Arrow left.png";  // Disabled gray left arrow image
+        prevArrowImage.src = "assets/Images/Arrow-left.png";  // Disabled gray left arrow image
         prevButton.style.pointerEvents = "none";  // Disable click event
     } else {
         // Active left arrow: white arrow
@@ -82,7 +82,7 @@ function updateNavigationButtons(totalSlides) {
     } else {
         // Active right arrow: white arrow
         nextButton.classList.remove("disabled");    
-        nextArrowImage.src = "assets/Images/Arrow right.png";  // White right arrow image
+        nextArrowImage.src = "assets/Images/Arrow-right.png";  // White right arrow image
         nextButton.style.pointerEvents = "auto";  // Enable click event
     }
 }
