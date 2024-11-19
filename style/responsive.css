@@ -1,117 +1,119 @@
 /* ========== Responsive Breakpoints ========== */
 @media(max-width:1199.98px) {
-    .container {
-        max-width: 960px;
-    }
+  .container {
+    max-width: 960px;
+  }
+
+  .slider-container {
+    padding: 50px 0px 250px 60px;
+  }
 }
 
 @media(max-width:991.98px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 
 
 }
 
 @media(max-width:767.98px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .heading-section-wrap .heading h3 {
-        font-size: 36px;
-        line-height: 45.94px;
-    }
+  .heading-section-wrap .heading h3 {
+    font-size: 36px;
+    line-height: 45.94px;
+  }
 
-    .heading-wrap {
-        flex-direction: column;
-        text-align: center;
-    }
+  .heading-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .btn {
-        width: 100%;
-    }
+  .btn {
+    width: 100%;
+  }
 
-    /* ===========jenali testimonials css start================== */
-    /* Adjust the padding and font sizes for mobile */
-    .case-studies {
-        padding: 20px 10px;
-    }
-
-    .slider-wrapper {
-        display: flex;
-        /* Space between slides */
-    }
-
-    .heading-section-wrap p {
-        width: 100%;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    /* Adjust slider container for mobile */
-    .slider-container {
-        padding: 30px 20px 100px;
-    }
-
-    /* Make each slide fit smaller screens */
-    .case-study-slide {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-bottom: 10px;
-        position: relative;
-    }
+  /* ===========jenali testimonials css start================== */
+  /* Adjust the padding and font sizes for mobile */
+  .case-studies {
+    padding: 20px 10px;
+  }
 
 
-    .imag img.image-mobile {
-        display: block;
-    }
+  .heading-section-wrap p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-    /* Style for author information */
-    .author-info {
-        margin-left: 50px;
-        font-size: 14px !important;
-        text-align: left;
-    }
+  /* Adjust slider container for mobile */
+  .slider-container {
+    padding: 30px 20px 100px;
+  }
 
-    /* Adjust navigation and pagination for mobile */
-    .slider-controls {
-        bottom: 40px;
-        width: 90%;
-    }
+  /* Make each slide fit smaller screens */
+  .case-study-slide {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
 
-    .slider-controls img {
-        width: 15px;
-        height: 15px;
-    }
 
-    .dot {
-        width: 12px;
-        height: 12px;
-    }
+  .imag img.image-mobile {
+    display: block;
+  }
 
-    .dot img {
-        height: 14px;
-        width: 14px;
-    }
+  /* Style for author information */
+  .author-info {
+    margin-left: 50px;
+    font-size: 14px !important;
+    text-align: left;
+  }
 
-    .slider-wrapper {
-        gap: 70px;
-    }
+  /* Adjust navigation and pagination for mobile */
+  .slider-controls {
+    bottom: 40px;
+    width: 90%;
+  }
 
-    .pagination {
-        bottom: 60px;
-    }
+  .slider-controls img {
+    width: 15px;
+    height: 15px;
+  }
 
-    /* ===========jenali testimonials css end================== */
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .dot img {
+    height: 14px;
+    width: 14px;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    gap: 62px;
+    /* justify-content: center; */
+  }
+
+  .pagination {
+    bottom: 60px;
+  }
+
+  /* ===========jenali testimonials css end================== */
 }
 
 /* jenali testimonials add css start */
 @media(max-width:375px) {
-    .slider-wrapper {
-        gap: 60px;
-    }
+  .slider-wrapper {
+    gap: 55px;
+  }
 
 }
 
@@ -119,25 +121,25 @@
 
 @media(max-width:350.98px) {
 
-    /* jenali testimonials add css start */
-    .heading-section-wrap p {
-        max-width: 290px;
-        height: 72px;
-        font-size: 16px
-    }
+  /* jenali testimonials add css start */
+  .heading-section-wrap p {
+    max-width: 290px;
+    height: 72px;
+    font-size: 16px
+  }
 
 
-    .slider-wrapper {
-        gap: 50px;
-    }
+  .slider-wrapper {
+    gap: 42px;
+  }
 
-    .testimonial-box p {
-        display: -webkit-box;
-        -webkit-line-clamp: 10;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+  .testimonial-box p {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-    /* jenali testimonials add css end */
+  /* jenali testimonials add css end */
 }
