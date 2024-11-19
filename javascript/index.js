@@ -1,16 +1,4 @@
-// JavaScript to duplicate logos four times for extended scrolling
-const logoContainer = document.getElementById("logoContainer");
-const logos = logoContainer.innerHTML;
-
-// Duplicate the logos content four times
-for (let i = 0; i < 5; i++) {
-logoContainer.innerHTML += logos;
-}
-
-
-
-
-// ===================Rudra js start==================
+// ===================Rudra Menubar js start==================
 
 // JavaScript for toggling sidebar
 const hamburger = document.getElementById("hamburger");
@@ -33,7 +21,67 @@ function closeSidebar() {
 // Event Listeners
 hamburger.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
-// ===================Rudra  js end================== 
+// ===================Rudra Menubar js end==================
 
 
 
+
+
+
+// ===================jenali Cline-section js start==================
+// const copy = document.querySelector(".logos-slide").cloneNode(true);
+// document.querySelector(".logos").appendChild(copy);
+
+// JavaScript to duplicate logos four times for extended scrolling
+const logoContainer = document.getElementById("logoContainer");
+const logos = logoContainer.innerHTML;
+
+// Duplicate the logos content four times
+for (let i = 0; i < 5; i++) {
+  logoContainer.innerHTML += logos;
+}
+// ===================jenali Cline-section js end==================
+
+
+
+
+
+
+
+
+// ===================Rudra Working-section js Start==================
+
+function toggleAccordion(element) {
+  const content = element.nextElementSibling;
+  const isActive = element.classList.contains("active");
+
+  // Close all other items
+  document.querySelectorAll(".accordion-header").forEach((header) => {
+    header.classList.remove("active");
+    header.querySelector(".icon").textContent = "+";
+    header.nextElementSibling.style.maxHeight = null;
+    header.nextElementSibling.style.padding = "0 20px";
+  });
+
+  // Toggle current item
+  if (!isActive) {
+    element.classList.add("active");
+    element.querySelector(".icon").textContent = "-";
+    content.style.maxHeight = content.scrollHeight + "px";
+    content.style.padding = "10px 20px";
+  }
+}
+
+// Open the first section by default
+document.addEventListener("DOMContentLoaded", () => {
+  const firstHeader = document.querySelector(".accordion-header");
+  const firstContent = firstHeader.nextElementSibling;
+
+  // Make the first section active by default
+  firstHeader.classList.add("active");
+  firstHeader.querySelector(".icon").textContent = "-";
+  firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+  firstContent.style.padding = "10px 20px";
+});
+
+// ===================Rudra Working-section js End==================

@@ -95,10 +95,6 @@
         font-size: 16px;
     }
 
-    .heading-section-wrap .heading h3 {
-        font-size: 30px;
-    }
-
     .col-4 {
         width: 313px;
     }
@@ -147,10 +143,7 @@
     max-width: 100%;
   }
 
-  .heading-section-wrap .heading h3 {
-    font-size: 36px;
-    line-height: 45.94px;
-  }
+
 
   .heading-wrap {
     flex-direction: column;
@@ -186,7 +179,7 @@
   }
 
   .Service-gap {
-    gap: 20px;
+    gap: 30px;
   }
 
   .service-title {
@@ -198,6 +191,8 @@
   }
 
   .icon-circle {
+    width: 30px;
+    height: 30px;
     background-color: var(--secondary-color); /* Dark circle background */
     color: var(--Lime-light);
   }
@@ -240,6 +235,8 @@
   }
 
   .icon-white {
+    width: 30px;
+    height: 30px;
     background-color: white; /* Dark circle background */
     color:black; /* Green color for the arrow */
   }
@@ -255,8 +252,49 @@
 
   .card-image img {
     width: 100%; /* Make image responsive */
-    margin-top: 60px;
+    margin-top: 40px;
   }
+
+  /* ===================Rudra Service-section End ================== */
+
+  /* ===================Rudra Working-section Start ================== */
+
+  .accordion .card-1 {
+    padding: 16px;
+  }
+
+  .accordion .card-2 {
+    padding: 16px;
+  }
+
+  .icon {
+    font-size: 1.5em;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #191a23;
+    background-color: #f3f3f3;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+  }
+
+  .accordion-header .num {
+    font-size: 24px;
+  }
+
+  .accordion-header .number span {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+  }
+
+  /* =================== Rudra Working-section End ================== */
 }
 
 @media (max-width: 350.98px) {
@@ -300,6 +338,18 @@
     line-height: 24px;
   }
   /* kartavya Hero Section Responsive CSS end  */
+
+  /* Rudra Working-Section Responsive Css Start */
+
+  .accordion .card-1 {
+    padding: 10px;
+  }
+
+  .accordion .card-2 {
+    padding: 10px;
+  }
+
+  /* Rudra Working-Section Responsive Css End */
 }
 
 @media (max-width: 767.98px) {
@@ -332,6 +382,39 @@
   }
 
   /* ===================jenali Cline-section css start================== */
+
+  /* =================== Rudra Working-section Start ================== */
+
+  .icon {
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--light-gray-color);
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-header {
+    font-size: var(--font-small);
+  }
+
+  .accordion-header .num {
+    font-size: 24px;
+  }
+
+  .accordion-header .number span {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--black-color);
+  }
+
+  .radio-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* =================== Rudra Working-section End ================== */
 }
 
 @media (max-width: 576.98px) {
@@ -358,6 +441,18 @@
     margin-bottom: 40px;
   }
   /* kartavya Hero Section Responsive CSS end  */
+
+  /* Rudra Working Section Start */
+
+  .accordion-header {
+    padding: 10px;
+  }
+
+  .number {
+    font-size: var(--font-medium);
+  }
+
+  /* Rudra Working Section End */
 }
 
 @media (max-width: 350.98px) {
