@@ -26,6 +26,10 @@
     display: block;
   }
 
+  .btn-size{
+    width: 100%;
+  }
+
   /* Rudra About Section Start */
 
   .form-container {
