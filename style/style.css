@@ -170,11 +170,12 @@ p {
 .w-100 {
   width: 100%;
 }
+
 /* ========== Utility Classes end ========== */
 
 /* ========== heading start ========== */
 
-.heading {
+.heading h3 {
   font-size: 40px;
   line-height: 51px;
   font-weight: 500;
@@ -257,12 +258,73 @@ p {
 
 /* ========== Button Styles end ========== */
 
+/* ================ jenali Case Studies Section css start ================*/
+/* .case-studies-mobile{
+    display: none;
+} */
+
+.Case-Studies {
+  padding: 60px 0px 0px 0px;
+}
+
+.case-studies-content {
+  padding: 60px 0px 0px 0px;
+}
+
+.heading-wrap p {
+  width: 580px;
+  height: 46px;
+}
+
+.row {
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 45px;
+  padding: 70px 60px 70px 60px;
+  gap: 100px;
+}
+
+.col-4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+}
+
+.col-4 p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content-border {
+  border-left: 1px solid var(--white-color);
+  padding-left: 60px;
+}
+
+.learnMore {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.learnMore img {
+  width: 15px;
+  height: 15px;
+  margin-left: 12px;
+  margin-bottom: -2px;
+}
+
+/* ======================= jenali Case Studies Section css end ============ */
 /* ========== Rudra Header Section start ========== */
 .header {
   padding: 60px 0px;
 }
+
 .logo img {
-  width: 150px; /* Adjust logo size as needed */
+  width: 150px;
+  /* Adjust logo size as needed */
   height: auto;
 }
 
@@ -285,6 +347,7 @@ p {
   font-size: 20px;
   transition: color 0.3s;
 }
+
 .ml-2 {
   margin-left: 40px;
 }
@@ -379,12 +442,16 @@ p {
 }
 
 .hero-image img {
-  max-width: 100%; /* Ensure the image fits within the div */
-  height: auto; /* Maintain the aspect ratio */
+  max-width: 100%;
+  /* Ensure the image fits within the div */
+  height: auto;
+  /* Maintain the aspect ratio */
 }
+
 .hero-image .description-and-btn-mobile-wrap {
   display: none;
 }
+
 /* ========== Hero Section End ========== */
 /* ================Kartavya CSS Code End================ */
 
@@ -458,34 +525,36 @@ p {
   padding: 40px;
   width: 580px;
   height: 310px;
-  background-color: #f3f3f3;
+  background-color: var(--white-color);
   border-radius: 45px;
-  border: 1px solid #191a23;
-  box-shadow: 0 5px 0 0 #191a23;
+  border: 1px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
   transition: all 0.3s ease;
   margin-top: 10px;
 }
 
+.size .bg-white {
+  background-color: #fff;
+}
+
 .Service-bg {
-  background-color: #b9ff66;
+  background-color: var(--Service-background);
 }
 
 .service-color {
-  background-color: #191a23;
+  background-color: var(--secondary-color);
 }
 
-.service-part {
-  background-color: #fff;
-  color: black;
-  display: inline-block;
-  padding: 0px 7px;
-  border-radius: 7px;
+.size h4 {
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .Service-gap {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px; /* Adjust the gap as desired */
+  gap: 40px;
+  /* Adjust the gap as desired */
   justify-content: center;
   margin-bottom: 100px;
 }
@@ -501,19 +570,23 @@ p {
   display: inline-block;
   font-size: 30px;
   font-weight: 500;
-  background-color: #b9ff66;
-  color: #000;
+  background-color: var(--primary-color);
+  color: var(--black-color);
   padding: 0px 7px;
   border-radius: 7px;
   line-height: 38px;
+}
+
+.new-flex {
+  display: inline-block;
 }
 
 .learn-more {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
-  color: #000;
+  font-size: var(--font-small);
+  color: var(--black-color);
 }
 
 .icon-circle {
@@ -522,9 +595,11 @@ p {
   align-items: center;
   width: 41px;
   height: 41px;
-  background-color: #1a1a1a; /* Dark circle background */
+  background-color: var(--secondary-color);
+  /* Dark circle background */
   border-radius: 50%;
-  color: #a3ff33; /* Green color for the arrow */
+  color: var(--Lime-light);
+  /* Green color for the arrow */
   font-size: 18px;
   font-weight: 300;
 }
@@ -535,10 +610,12 @@ p {
   align-items: center;
   width: 41px;
   height: 41px;
-  background-color: #fff; /* Dark circle background */
+  background-color: white;
+  /* Dark circle background */
   border-radius: 50%;
-  color: black; /* Green color for the arrow */
-  font-size: 18px;
+  color: black;
+  /* Green color for the arrow */
+  font-size: var(--font-medium);
   font-weight: 300;
 }
 
@@ -553,12 +630,12 @@ p {
 }
 
 .learn-more span {
-  font-size: 20px;
+  font-size: var(--font-large);
   font-weight: 400;
 }
 
 .card-image img {
-  width: 100%; /* Make image responsive */
+  /* width: 100%;  */
   height: auto;
   margin-top: 40px;
 }

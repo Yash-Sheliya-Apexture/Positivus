@@ -1,4 +1,4 @@
-// ===================Rudra js start==================
+// ===================Rudra Menubar js start==================
 
 // JavaScript for toggling sidebar
 const hamburger = document.getElementById("hamburger");
@@ -21,7 +21,12 @@ function closeSidebar() {
 // Event Listeners
 hamburger.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
-// ===================Rudra  js end==================
+// ===================Rudra Menubar js end==================
+
+
+
+
+
 
 // ===================jenali Cline-section js start==================
 // const copy = document.querySelector(".logos-slide").cloneNode(true);
@@ -36,6 +41,13 @@ for (let i = 0; i < 5; i++) {
   logoContainer.innerHTML += logos;
 }
 // ===================jenali Cline-section js end==================
+
+
+
+
+
+
+
 
 // ===================Rudra Working-section js Start==================
 

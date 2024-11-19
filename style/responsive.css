@@ -12,6 +12,111 @@
   /* ===================Rudra css end================== */
 }
 
+@media(max-width:991.98px) {
+    .container {
+        max-width: 720px;
+    }
+
+    /* ===================jenali Case Studies Section start================== */
+    .row {
+        padding: 50px 40px 50px 40px;
+        gap: 30px;
+    }
+
+    .col-4 p {
+        font-size: 15px;
+    }
+
+    /* ===================jenali Case Studies Section start================== */
+}
+
+@media(max-width:767.98px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .heading-section-wrap .heading h3 {
+        font-size: 36px;
+        line-height: 45.94px;
+    }
+
+    .heading-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .case-studies-content {
+        /* Enable horizontal scrolling */
+        overflow-x: auto;
+        /* Prevent the scrollbar from being visible */
+        scrollbar-width: none;
+        -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+        padding: 60px 0px 0px 0px;/* Add 20px padding on both sides */
+        display: flex; /* Flexbox to align items horizontally */
+    }
+    
+    .case-studies-content::-webkit-scrollbar {
+        display: none; /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+    }
+    
+    .row {
+        background-color: unset;
+        color: var(--black-color);
+        padding: 0; /* Remove any padding from the row */
+        gap: 20px; /* Space between row items */
+        display: flex; /* Align items horizontally */
+        flex-wrap: nowrap; /* Prevent wrapping of items */
+    }
+    
+
+    .col-4 {
+        background-color: var(--secondary-color);
+        width: 350px;
+        height: 252px;
+        border-radius: 40px;
+        color: var(--white-color);
+        flex: 0 0 auto;
+        padding: 42px 50px 42px 50px;
+    }
+
+    .content-border {
+        border-left: none;
+        /* padding-left: 0; */
+        /* padding: 42px 50px 42px 50px; */
+    }
+
+    .heading-wrap p {
+        width: 370px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .col-4 {
+        width: 313px;
+    }
+}
+
+
+@media(max-width:350.98px) {
+
+    /* jenali caseStudies css start */
+
+    .col-4 {
+        width: 245px;
+        padding: 40px 40px 40px 40px;
+    }
+
+    .heading-wrap p {
+        width: 276px;
+        height: 48px;
+    }
+
+    /* jenali caseStudies css end */
+}
 @media (max-width: 1024.98px) {
   .container {
     max-width: 960px;
@@ -38,10 +143,7 @@
     max-width: 100%;
   }
 
-  .heading-section-wrap .heading h3 {
-    font-size: 36px;
-    line-height: 45.94px;
-  }
+
 
   .heading-wrap {
     flex-direction: column;
@@ -67,6 +169,8 @@
 
   /* ===================jenali Cline-section css End================== */
 
+
+
   /* ===================Rudra Service-section Start ================== */
 
   .service-card {
@@ -79,17 +183,51 @@
   }
 
   .service-title {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 
   .service-part {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 
   .icon-circle {
     width: 30px;
     height: 30px;
+    background-color: var(--secondary-color); /* Dark circle background */
+    color: var(--Lime-light);
   }
+
+  .icon-circle .arrow {
+    font-size: var(--font-large);
+    rotate: -35deg;
+  }
+
+  .icon-white {
+    background-color: #1a1a1a; /* Dark circle background */
+    color: #a3ff33; /* Green color for the arrow */
+  }
+
+  .size h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .icon-white .arrow {
+    font-size: var(--font-large);
+    rotate: -35deg;
+  }
+
+  .learn-more .learn {
+    display: none;
+  }
+
+  .card-image img {
+    height: 60%;
+    margin-top: 40px;
+  }
+
+ 
+  /* ===================Rudra Service-section End ================== */
 
   .icon-circle .arrow {
     font-size: 20px;
@@ -99,6 +237,8 @@
   .icon-white {
     width: 30px;
     height: 30px;
+    background-color: white; /* Dark circle background */
+    color:black; /* Green color for the arrow */
   }
 
   .icon-white .arrow {
