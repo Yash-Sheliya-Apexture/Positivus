@@ -1,5 +1,83 @@
 /* ========== Responsive Breakpoints ========== */
 @media (max-width: 1199.98px) {
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 960px;
+  }
+  /* Reusable Breakpoints css */
+
+  /* ===================kartavya Responsive CSS start=================== */
+  /* Hero Section Start */
+  .hero-section .hero-detail .hero-content-wrap .heading {
+    font-size: 50px;
+    line-height: 59.56px;
+  }
+  .hero-section .hero-detail .hero-content-wrap .heading.mb-2,
+  .hero-section .hero-detail .hero-content-wrap .description.mb-2 {
+    margin-bottom: 20px;
+  }
+  .hero-section .hero-detail {
+    gap: 50px;
+  }
+  /* Hero Section End */
+
+  /* Things Happen Section Start */
+  .things-happen .things-happen-detail {
+    gap: 120px;
+  }
+
+  /* Things Happen Section End */
+  /* ===================kartavya Responsive CSS end=================== */
+}
+
+@media (max-width: 991.98px) {
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 720px;
+  }
+  /* Reusable Breakpoints css */
+
+  /* ===================kartavya Responsive CSS Start=================== */
+  /* Hero Section Start */
+  .hero-section .hero-detail .hero-content-wrap .heading {
+    font-size: 44px;
+    line-height: 49.56px;
+  }
+  .hero-section .hero-detail .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* Hero Section End */
+
+  /* Things Happen Section Start */
+  
+  .things-happen .things-happen-detail {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+  }
+  .things-happen .things-happen-detail .things-happen-content {
+    flex: 1;
+  }
+
+  .things-happen .things-happen-detail .things-image {
+    display: none;
+  }
+  /* Things Happen Section End */
+
+  /* ===================kartavya Responsive CSS End=================== */
+}
+
+@media (max-width: 767.98px) {
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 100%;
+  }
+
+  .heading-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
   .container {
     max-width: 1140px;
   }
@@ -40,14 +118,37 @@
         line-height: 45.94px;
     }
 
-    .heading-wrap {
-        flex-direction: column;
-        text-align: center;
-    }
+  .btn {
+    width: 100%;
+  }
+  /* Reusable Breakpoints css */
 
-    .btn {
-        width: 100%;
-    }
+  /* ===================kartavya Responsive CSS Start=================== */
+  /* Things Happen Section Start */
+  .things-happen .things-happen-detail {
+    gap: 20px;
+  }
+  .things-happen .things-happen-detail .things-happen-content{
+    padding: 50px;
+  }
+  .things-happen .things-happen-detail .things-happen-content .things-title {
+    font-size: 26px;
+    line-height: 33.18px;
+  }
+
+  .things-happen .things-happen-detail .things-happen-content .things-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* Things Happen Section End */
+  /* ===================kartavya Responsive CSS End=================== */
+
+  /* ===================jenali Cline-section css start================== */
+  .logos:before,
+  .logos:after {
+    width: 100px;
+    height: 100%;
+  }
 
     .case-studies-content {
         /* Enable horizontal scrolling */
@@ -382,9 +483,16 @@
   }
 
   /* ===================jenali Cline-section css start================== */
+}
+
+@media (max-width: 576.98px) {
+  /* ===================kartavya Responsive CSS Start=================== */
+  /* Hero Section Start */
 
   /* =================== Rudra Working-section Start ================== */
-
+  .number {
+    font-size: var(--font-medium);
+}
   .icon {
     font-size: 30px;
     height: 30px;
@@ -440,6 +548,29 @@
   .hero-section .hero-detail .description {
     margin-bottom: 40px;
   }
+  /* Hero Section End */
+
+  /* Things Happen Section Start */
+ 
+  .things-happen .things-happen-detail .things-title.mb-2,
+  .things-happen .things-happen-detail .things-para.mb-2 {
+    margin-bottom: 20px;
+  }
+  .things-happen .things-happen-detail .things-happen-content .btn-none{
+    display: none;
+  }
+  .things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap{
+    display: block;
+    width: 100%;
+  }
+  /* Things Happen Section End */
+  /* ===================kartavya Responsive CSS End=================== */
+}
+
+@media (max-width: 350.98px) {
+  /* ===================kartavya Responsive CSS Start=================== */
+  
+  /* ===================kartavya Responsive CSS End=================== */
   /* kartavya Hero Section Responsive CSS end  */
 
   /* Rudra Working Section Start */
