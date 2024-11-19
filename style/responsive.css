@@ -1,5 +1,6 @@
 /* ========== Responsive Breakpoints ========== */
-@media(max-width:1199.98px) {
+
+@media (max-width: 1199.98px) {
   .container {
     max-width: 960px;
   }
@@ -7,377 +8,401 @@
   .slider-container {
     padding: 50px 0px 250px 60px;
   }
-@media (max-width: 1199.98px) {
-  /* Reusable Breakpoints css */
-  .container {
-    max-width: 960px;
-  }
-  /* Reusable Breakpoints css */
+  @media (max-width: 1199.98px) {
+    /* Reusable Breakpoints css */
+    .container {
+      max-width: 960px;
+    }
+    /* Reusable Breakpoints css */
 
-  /* ===================kartavya Responsive CSS start=================== */
-  /* Hero Section Start */
-  .hero-section .hero-detail .hero-content-wrap .heading {
-    font-size: 50px;
-    line-height: 59.56px;
-  }
-  .hero-section .hero-detail .hero-content-wrap .heading.mb-2,
-  .hero-section .hero-detail .hero-content-wrap .description.mb-2 {
-    margin-bottom: 20px;
-  }
-  .hero-section .hero-detail {
-    gap: 50px;
-  }
-  /* Hero Section End */
+    /* ===================kartavya Responsive CSS start=================== */
+    /* Hero Section Start */
+    .hero-section .hero-detail .hero-content-wrap .heading {
+      font-size: 50px;
+      line-height: 59.56px;
+    }
+    .hero-section .hero-detail .hero-content-wrap .heading.mb-2,
+    .hero-section .hero-detail .hero-content-wrap .description.mb-2 {
+      margin-bottom: 20px;
+    }
+    .hero-section .hero-detail {
+      gap: 50px;
+    }
+    /* Hero Section End */
 
-  /* Things Happen Section Start */
-  .things-happen .things-happen-detail {
-    gap: 120px;
-  }
+    /* Things Happen Section Start */
+    .things-happen .things-happen-detail {
+      gap: 120px;
+    }
 
-  /* Things Happen Section End */
+    /* Things Happen Section End */
 
-  /* Team Section Start */
+    /* Team Section Start */
 
-  .team-section .all-team-cards .team-member-card {
-    grid-template-columns: auto auto;
-  }
- 
-  /* Team Section End */
+    .team-section .all-team-cards .team-member-card {
+      grid-template-columns: auto auto;
+    }
 
-  /* ===================kartavya Responsive CSS end=================== */
+    /* Team Section End */
+/* Footer Section Start */
+.footer-section .footer-content .footer-top {
+  margin-bottom: 55px;
 }
 
-@media (max-width: 991.98px) {
-  /* Reusable Breakpoints css */
-  .container {
-    max-width: 720px;
-  }
-  /* Reusable Breakpoints css */
-
-  /* ===================kartavya Responsive CSS Start=================== */
-  /* Hero Section Start */
-  .hero-section .hero-detail .hero-content-wrap .heading {
-    font-size: 44px;
-    line-height: 49.56px;
-  }
-  .hero-section .hero-detail .description {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  /* Hero Section End */
-
-  /* Things Happen Section Start */
-
-  .things-happen .things-happen-detail {
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 80px;
-  }
-  .things-happen .things-happen-detail .things-happen-content {
-    flex: 1;
-  }
-
-  .things-happen .things-happen-detail .things-image {
-    display: none;
-  }
-  /* Things Happen Section End */
-
-  /* Team Section Start */
-
-  .team-section {
-    margin-top: 100px;
-  }
-
-  .team-section .heading-section-wrap {
-    margin-bottom: 60px;
-  }
-  .team-section .all-team-cards .team-member-card {
-    grid-template-columns: auto;
-  }
-
-  /* Team Section End */
-
-  /* ===================kartavya Responsive CSS End=================== */
+.footer-section .footer-content .footer-contact-section {
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  text-align: center;
+}
+.footer-section .footer-top .footer-menu .menu-list {
+  gap: 30px;
+  list-style-type: none;
+}
+.footer-copyright {
+  justify-content: center;
+  text-align: center;
 }
 
-@media (max-width: 767.98px) {
-  /* Reusable Breakpoints css */
-  .container {
-    max-width: 100%;
+.footer-section .footer-content .footer-contact-section .footer-contact-form{
+  max-width: 100%;
+}
+/* Footer Section End */
+    /* ===================kartavya Responsive CSS end=================== */
   }
 
-  .heading-section-wrap .heading h3 {
-    font-size: 36px;
-    line-height: 45.94px;
-  }
-  .heading-wrap {
+  @media (max-width: 991.98px) {
+    /* Reusable Breakpoints css */
+    .container {
+      max-width: 720px;
+    }
+    /* Reusable Breakpoints css */
+
+    /* ===================kartavya Responsive CSS Start=================== */
+    /* Hero Section Start */
+    .hero-section .hero-detail .hero-content-wrap .heading {
+      font-size: 44px;
+      line-height: 49.56px;
+    }
+    .hero-section .hero-detail .description {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    /* Hero Section End */
+
+    /* Things Happen Section Start */
+
+    .things-happen .things-happen-detail {
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 80px;
+    }
+    .things-happen .things-happen-detail .things-happen-content {
+      flex: 1;
+    }
+
+    .things-happen .things-happen-detail .things-image {
+      display: none;
+    }
+    /* Things Happen Section End */
+
+    /* Team Section Start */
+
+    .team-section {
+      margin-top: 100px;
+    }
+
+    .team-section .heading-section-wrap {
+      margin-bottom: 60px;
+    }
+    .team-section .all-team-cards .team-member-card {
+      grid-template-columns: auto;
+    }
+
+    /* Team Section End */
+
+  /* Footer Section Start */
+  .footer-section .footer-top {
     flex-direction: column;
-    text-align: center;
+    gap: 40px;
   }
-  .container {
-    max-width: 1140px;
-  }
-  /* ===================Rudra css start================== */
-
-  .header {
-    padding: 30px 0px;
+  .footer-section .footer-content .footer-contact-section .footer-contact-form {
+    flex-direction: column;
   }
 
-  /* ===================Rudra css end================== */
-}
-
-@media(max-width:991.98px) {
-  .container {
-    max-width: 720px;
+  /* Footer Section End */
+    /* ===================kartavya Responsive CSS End=================== */
   }
 
+  @media (max-width: 767.98px) {
+    /* Reusable Breakpoints css */
+    .container {
+      max-width: 100%;
+    }
+
+    .heading-section-wrap .heading h3 {
+      font-size: 36px;
+      line-height: 45.94px;
+    }
+    .heading-wrap {
+      flex-direction: column;
+      text-align: center;
+    }
+    .container {
+      max-width: 1140px;
+    }
+    /* ===================Rudra css start================== */
+
+    .header {
+      padding: 30px 0px;
+    }
+
+    /* ===================Rudra css end================== */
+  }
+
+  @media (max-width: 991.98px) {
+    .container {
+      max-width: 720px;
+    }
 
     .col-4 p {
-        font-size: 15px;
+      font-size: 15px;
     }
 
     /* ===================jenali Case Studies Section start================== */
-}
-
-@media(max-width:767.98px) {
-  .container {
-    max-width: 100%;
   }
 
-  .heading-section-wrap .heading h3 {
-    font-size: 36px;
-    line-height: 45.94px;
-  }
+  @media (max-width: 767.98px) {
+    .container {
+      max-width: 100%;
+    }
 
-  .heading-wrap {
+    .heading-section-wrap .heading h3 {
+      font-size: 36px;
+      line-height: 45.94px;
+    }
+
+    .heading-wrap {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    /* ===========jenali testimonials css start================== */
+    /* Adjust the padding and font sizes for mobile */
+    .case-studies {
+      padding: 20px 10px;
+    }
+
+    .heading-section-wrap p {
+      width: 100%;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    /* Adjust slider container for mobile */
+    .slider-container {
+      padding: 30px 20px 100px;
+    }
+    .btn {
+      width: 100%;
+    }
+    /* Reusable Breakpoints css */
+
+    /* ===================kartavya Responsive CSS Start=================== */
+    /* Things Happen Section Start */
+    .things-happen .things-happen-detail {
+      gap: 20px;
+    }
+    .things-happen .things-happen-detail .things-happen-content {
+      padding: 50px;
+    }
+    .things-happen .things-happen-detail .things-happen-content .things-title {
+      font-size: 26px;
+      line-height: 33.18px;
+    }
+
+    .things-happen .things-happen-detail .things-happen-content .things-para {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    /* Things Happen Section End */
+
+    /* Team Section Start */
+    .team-section {
+      margin-top: 80px;
+    }
+
+    .team-section .heading-wrap {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+    .team-section .heading-section-wrap {
+      margin-bottom: 40px;
+    }
+
+    .btn-all-team {
+      text-align: center;
+    }
+
+    /* Team Section End */
+  /* Footer Section Start */
+
+  .footer-section .footer-content .footer-copyright {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  /* ===========jenali testimonials css start================== */
-  /* Adjust the padding and font sizes for mobile */
-  .case-studies {
-    padding: 20px 10px;
-  }
-
-
-  .heading-section-wrap p {
-    width: 100%;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  /* Adjust slider container for mobile */
-  .slider-container {
-    padding: 30px 20px 100px;
-  }
-  .btn {
-    width: 100%;
-  }
-  /* Reusable Breakpoints css */
-
-  /* ===================kartavya Responsive CSS Start=================== */
-  /* Things Happen Section Start */
-  .things-happen .things-happen-detail {
-    gap: 20px;
-  }
-  .things-happen .things-happen-detail .things-happen-content{
-    padding: 50px;
-  }
-  .things-happen .things-happen-detail .things-happen-content .things-title {
-    font-size: 26px;
-    line-height: 33.18px;
-  }
-
-  .things-happen .things-happen-detail .things-happen-content .things-para {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  /* Things Happen Section End */
-
-  /* Team Section Start */
-  .team-section {
-    margin-top: 80px;
-  }
-
-  .team-section .heading-wrap {
-    flex-direction: column;
-    text-align: center;
     gap: 30px;
   }
-  .team-section .heading-section-wrap {
-    margin-bottom: 40px;
-  }
+  /* Footer Section End */
+    /* ===================kartavya Responsive CSS End=================== */
 
-  .btn-all-team {
-    text-align: center;
-  }
-
-  /* Team Section End */
-
-  /* ===================kartavya Responsive CSS End=================== */
-
-  /* ===================jenali Cline-section css start================== */
-  .logos:before,
-  .logos:after {
-    width: 100px;
-    height: 100%;
-  }
+    /* ===================jenali Cline-section css start================== */
+    .logos:before,
+    .logos:after {
+      width: 100px;
+      height: 100%;
+    }
 
     .case-studies-content {
-        /* Enable horizontal scrolling */
-        overflow-x: auto;
-        /* Prevent the scrollbar from being visible */
-        scrollbar-width: none;
-        -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
-        padding: 60px 0px 0px 0px;/* Add 20px padding on both sides */
-        display: flex; /* Flexbox to align items horizontally */
+      /* Enable horizontal scrolling */
+      overflow-x: auto;
+      /* Prevent the scrollbar from being visible */
+      scrollbar-width: none;
+      -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+      padding: 60px 0px 0px 0px; /* Add 20px padding on both sides */
+      display: flex; /* Flexbox to align items horizontally */
     }
-    
+
     .case-studies-content::-webkit-scrollbar {
-        display: none; /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+      display: none; /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
     }
-    
+
     .row {
-        background-color: unset;
-        color: var(--black-color);
-        padding: 0; /* Remove any padding from the row */
-        gap: 20px; /* Space between row items */
-        display: flex; /* Align items horizontally */
-        flex-wrap: nowrap; /* Prevent wrapping of items */
+      background-color: unset;
+      color: var(--black-color);
+      padding: 0; /* Remove any padding from the row */
+      gap: 20px; /* Space between row items */
+      display: flex; /* Align items horizontally */
+      flex-wrap: nowrap; /* Prevent wrapping of items */
     }
-    
 
     .col-4 {
-        background-color: var(--secondary-color);
-        width: 350px;
-        height: 252px;
-        border-radius: 40px;
-        color: var(--white-color);
-        flex: 0 0 auto;
-        padding: 42px 50px 42px 50px;
+      background-color: var(--secondary-color);
+      width: 350px;
+      height: 252px;
+      border-radius: 40px;
+      color: var(--white-color);
+      flex: 0 0 auto;
+      padding: 42px 50px 42px 50px;
     }
 
-  /* Make each slide fit smaller screens */
-  .case-study-slide {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin-bottom: 10px;
-    position: relative;
+    /* Make each slide fit smaller screens */
+    .case-study-slide {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .imag img.image-mobile {
+      display: block;
+    }
+
+    /* Style for author information */
+    .author-info {
+      margin-left: 50px;
+      font-size: 14px !important;
+      text-align: left;
+    }
+
+    /* Adjust navigation and pagination for mobile */
+    .slider-controls {
+      bottom: 40px;
+      width: 90%;
+    }
+
+    .slider-controls img {
+      width: 15px;
+      height: 15px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+    }
+
+    .dot img {
+      height: 14px;
+      width: 14px;
+    }
+
+    .slider-wrapper {
+      display: flex;
+      gap: 62px;
+      /* justify-content: center; */
+    }
+
+    .pagination {
+      bottom: 60px;
+    }
+
+    /* ===========jenali testimonials css end================== */
   }
-
-
-  .imag img.image-mobile {
-    display: block;
-  }
-
-  /* Style for author information */
-  .author-info {
-    margin-left: 50px;
-    font-size: 14px !important;
-    text-align: left;
-  }
-
-  /* Adjust navigation and pagination for mobile */
-  .slider-controls {
-    bottom: 40px;
-    width: 90%;
-  }
-
-  .slider-controls img {
-    width: 15px;
-    height: 15px;
-  }
-
-  .dot {
-    width: 12px;
-    height: 12px;
-  }
-
-  .dot img {
-    height: 14px;
-    width: 14px;
-  }
-
-  .slider-wrapper {
-    display: flex;
-    gap: 62px;
-    /* justify-content: center; */
-  }
-
-  .pagination {
-    bottom: 60px;
-  }
-
-  /* ===========jenali testimonials css end================== */
-}
-
-/* jenali testimonials add css start */
-@media(max-width:375px) {
-  .slider-wrapper {
-    gap: 55px;
-  }
-
-}
-
-/* jenali testimonials add css end */
-
-@media(max-width:350.98px) {
 
   /* jenali testimonials add css start */
-  .heading-section-wrap p {
-    max-width: 290px;
-    height: 72px;
-    font-size: 16px
-  }
-
-
-  .slider-wrapper {
-    gap: 42px;
-  }
-
-  .testimonial-box p {
-    display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  @media (max-width: 375px) {
+    .slider-wrapper {
+      gap: 55px;
+    }
   }
 
   /* jenali testimonials add css end */
+
+  @media (max-width: 350.98px) {
+    /* jenali testimonials add css start */
+    .heading-section-wrap p {
+      max-width: 290px;
+      height: 72px;
+      font-size: 16px;
+    }
+
+    .slider-wrapper {
+      gap: 42px;
+    }
+
+    .testimonial-box p {
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* jenali testimonials add css end */
+  }
+  .heading-wrap p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .col-4 {
+    width: 313px;
+  }
 }
-    .heading-wrap p {
-        width: 370px;
-        height: 48px;
-        font-size: 16px;
-    }
 
-    .col-4 {
-        width: 313px;
-    }
-}
+@media (max-width: 350.98px) {
+  /* jenali caseStudies css start */
 
+  .col-4 {
+    width: 245px;
+    padding: 40px 40px 40px 40px;
+  }
 
-@media(max-width:350.98px) {
-
-    /* jenali caseStudies css start */
-
-    .col-4 {
-        width: 245px;
-        padding: 40px 40px 40px 40px;
-    }
-
-    .heading-wrap p {
-        width: 276px;
-        height: 48px;
-    }
-
-    /* jenali caseStudies css end */
+  /* jenali caseStudies css end */
 }
 @media (max-width: 1024.98px) {
   .container {
@@ -391,6 +416,35 @@
   .hamburger {
     display: block;
   }
+
+  .btn-size {
+    width: 100%;
+  }
+
+  /* Rudra About Section Start */
+
+  .form-container {
+    padding: 20px 0px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%; /* Full width */
+    font-size: var(--font-extrasmall);
+  }
+
+  form textarea {
+    height: 150px; /* Adjust textarea height */
+  }
+
+  .form-container .form-fields {
+    flex: 1;
+    padding: 40px;
+  }
+
+  /* Rudra About Section End */
+
   /* ===================Rudra css end================== */
 }
 
@@ -398,14 +452,17 @@
   .container {
     max-width: 720px;
   }
+
+  .form-container .form-fields {
+    flex: 1;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 767.98px) {
   .container {
     max-width: 100%;
   }
-
-
 
   .heading-wrap {
     flex-direction: column;
@@ -431,8 +488,6 @@
 
   /* ===================jenali Cline-section css End================== */
 
-
-
   /* ===================Rudra Service-section Start ================== */
 
   .service-card {
@@ -441,7 +496,7 @@
   }
 
   .Service-gap {
-    gap: 30px;
+    gap: 20px;
   }
 
   .service-title {
@@ -456,6 +511,10 @@
     width: 30px;
     height: 30px;
     background-color: var(--secondary-color); /* Dark circle background */
+    border-radius: 50%;
+    color: var(--Lime-light);
+    font-size: var(--font-medium);
+    font-weight: 300;
     color: var(--Lime-light);
   }
 
@@ -488,7 +547,6 @@
     margin-top: 40px;
   }
 
- 
   /* ===================Rudra Service-section End ================== */
 
   .icon-circle .arrow {
@@ -500,11 +558,20 @@
     width: 30px;
     height: 30px;
     background-color: white; /* Dark circle background */
-    color:black; /* Green color for the arrow */
+    border-radius: 50%;
+    color: var(--black-color); /* Green color for the arrow */
+    font-size: var(--font-medium);
+    font-weight: 300;
+    color: black; /* Green color for the arrow */
+  }
+
+  .size h4 {
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .icon-white .arrow {
-    font-size: 20px;
+    font-size: var(--font-large);
     rotate: -35deg;
   }
 
@@ -513,13 +580,20 @@
   }
 
   .card-image img {
-    width: 100%; /* Make image responsive */
+    height: 60%;
     margin-top: 40px;
   }
 
   /* ===================Rudra Service-section End ================== */
 
-  /* ===================Rudra Working-section Start ================== */
+  /* =================== Rudra Working-section Start ================== */
+  .Our-Working-Process {
+    padding-top: 60px;
+  }
+
+  .Services-Section {
+    padding-top: 60px;
+  }
 
   .accordion .card-1 {
     padding: 16px;
@@ -530,11 +604,11 @@
   }
 
   .icon {
-    font-size: 1.5em;
+    font-size: 30px;
     height: 30px;
     width: 30px;
-    border: 1px solid #191a23;
-    background-color: #f3f3f3;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--light-gray-color);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -543,7 +617,7 @@
   }
 
   .accordion-header {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 
   .accordion-header .num {
@@ -553,7 +627,12 @@
   .accordion-header .number span {
     font-size: 30px;
     font-weight: 500;
-    color: black;
+    color: var(--black-color);
+  }
+
+  .radio-buttons {
+    display: flex;
+    justify-content: space-between;
   }
 
   /* =================== Rudra Working-section End ================== */
@@ -581,6 +660,11 @@
     gap: 50px;
   }
   /* kartavya Hero Section Responsive CSS end  */
+
+  .main-img img {
+    position: absolute;
+    left: 200px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -601,6 +685,13 @@
   }
   /* kartavya Hero Section Responsive CSS end  */
 
+  .main-img img {
+    display: none;
+  }
+
+  .main-img {
+    flex: 0;
+  }
   /* Rudra Working-Section Responsive Css Start */
 
   .accordion .card-1 {
@@ -649,11 +740,12 @@
 @media (max-width: 576.98px) {
   /* ===================kartavya Responsive CSS Start=================== */
   /* Hero Section Start */
+  
 
   /* =================== Rudra Working-section Start ================== */
   .number {
     font-size: var(--font-medium);
-}
+  }
   .icon {
     font-size: 30px;
     height: 30px;
@@ -776,14 +868,82 @@
   }
 
   /* Team Section End */
+/* Footer Section Start */
+.footer-section .footer-content {
+  padding: 50px 20px 30px;
+  border-radius: 0px;
+}
 
+.footer-section .footer-content .footer-top {
+  margin-bottom: 37px;
+}
+
+.footer-section .footer-top {
+  gap: 37px;
+}
+
+.footer-section .footer-top .footer-menu .menu-list {
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.footer-section .footer-content .footer-contact-section {
+  gap: 37px;
+}
+
+.footer-section
+  .footer-content
+  .footer-contact-section
+  .footer-contact-details
+  .footer-contact-info {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-section .footer-content .footer-contact-section .footer-contact-form {
+  padding: 30px;
+}
+
+.footer-section .footer-top .footer-icons {
+  display: none;
+}
+
+.footer-section .footer-content .footer-icons-wrap .icon-wrap{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: 37px;
+}
+.footer-section .footer-content .footer-contact-section .footer-contact-form input{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-section .footer-content .footer-contact-section .footer-contact-form .btn{
+  line-height: 28px;
+}
+.footer-section .footer-content .footer-borderline {
+  border: 1px solid #fff;
+  margin: 37px 0;
+}
+.footer-section .footer-content .footer-copyright {
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-section .container{
+padding: 0px;
+}
+.footer-section .footer-content .footer-menu .menu-list .menu-item a,.footer-section .footer-content .footer-copyright a{
+  text-decoration: none;
+}
+/* Footer Section End */
   /* ===================kartavya Responsive CSS End=================== */
 }
 
 @media (max-width: 350.98px) {
   /* ===================kartavya Responsive CSS Start=================== */
-  
- 
+
   /* ===================kartavya Responsive CSS End=================== */
   /* kartavya Hero Section Responsive CSS end  */
 
@@ -795,6 +955,21 @@
 
   .number {
     font-size: var(--font-medium);
+    gap: 0px 25px;
+  }
+
+  .form-container {
+    padding: 40px 0px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  form button {
+    width: 100%;
   }
 
   /* Rudra Working Section End */
