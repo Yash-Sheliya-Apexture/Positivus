@@ -47,12 +47,23 @@
   --light-gray-color: #f3f3f3;
   /* Light Gray */
   --white-color: #f3f3f3;
-  /* White */
+  /* light Lime */
+  --Lime-light: #a3ff33;
+  /* Service BackGround */
+  --Service-background: #b9ff66;
 
   /* Font Family Variable */
   --font-family-primary: "SpaceGrotesk", sans-serif;
-}
 
+  /* Font-size Variable */
+  --font-extrasmall: 14px;
+  --font-small: 16px;
+  --font-medium: 18px;
+  --font-large: 20px;
+
+  /* box-shadow Variable */
+  --box-shadow: 0 5px 0 0 #191a23;
+}
 /* ========== Global Styles ========== */
 *,
 *::before,
@@ -130,12 +141,20 @@ p {
   justify-content: center;
 }
 
+.flex-justify-content-space-between {
+  justify-content: space-between;
+}
+
 .flex-align-items-center {
   align-items: center;
 }
 
 .text-center {
   text-align: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .mt-2 {
@@ -146,6 +165,10 @@ p {
   margin-bottom: 20px;
 }
 
+.white {
+  color: #fff;
+}
+
 .w-50 {
   width: 50%;
 }
@@ -153,11 +176,16 @@ p {
 .w-100 {
   width: 100%;
 }
+
 /* ========== Utility Classes end ========== */
 
-/* yash */
-
 /* ========== heading start ========== */
+
+.heading h3 {
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: 500;
+}
 
 .heading-bg-green {
   background-color: var(--primary-color);
@@ -171,6 +199,14 @@ p {
 
 .heading-wrap {
   gap: 40px;
+}
+
+.Head-data {
+  margin-bottom: 60px;
+}
+
+.new-data {
+  margin-bottom: 80px;
 }
 
 .heading-section-wrap p {
@@ -228,6 +264,168 @@ p {
 
 /* ========== Button Styles end ========== */
 
+/* ================ jenali Case Studies Section css start ================*/
+/* .case-studies-mobile{
+    display: none;
+} */
+
+.Case-Studies {
+  padding: 60px 0px 0px 0px;
+}
+
+.case-studies-content {
+  padding: 60px 0px 0px 0px;
+}
+
+.heading-wrap p {
+  width: 580px;
+  height: 46px;
+}
+
+.row {
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 45px;
+  padding: 70px 60px 70px 60px;
+  gap: 100px;
+}
+
+.col-4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+}
+
+.col-4 p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content-border {
+  border-left: 1px solid var(--white-color);
+  padding-left: 60px;
+}
+
+.learnMore {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.learnMore img {
+  width: 15px;
+  height: 15px;
+  margin-left: 12px;
+  margin-bottom: -2px;
+}
+
+/* ======================= jenali Case Studies Section css end ============ */
+/* ========== Rudra Header Section start ========== */
+.header {
+  padding: 60px 0px;
+}
+
+.logo img {
+  width: 150px;
+  /* Adjust logo size as needed */
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.ml-2 {
+  margin-left: 40px;
+}
+
+/* Button Styles */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+  padding-top: 50px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
+/* Close Button for Sidebar */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.sidebar .mobail-button-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+.sidebar .mobail-button-wrap {
+  box-shadow: 0px -6px 20px rgb(0 0 0 / 24%);
+  border-radius: 20px 20px 0px 0px;
+  border-top: 2px solid var(--black-color);
+}
+
+/* ========== Rudra Header Section End ========== */
+
 /* ================Kartavya CSS Code Start================ */
 /* ========== Hero Section Start ========== */
 
@@ -268,19 +466,20 @@ p {
 .things-happen .things-happen-detail {
   background-color: #f3f3f3;
   border-radius: 45px;
-}
-
-.things-happen .things-happen-detail {
   gap: 186px;
+  position: relative;
+}
+.things-happen .things-happen-detail .things-happen-content {
   padding: 60px;
 }
 
-.things-image img {
-  max-width: 100%; /* Ensure the image fits within the div */
-  height: auto; /* Maintain the aspect ratio */
+.things-image{
+  position: absolute;
+  top: -25px;
+  right: 135px;
 }
 
-.things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap{
+.things-happen .things-happen-detail .things-happen-content .btn-mobile-wrap {
   display: none;
 }
 /* ========== Things Happen Section End ========== */
@@ -358,6 +557,11 @@ p {
 
 
 /* ========== Team Section End ========== */
+.hero-image .description-and-btn-mobile-wrap {
+  display: none;
+}
+
+/* ========== Hero Section End ========== */
 /* ================Kartavya CSS Code End================ */
 
 /* ================ jenali Cline-section css start ================*/
@@ -421,3 +625,235 @@ p {
 }
 
 /* ======================= jenali Cline-section css end ============ */
+
+/* ======================= Rudra Services-section css Start ============ */
+
+.service-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 580px;
+  height: 310px;
+  background-color: var(--white-color);
+  border-radius: 45px;
+  border: 1px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.size .bg-white {
+  background-color: #fff;
+}
+
+.Service-bg {
+  background-color: var(--Service-background);
+}
+
+.service-color {
+  background-color: var(--secondary-color);
+}
+
+.size h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.Service-gap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  /* Adjust the gap as desired */
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.service-title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  padding: 0px 7px;
+  border-radius: 7px;
+  line-height: 38px;
+}
+
+.new-flex {
+  display: inline-block;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-small);
+  color: var(--black-color);
+}
+
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background-color: var(--secondary-color);
+  /* Dark circle background */
+  border-radius: 50%;
+  color: var(--Lime-light);
+  /* Green color for the arrow */
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.icon-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background-color: white;
+  /* Dark circle background */
+  border-radius: 50%;
+  color: black;
+  /* Green color for the arrow */
+  font-size: var(--font-medium);
+  font-weight: 300;
+}
+
+.icon-white .arrow {
+  font-size: 30px;
+  rotate: -35deg;
+}
+
+.icon-circle .arrow {
+  font-size: 30px;
+  rotate: -35deg;
+}
+
+.learn-more span {
+  font-size: var(--font-large);
+  font-weight: 400;
+}
+
+.card-image img {
+  /* width: 100%;  */
+  height: auto;
+  margin-top: 40px;
+}
+
+/* ======================= Rudra Services-section css End ============ */
+
+/* ======================= Rudra Working-section css Start ============ */
+
+.accordion {
+  width: 100%;
+  height: auto;
+}
+
+.accordion .card-1 {
+  background-color: var(--primary-color);
+  padding: 41px 60px;
+}
+
+.accordion-item .card-2 {
+  background-color: var(--light-gray-color);
+  padding: 41px 60px;
+}
+
+.accordion-item .card-2:hover {
+  background-color: var(--primary-color);
+  transition: all 0.4s ease;
+}
+
+.accordion-content .border-accordion {
+  border-top: 1px solid var(--black-color);
+  margin: 20px 0px;
+}
+
+.accordion-item {
+  border: 1px solid var(--secondary-color);
+  border-radius: 45px;
+  background-color: #f3f3f3;
+  box-shadow: 0 5px 0 0 var(--secondary-color);
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.accordion-item .active {
+  border-radius: 10px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  font-size: var(--font-large);
+  font-weight: 500;
+  transition: background-color 0.4s ease;
+}
+
+.accordion-header.active {
+  border-radius: 10px;
+}
+
+.heading-wrap .para-1 {
+  max-width: 300px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-content p {
+  padding: 10px 0;
+  color: var(--black-color);
+  font-size: 18px;
+}
+
+.number {
+  font-size: 30px;
+  color: var(--black-color);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 25px;
+}
+
+.accordion-header .number span {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--black-color);
+}
+
+.icon {
+  font-size: 2.5rem;
+  height: 58px;
+  width: 58px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--light-gray-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease;
+}
+
+.space-top {
+  margin-top: 140px;
+}
+/* ======================= Rudra Working-section css End ============ */
