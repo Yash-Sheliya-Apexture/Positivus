@@ -283,9 +283,6 @@ p {
 
 .case-studies {
   padding: 60px 0px 60px 0px;
-  background-color: #f8f9fa;
-  color: #333;
-  text-align: center;
 }
 
 .case-studies h2 {
@@ -415,16 +412,6 @@ p {
   padding: 25px;
   max-width: 600px;
   position: relative;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 8%,
-    100% 100%,
-    100% 100%,
-    0% 116%,
-    0% 96%,
-    0% 5%
-  );
   border-radius: 45px;
   border: 1px solid var(--primary-color);
   background-color: var(--secondary-color);
@@ -1226,7 +1213,6 @@ input::placeholder {
   border-radius: 45px;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 140px;
 }
 
 .form-fields {
