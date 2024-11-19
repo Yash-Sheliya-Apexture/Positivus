@@ -3,6 +3,7 @@
   .container {
     max-width: 1140px;
   }
+
   /* ===================Rudra css start================== */
 
   .header {
@@ -13,114 +14,123 @@
 }
 
 @media(max-width:991.98px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 
-    /* ===================jenali Case Studies Section start================== */
-    .row {
-        padding: 50px 40px 50px 40px;
-        gap: 30px;
-    }
+  /* ===================jenali Case Studies Section start================== */
+  .row {
+    padding: 50px 40px 50px 40px;
+    gap: 30px;
+  }
 
-    .col-4 p {
-        font-size: 15px;
-    }
+  .col-4 p {
+    font-size: 15px;
+  }
 
-    /* ===================jenali Case Studies Section start================== */
+  /* ===================jenali Case Studies Section start================== */
 }
 
 @media(max-width:767.98px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 
-    .heading-section-wrap .heading h3 {
-        font-size: 36px;
-        line-height: 45.94px;
-    }
+  .heading-section-wrap .heading h3 {
+    font-size: 36px;
+    line-height: 45.94px;
+  }
 
-    .heading-wrap {
-        flex-direction: column;
-        text-align: center;
-    }
+  .heading-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .btn {
-        width: 100%;
-    }
+  .btn {
+    width: 100%;
+  }
 
-    .case-studies-content {
-        /* Enable horizontal scrolling */
-        overflow-x: auto;
-        /* Prevent the scrollbar from being visible */
-        scrollbar-width: none;
-        -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
-        padding: 60px 0px 0px 0px;/* Add 20px padding on both sides */
-        display: flex; /* Flexbox to align items horizontally */
-    }
-    
-    .case-studies-content::-webkit-scrollbar {
-        display: none; /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
-    }
-    
-    .row {
-        background-color: unset;
-        color: var(--black-color);
-        padding: 0; /* Remove any padding from the row */
-        gap: 20px; /* Space between row items */
-        display: flex; /* Align items horizontally */
-        flex-wrap: nowrap; /* Prevent wrapping of items */
-    }
-    
+  .case-studies-content {
+    /* Enable horizontal scrolling */
+    overflow-x: auto;
+    /* Prevent the scrollbar from being visible */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* Hide scrollbar in Internet Explorer */
+    padding: 60px 20px 0px 20px;
+    /* Add 20px padding on both sides */
+    display: flex;
+    /* Flexbox to align items horizontally */
+  }
 
-    .col-4 {
-        background-color: var(--secondary-color);
-        width: 350px;
-        height: 252px;
-        border-radius: 40px;
-        color: var(--white-color);
-        flex: 0 0 auto;
-        padding: 42px 50px 42px 50px;
-    }
+  .case-studies-content::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+  }
 
-    .content-border {
-        border-left: none;
-        /* padding-left: 0; */
-        /* padding: 42px 50px 42px 50px; */
-    }
+  .row {
+    background-color: unset;
+    color: var(--black-color);
+    padding: 0;
+    /* Remove any padding from the row */
+    gap: 20px;
+    /* Space between row items */
+    display: flex;
+    /* Align items horizontally */
+    flex-wrap: nowrap;
+    /* Prevent wrapping of items */
+  }
 
-    .heading-wrap p {
-        width: 370px;
-        height: 48px;
-        font-size: 16px;
-    }
 
-    .heading-section-wrap .heading h3 {
-        font-size: 30px;
-    }
+  .col-4 {
+    background-color: var(--secondary-color);
+    width: 350px;
+    height: 252px;
+    border-radius: 40px;
+    color: var(--white-color);
+    flex: 0 0 auto;
+    padding: 42px 50px 42px 50px;
+  }
 
-    .col-4 {
-        width: 313px;
-    }
+  .content-border {
+    border-left: none;
+    /* padding-left: 0; */
+    /* padding: 42px 50px 42px 50px; */
+  }
+
+  .heading-wrap p {
+    width: 370px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .heading-section-wrap .heading h3 {
+    font-size: 30px;
+  }
+
+  .col-4 {
+    width: 313px;
+  }
 }
 
 
 @media(max-width:350.98px) {
 
-    /* jenali caseStudies css start */
+  /* jenali caseStudies css start */
 
-    .col-4 {
-        width: 245px;
-        padding: 40px 40px 40px 40px;
-    }
+  .col-4 {
+    width: 245px;
+    padding: 40px 40px 40px 40px;
+  }
 
-    .heading-wrap p {
-        width: 276px;
-        height: 48px;
-    }
+  .heading-wrap p {
+    width: 276px;
+    height: 48px;
+  }
 
-    /* jenali caseStudies css end */
+  /* jenali caseStudies css end */
 }
+
 @media (max-width: 1024.98px) {
   .container {
     max-width: 960px;
@@ -130,9 +140,11 @@
   .header .nav .navbar {
     display: none;
   }
+
   .hamburger {
     display: block;
   }
+
   /* ===================Rudra css end================== */
 }
 
@@ -198,7 +210,8 @@
   }
 
   .icon-circle {
-    background-color: var(--secondary-color); /* Dark circle background */
+    background-color: var(--secondary-color);
+    /* Dark circle background */
     color: var(--Lime-light);
   }
 
@@ -208,8 +221,10 @@
   }
 
   .icon-white {
-    background-color: #1a1a1a; /* Dark circle background */
-    color: #a3ff33; /* Green color for the arrow */
+    background-color: #1a1a1a;
+    /* Dark circle background */
+    color: #a3ff33;
+    /* Green color for the arrow */
   }
 
   .size h4 {
@@ -231,7 +246,7 @@
     margin-top: 40px;
   }
 
- 
+
   /* ===================Rudra Service-section End ================== */
 
   .icon-circle .arrow {
@@ -240,8 +255,10 @@
   }
 
   .icon-white {
-    background-color: white; /* Dark circle background */
-    color:black; /* Green color for the arrow */
+    background-color: white;
+    /* Dark circle background */
+    color: black;
+    /* Green color for the arrow */
   }
 
   .icon-white .arrow {
@@ -254,18 +271,21 @@
   }
 
   .card-image img {
-    width: 100%; /* Make image responsive */
+    width: 100%;
+    /* Make image responsive */
     margin-top: 60px;
   }
 }
 
-@media (max-width: 350.98px) {
-}
+@media (max-width: 350.98px) {}
+
 @media (max-width: 1199.98px) {
+
   /* Reusable Breakpoints css */
   .container {
     max-width: 960px;
   }
+
   /* Reusable Breakpoints css */
 
   /* kartavya Hero Section Responsive CSS start  */
@@ -273,21 +293,26 @@
     font-size: 50px;
     line-height: 59.56px;
   }
+
   .hero-section .hero-detail .hero-content-wrap .heading.mb-2,
   .hero-section .hero-detail .hero-content-wrap .description.mb-2 {
     margin-bottom: 20px;
   }
+
   .hero-section .hero-detail {
     gap: 50px;
   }
+
   /* kartavya Hero Section Responsive CSS end  */
 }
 
 @media (max-width: 991.98px) {
+
   /* Reusable Breakpoints css */
   .container {
     max-width: 720px;
   }
+
   /* Reusable Breakpoints css */
 
   /* kartavya Hero Section Responsive CSS start  */
@@ -295,18 +320,22 @@
     font-size: 45px;
     line-height: 49.56px;
   }
+
   .hero-section .hero-detail .description {
     font-size: 16px;
     line-height: 24px;
   }
+
   /* kartavya Hero Section Responsive CSS end  */
 }
 
 @media (max-width: 767.98px) {
+
   /* Reusable Breakpoints css */
   .container {
     max-width: 100%;
   }
+
   /* Reusable Breakpoints css */
 
   .heading-wrap {
@@ -331,34 +360,41 @@
     margin: 0 19px;
   }
 
+  .Case-Studies-card .container {
+    padding: 0;
+  }
+
   /* ===================jenali Cline-section css start================== */
 }
 
 @media (max-width: 576.98px) {
+
   /* kartavya Hero Section Responsive CSS start  */
   .hero-section .hero-detail {
     flex-wrap: wrap;
   }
-  .hero-section
-    .hero-detail
-    .hero-content-wrap
-    .description-and-btn-desktop-wrap {
+
+  .hero-section .hero-detail .hero-content-wrap .description-and-btn-desktop-wrap {
     display: none;
   }
+
   .hero-section .hero-detail .column.w-50 {
     width: 100%;
   }
+
   .hero-section .hero-detail {
     gap: 10px;
   }
+
   .hero-image .description-and-btn-mobile-wrap {
     display: block;
   }
+
   .hero-section .hero-detail .description {
     margin-bottom: 40px;
   }
+
   /* kartavya Hero Section Responsive CSS end  */
 }
 
-@media (max-width: 350.98px) {
-}
+@media (max-width: 350.98px) {}
