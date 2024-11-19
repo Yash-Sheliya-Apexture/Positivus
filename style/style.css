@@ -201,8 +201,9 @@ p {
   gap: 40px;
 }
 
-.Head-data {
-  margin-bottom: 60px;
+.heading-wrap .Para {
+  font-size: 20px;
+  max-width: 650px;
 }
 
 .new-data {
@@ -211,7 +212,7 @@ p {
 
 .heading-section-wrap p {
   margin: 0px;
-  font-size: 18px;
+  font-size: var(--font-medium);
   line-height: 22.97px;
 }
 
@@ -221,9 +222,9 @@ p {
 .btn {
   padding: 20px 35px;
   border-radius: 14px;
-  font-size: 20px;
+  font-size: var(--font-large);
   font-family: var(--font-family-primary);
-  border: 1px solid #000;
+  border: 1px solid var(--black-color);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -267,8 +268,7 @@ p {
 /* ================ jenali TestimonialsSection css start ================*/
 /* General case studies container styling */
 .heading-section-wrap p {
-    width: 473px;
-    height: 47px;
+    max-width: 473px;
     margin: 0px;
     font-size: 18px;
     line-height: 22.97px;
@@ -472,8 +472,7 @@ p {
 }
 
 .heading-wrap p {
-  width: 580px;
-  height: 46px;
+  max-width: 580px;
 }
 
 .row {
@@ -542,10 +541,14 @@ p {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--black-color);
   font-weight: 400;
-  font-size: 20px;
+  font-size: var(--font-large);
   transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-color);
 }
 
 .ml-2 {
@@ -557,7 +560,7 @@ p {
 .hamburger {
   display: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: var(--font-large);
 }
 
 /* Sidebar Styling */
@@ -567,7 +570,7 @@ p {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: white;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 100;
@@ -587,13 +590,13 @@ p {
 }
 
 .sidebar ul li a {
-  color: black;
+  color: var(--black-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: var(--font-medium);
 }
 
 .sidebar ul li a:hover {
-  color: #007bff;
+  color: var(--primary-color);
 }
 
 /* Close Button for Sidebar */
@@ -638,7 +641,7 @@ p {
 
 .description {
   line-height: 28px;
-  font-size: 20px;
+  font-size: var(--font-large);
 }
 
 .hero-image img {
@@ -822,6 +825,11 @@ p {
 
 /* ======================= Rudra Services-section css Start ============ */
 
+.Services-Section{
+  padding-top: 80px;
+}
+
+
 .service-card {
   display: flex;
   justify-content: space-between;
@@ -898,10 +906,9 @@ p {
   align-items: center;
   width: 41px;
   height: 41px;
-  background-color: var(--secondary-color);
-  /* Dark circle background */
+  background-color: var(--secondary-color); /* Dark circle background */
   border-radius: 50%;
-  color: var(--Lime-light);
+  color: var(--Lime-light); /* Green color for the arrow */
   /* Green color for the arrow */
   font-size: 18px;
   font-weight: 300;
@@ -913,11 +920,9 @@ p {
   align-items: center;
   width: 41px;
   height: 41px;
-  background-color: white;
-  /* Dark circle background */
+  background-color: white; /* Dark circle background */
   border-radius: 50%;
-  color: black;
-  /* Green color for the arrow */
+  color: black; /* Green color for the arrow */
   font-size: var(--font-medium);
   font-weight: 300;
 }
@@ -946,7 +951,9 @@ p {
 /* ======================= Rudra Services-section css End ============ */
 
 /* ======================= Rudra Working-section css Start ============ */
-
+.Our-Working-Process{
+  padding-top: 140px;
+}
 .accordion {
   width: 100%;
   height: auto;
@@ -1015,6 +1022,7 @@ p {
 .accordion-content p {
   padding: 10px 0;
   color: var(--black-color);
+  font-size: var(--font-medium);
   font-size: 18px;
 }
 
@@ -1051,3 +1059,126 @@ p {
   margin-top: 140px;
 }
 /* ======================= Rudra Working-section css End ============ */
+
+/* ======================= Rudra Contant-Us css Start ============ */
+
+.form-container {
+  display: flex;
+  background-color: var(--light-gray-color);
+  padding: 60px 100px 80px 100px;
+  border-radius: 45px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 140px;
+}
+
+.form-fields {
+  flex: 1;
+  padding: 10px;
+}
+
+.radio-buttons {
+  display: flex;
+  gap: 35px; /* Space between radio buttons */
+}
+
+.radio-buttons label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between the circle and text */
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.radio-buttons input[type="radio"] {
+  appearance: none; /* Remove default radio button styling */
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--black-color);
+  border-radius: 50%; /* Make it circular */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-buttons input[type="radio"]:checked {
+  background-color: white;
+  border: 1px solid var(--black-color); /* Match border color */
+}
+
+.radio-buttons input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: none; /* Hidden by default */
+}
+
+.radio-buttons input[type="radio"]:checked::before {
+  display: block; /* Visible only when selected */
+}
+
+.top-space {
+  margin-top: 68px;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+form input {
+  width: 100%;
+  padding: 18px 30px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border: 1px solid var(--black-color);
+  border-radius: 14px;
+  font-size: var(--font-small);
+  resize: none;
+  font-family: var(--font-family-primary);
+}
+
+form textarea {
+  width: 490px;
+  height: 190px;
+  padding: 18px 30px;
+  margin-bottom: 40px;
+  border: 1px solid var(--black-color);
+  border-radius: 14px;
+  font-size: var(--font-small);
+  resize: none;
+}
+
+form button {
+  width: 100%;
+}
+
+.main-img {
+  flex: 1;
+  position: relative;
+}
+
+.main-img img {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 68%;
+}
+
+/* Form Validation Style */
+.error-message {
+  display: none; /* Hide error messages initially */
+  color: red;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: -10px;
+}
