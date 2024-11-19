@@ -214,6 +214,18 @@
     line-height: 24px;
   }
   /* kartavya Hero Section Responsive CSS end  */
+
+  /* Rudra Working-Section Responsive Css Start */
+
+  .accordion .card-1 {
+    padding: 10px;
+  }
+
+  .accordion .card-2 {
+    padding: 10px;
+  }
+
+  /* Rudra Working-Section Responsive Css End */
 }
 
 @media (max-width: 767.98px) {
@@ -246,6 +258,42 @@
   }
 
   /* ===================jenali Cline-section css start================== */
+
+  /* =================== Rudra Working-section Start ================== */
+
+  .icon {
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--light-gray-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-header {
+    font-size: var(--font-small);
+  }
+
+  .accordion-header .num {
+    font-size: 24px;
+  }
+
+  .accordion-header .number span {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--black-color);
+  }
+
+  .radio-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* =================== Rudra Working-section End ================== */
 }
 
 @media (max-width: 576.98px) {
@@ -276,17 +324,12 @@
   /* Rudra Working Section Start */
 
   .accordion-header {
-    font-size: 0.9em;
     padding: 10px;
   }
 
   .number {
-    font-size: 16px;
+    font-size: var(--font-medium);
     gap: 0px 25px;
-  }
-
-  .accordion-content p {
-    font-size: 18px;
   }
 
   /* Rudra Working Section End */

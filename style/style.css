@@ -624,7 +624,7 @@ p {
 .accordion-content p {
   padding: 10px 0;
   color: var(--black-color);
-  font-size: var(--font-medium);
+  font-size: 18px;
 }
 
 .number {
@@ -656,4 +656,7 @@ p {
   transition: background-color 0.4s ease;
 }
 
+.space-top {
+  margin-top: 140px;
+}
 /* ======================= Rudra Working-section css End ============ */
