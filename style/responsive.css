@@ -129,6 +129,10 @@
   .hamburger {
     display: block;
   }
+
+  .btn-size{
+    width: 100%;
+  }
   /* ===================Rudra css end================== */
 }
 
