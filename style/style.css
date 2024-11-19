@@ -405,18 +405,6 @@ p {
     width: 14px;
 }
 
-/* Active dot styling */
-.dot.active img {
-    content: url('assets\Images\greenDot.png');
-    /* Active dot with primary color */
-}
-
-/* Default inactive dot styling */
-.dot img {
-    content: url('assets\Images\whiteDot.png');
-    /* Inactive dot with white color */
-}
-
 .slider-controls button.disabled img {
     opacity: 0.5;
     /* Make the image appear faded */
