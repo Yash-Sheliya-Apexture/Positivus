@@ -613,6 +613,7 @@ p {
   bottom: 0;
   width: 100%;
   padding: 16px;
+  background-color: #fff;
 }
 
 .sidebar .mobail-button-wrap {
@@ -758,7 +759,140 @@ p {
   display: none;
 }
 
-/* ========== Hero Section End ========== */
+/* ========== Footer Section Start ========== */
+
+.footer-section .footer-content {
+  padding: 50px 60px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  background-color: #191a23;
+}
+
+.footer-section .footer-content .footer-top {
+  justify-content: space-between;
+  margin-bottom: 66px;
+}
+
+.footer-section .footer-top .footer-menu .menu-list {
+  gap: 40px;
+  list-style-type: none;
+}
+
+.footer-section .footer-top .footer-menu .menu-list .menu-item a {
+  color: #fff;
+}
+
+.footer-section .footer-top .footer-icons,
+.footer-section .footer-content .footer-icons-wrap{
+  gap: 20px;
+}
+
+.footer-section .footer-top .footer-icons .icon,
+.footer-section .footer-content .footer-icons-wrap .icon-wrap .icon {
+  display: inline-flex;
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #000;
+}
+
+.footer-section .footer-content .footer-icons-wrap .icon-wrap{
+  display: none;
+} 
+
+.footer-icons a,
+.footer-icons-wrap .icon-wrap a {
+  text-decoration: none;
+}
+
+.footer-section
+  .footer-content
+  .footer-contact-section
+  .footer-contact-details {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-section
+  .footer-content
+  .footer-contact-section
+  .footer-contact-details
+  .footer-contactus
+  h4 {
+  display: inline-block;
+  padding: 0 7px;
+  background-color: #b9ff66;
+  color: #000;
+  border-radius: 7px;
+}
+
+.footer-section
+  .footer-content
+  .footer-contact-section
+  .footer-contact-details
+  .footer-contact-info {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-section
+  .footer-content
+  .footer-contact-section
+  .footer-contact-details
+  .footer-contact-info
+  p {
+  color: #fff;
+}
+
+.footer-section .footer-content .footer-contact-section {
+  justify-content: space-between;
+}
+
+.footer-section .footer-content .footer-contact-section .footer-contact-form {
+  background-color: #292A32;
+  padding: 58px 40px;
+  border-radius: 14px;
+  gap: 20px;
+}
+
+.footer-section .footer-content .footer-contact-section .footer-contact-form input {
+  outline: none;
+  color: #ffffff;
+  padding: 22px 35px;
+  border-radius: 14px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+  font-family: var(--font-family-primary);
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.footer-section .footer-content .footer-borderline{
+  border: 1px solid #fff;
+  margin: 50px 0;
+}
+
+.footer-section .footer-content .footer-copyright{
+  color: #fff;
+  gap: 40px;
+}
+
+.footer-section .footer-content .footer-copyright a {
+  color: white;
+}
+.footer-section .footer-content .social-media-icon i{
+  font-size: 16px;
+}
+
+/* ========== Footer Section End ========== */
+
+
 /* ================Kartavya CSS Code End================ */
 
 /* ================ jenali Cline-section css start ================*/
