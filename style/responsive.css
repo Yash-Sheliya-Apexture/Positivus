@@ -33,9 +33,7 @@
   .team-section .all-team-cards .team-member-card {
     grid-template-columns: auto auto;
   }
-  .team-section .heading-section-wrap .heading-wrap .heading-description{
-    max-width: 60%;
-  }
+ 
   /* Team Section End */
 
   /* ===================kartavya Responsive CSS end=================== */
@@ -134,10 +132,6 @@
   /* Team Section Start */
   .team-section {
     margin-top: 80px;
-  }
-
-  .team-section .heading-section-wrap .heading-wrap .heading-description{
-    max-width: 80%;
   }
 
   .team-section .heading-wrap {
