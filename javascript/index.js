@@ -1,53 +1,39 @@
-// ===================jenali Testimonials Section js start==================
-let currentIndex = 0;
+// JavaScript to duplicate logos four times for extended scrolling
+const logoContainer = document.getElementById("logoContainer");
+const logos = logoContainer.innerHTML;
 
-function showSlides(index) {
-    const slides = document.querySelectorAll(".testimonial-slide");
-    const wrapper = document.querySelector(".testimonial-wrapper");
-    const totalSlides = slides.length;
-
-    // Ensure index is within bounds
-    if (index < 0) {
-        currentIndex = 0;
-    } else if (index > totalSlides - 3) { // Only show 3 slides at a time
-        currentIndex = totalSlides - 3;
-    } else {
-        currentIndex = index;
-    }
-
-    // Calculate transform amount
-    wrapper.style.transform = `translateX(-${currentIndex * (100 / 3)}%)`;
-    updatePagination();
+// Duplicate the logos content four times
+for (let i = 0; i < 5; i++) {
+logoContainer.innerHTML += logos;
 }
 
-function nextSlide() {
-    const slides = document.querySelectorAll(".testimonial-slide");
-    if (currentIndex < slides.length - 3) {
-        currentIndex++;
-        showSlides(currentIndex);
-    }
+
+
+
+// ===================Rudra js start==================
+
+// JavaScript for toggling sidebar
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("closeBtn");
+const overlay = document.getElementById("overlay");
+
+// Function to open the sidebar
+function openSidebar() {
+  sidebar.style.transform = "translateX(0)";
+  overlay.style.display = "block";
 }
 
-function prevSlide() {
-    if (currentIndex > 0) {
-        currentIndex--;
-        showSlides(currentIndex);
-    }
+// Function to close the sidebar
+function closeSidebar() {
+  sidebar.style.transform = "translateX(100%)";
+  overlay.style.display = "none";
 }
 
-function goToSlide(index) {
-    showSlides(index);
-}
-
-function updatePagination() {
-    const dots = document.querySelectorAll(".dot");
-    dots.forEach((dot, idx) => {
-        dot.classList.toggle("active", idx === currentIndex);
-    });
-}
-
-// Initialize and show first set of slides
-showSlides(currentIndex);
+// Event Listeners
+hamburger.addEventListener("click", openSidebar);
+closeBtn.addEventListener("click", closeSidebar);
+// ===================Rudra  js end================== 
 
 
-// ===================jenali Testimonials Section js end==================
+

@@ -1,83 +1,93 @@
 /* ========== Font Import ========== */
 /* Import Space Grotesk font files from local sources */
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk';
-    src: url('../assets/font/SpaceGrotesk-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "SpaceGrotesk";
+  src: url("../assets/font/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* ========== CSS Variables ========== */
 :root {
-    /* Color Variables */
-    --primary-color: #B9FF66;
-    /* Lime Green */
-    --secondary-color: #191A23;
-    /* Dark Gray */
-    --black-color: #000000;
-    /* Black */
-    --light-gray-color: #F3F3F3;
-    /* Light Gray */
-    --white-color: #F3F3F3;
-    /* White */
+  /* Color Variables */
+  --primary-color: #b9ff66;
+  /* Lime Green */
+  --secondary-color: #191a23;
+  /* Dark Gray */
+  --black-color: #000000;
+  /* Black */
+  --light-gray-color: #f3f3f3;
+  /* Light Gray */
+  --white-color: #f3f3f3;
+  /* light Lime */
+  --Lime-light: #a3ff33;
+  /* Service BackGround */
+  --Service-background: #b9ff66;
 
-    /* Font Family Variable */
-    --font-family-primary: 'SpaceGrotesk', sans-serif;
+  /* Font Family Variable */
+  --font-family-primary: "SpaceGrotesk", sans-serif;
+
+  /* Font-size Variable */
+  --font-extrasmall: 14px;
+  --font-small: 16px;
+  --font-medium: 18px;
+  --font-large: 20px;
+
+  /* box-shadow Variable */
+  --box-shadow: 0 5px 0 0 #191a23;
 }
 
 /* ========== Global Styles ========== */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family-primary);
-    /* Apply SpaceGrotesk as the primary font */
-    background-color: var(--light-gray-color);
-    /* Set background to light gray */
-    color: var(--black-color);
-    /* Default text color */
-    line-height: 1.6;
+  font-family: var(--font-family-primary);
+  /* Apply SpaceGrotesk as the primary font */
+  color: var(--black-color);
+  /* Default text color */
+  line-height: 1.6;
 }
 
 /* ========== Layout Styles ========== */
 /* Center container for the main content */
 .container {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0px 16px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0px 16px;
 }
 
 /* ========== Typography Styles start ========== */
@@ -87,133 +97,161 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--black-color);
+  color: var(--black-color);
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 76.56px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 76.56px;
 }
 
 h2 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 51.04px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 51.04px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38.28px;
 }
 
 p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22.97px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
 }
 
 /* ========== Typography Styles end ========== */
 
-
-
-
-
 /* ========== Utility Classes start ========== */
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-justify-content-center {
-    justify-content: center;
+  justify-content: center;
+}
+
+.flex-justify-content-space-between {
+  justify-content: space-between;
 }
 
 .flex-align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .mt-2 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .mb-2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+
+.white {
+  color: #fff;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 /* ========== Utility Classes end ========== */
 
-
-/* yash */
-
 /* ========== heading start ========== */
 
+.heading h3 {
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: 500;
+}
+
 .heading-bg-green {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .heading-section-wrap .heading h3 {
-    border-radius: 7px;
-    padding: 0px 7px;
-    display: inline-block;
+  border-radius: 7px;
+  padding: 0px 7px;
+  display: inline-block;
 }
 
 .heading-wrap {
-    gap: 40px;
+  gap: 40px;
+}
+
+.Head-data {
+  margin-bottom: 60px;
 }
 
 .heading-section-wrap p {
-    margin: 0px;
-    font-size: 18px;
-    line-height: 22.97px;
+  margin: 0px;
+  font-size: 18px;
+  line-height: 22.97px;
 }
 
 /* ========== heading end ========== */
 
-
-
 /* ========== Button Styles start ========== */
 .btn {
-    padding: 20px 35px;
-    border-radius: 14px;
-    font-size: 20px;
-    font-family: var(--font-family-primary);
-    border: 1px solid #000;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  padding: 20px 35px;
+  border-radius: 14px;
+  font-size: 20px;
+  font-family: var(--font-family-primary);
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn.btn-type-one {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+  background-color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .btn.btn-type-one:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--black-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--black-color);
 }
 
 .btn.btn-type-two {
-    background-color: transparent;
-    color: var(--black-color);
+  background-color: transparent;
+  color: var(--black-color);
 }
 
 .btn.btn-type-two:hover {
-    background-color: var(--black-color);
-    border-color: var(--black-color);
-    color: var(--white-color);
+  background-color: var(--black-color);
+  border-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .btn.btn-type-three {
-    background-color: var(--primary-color);
-    color: var(--black-color);
-    border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  border-color: var(--primary-color);
 }
 
 .btn.btn-type-three:hover {
-    background-color: var(--black-color);
-    border-color: var(--black-color);
-    color: var(--white-color);
+  background-color: var(--black-color);
+  border-color: var(--black-color);
+  color: var(--white-color);
 }
 
 /* ========== Button Styles end ========== */
@@ -222,68 +260,382 @@ p {
 /* .case-studies-mobile{
     display: none;
 } */
-.case-studies {
-    padding: 60px 0px 60px 0px;
+
+.Case-Studies {
+  padding: 60px 0px 60px 0px;
+}
+
+.case-studies-content {
+  padding: 60px 0px 0px 0px;
 }
 
 .heading-wrap p {
-    width: 580px;
-    height: 46px;
-}
-
-.heading-section-wrap {
-    padding-top: 60px;
+  width: 580px;
+  height: 46px;
 }
 
 .row {
-    display: flex;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
-    border-radius: 45px;
-    padding: 70px 60px 70px 60px;
-    /* justify-content: space-between; */
-    gap: 100px;
-    /* flex-wrap: nowrap;
-    overflow-x: auto;  */
-}
-
-.heading-bg-green {
-    width: 202px;
-    height: 51px;
-    font-size: 30px;
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 45px;
+  padding: 70px 60px 70px 60px;
+  gap: 100px;
 }
 
 .col-4 {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22.97px;
-    /* width: 286px;
-    height: 186px; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
 }
 
 .col-4 p {
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    /* Show only 3 lines of text */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content-border {
-    border-left: 1px solid var(--white-color);
-    padding-left: 60px;
+  border-left: 1px solid var(--white-color);
+  padding-left: 60px;
 }
 
 .learnMore {
-    color: var(--primary-color);
-    cursor: pointer;
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
 .learnMore img {
-    width: 15px;
-    height: 15px;
-    margin-left: 12px;
-    margin-bottom: -2px;
+  width: 15px;
+  height: 15px;
+  margin-left: 12px;
+  margin-bottom: -2px;
 }
+
 /* ======================= jenali Case Studies Section css end ============ */
+/* ========== Rudra Header Section start ========== */
+.header {
+  padding: 60px 0px;
+}
+
+.logo img {
+  width: 150px;
+  /* Adjust logo size as needed */
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.ml-2 {
+  margin-left: 40px;
+}
+
+/* Button Styles */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+  padding-top: 50px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
+/* Close Button for Sidebar */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.sidebar .mobail-button-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+.sidebar .mobail-button-wrap {
+  box-shadow: 0px -6px 20px rgb(0 0 0 / 24%);
+  border-radius: 20px 20px 0px 0px;
+  border-top: 2px solid var(--black-color);
+}
+
+/* ========== Rudra Header Section End ========== */
+
+/* ================Kartavya CSS Code Start================ */
+/* ========== Hero Section Start ========== */
+
+.hero-section.mt-2 {
+  margin-top: 10px;
+}
+
+.hero-section .hero-detail {
+  gap: 108.54px;
+}
+
+.hero-section .hero-detail .hero-content-wrap .heading.mb-2,
+.hero-section .hero-detail .hero-content-wrap .description.mb-2 {
+  margin-bottom: 35px;
+}
+
+.description {
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  /* Ensure the image fits within the div */
+  height: auto;
+  /* Maintain the aspect ratio */
+}
+
+.hero-image .description-and-btn-mobile-wrap {
+  display: none;
+}
+
+/* ========== Hero Section End ========== */
+/* ================Kartavya CSS Code End================ */
+
+/* ================ jenali Cline-section css start ================*/
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 70s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+  filter: grayscale(1) brightness(0.7);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logos-slide img:hover {
+  filter: none;
+}
+
+/* ======================= jenali Cline-section css end ============ */
+
+/* ======================= Rudra Services-section css Start ============ */
+
+.service-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 580px;
+  height: 310px;
+  background-color: var(--white-color);
+  border-radius: 45px;
+  border: 1px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.size .bg-white {
+  background-color: #fff;
+}
+
+.Service-bg {
+  background-color: var(--Service-background);
+}
+
+.service-color {
+  background-color: var(--secondary-color);
+}
+
+.size h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.Service-gap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  /* Adjust the gap as desired */
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.service-title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  padding: 0px 7px;
+  border-radius: 7px;
+  line-height: 38px;
+}
+
+.new-flex {
+  display: inline-block;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-small);
+  color: var(--black-color);
+}
+
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background-color: var(--secondary-color);
+  /* Dark circle background */
+  border-radius: 50%;
+  color: var(--Lime-light);
+  /* Green color for the arrow */
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.icon-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background-color: white;
+  /* Dark circle background */
+  border-radius: 50%;
+  color: black;
+  /* Green color for the arrow */
+  font-size: var(--font-medium);
+  font-weight: 300;
+}
+
+.icon-white .arrow {
+  font-size: 30px;
+  rotate: -35deg;
+}
+
+.icon-circle .arrow {
+  font-size: 30px;
+  rotate: -35deg;
+}
+
+.learn-more span {
+  font-size: var(--font-large);
+  font-weight: 400;
+}
+
+.card-image img {
+  /* width: 100%;  */
+  height: auto;
+  margin-top: 40px;
+}
+
+/* ======================= Rudra Services-section css End ============ */
